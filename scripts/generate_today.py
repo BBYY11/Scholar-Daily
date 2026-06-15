@@ -125,15 +125,7 @@ def render_card(card: dict[str, Any], disc_en: str, disc_zh: str) -> str:
             marker_html = f'<span class="marker {cls}">{marker}</span>' if marker else ""
             detail_html += f'<p class="no-indent">{marker_html}{chunk.get("text", "")}</p>'
 
-    reviews_html = "".join(
-        f'''<li>
-          <div class="review-title">{r.get("title", "")}</div>
-          <div class="review-meta">{r.get("author", "")} · {r.get("venue", "")} · {r.get("date", "")}</div>
-          <p>{r.get("summary", "")}</p>
-          {f'<a href="{r.get("url", "")}" target="_blank">查看全文 →</a>' if r.get("url") else ""}
-        </li>'''
-        for r in card.get("reviews", [])
-    )
+    reviews_html = ""
 
     dialogue_html = "".join(
         f'<li><b>{d.get("work", "")}</b>（{d.get("year", "")}）'
@@ -197,11 +189,20 @@ def render_card(card: dict[str, Any], disc_en: str, disc_zh: str) -> str:
         if card.get("fallback") else ''
     )
 
+    # 内容深度提示：精读字数 + 是否基于全文
+    reading_chars = sum(len(c.get("text", "")) for c in card.get("reading_detail", []))
+    has_fulltext = card.get("has_fulltext", False)
+    if has_fulltext:
+        depth_badge = f'<div class="depth-badge fulltext">✓ 精读基于全文 · {reading_chars} 字</div>'
+    else:
+        depth_badge = f'<div class="depth-badge abridged">⚡ 精读基于公开摘要（未读全文） · {reading_chars} 字 · 完整 2000 字版待全文获取</div>'
+
     return f'''<article class="card">
       <div class="card-header">
         <div class="card-cover">{cover_html}</div>
         <div>
           {fallback_badge}
+          {depth_badge}
           <div class="discipline-tag">{disc_en.upper()} · {disc_zh}</div>
           <h2>{card.get("title_zh", "")}</h2>
           <p class="card-title-en">{card.get("title_en", "")}</p>
@@ -238,11 +239,6 @@ def render_card(card: dict[str, Any], disc_en: str, disc_zh: str) -> str:
       <section class="card-section">
         <h3>学术对话</h3>
         <ul class="dialogue-list">{dialogue_html}</ul>
-      </section>
-
-      <section class="card-section">
-        <h3>优秀评论</h3>
-        <ul class="review-list">{reviews_html}</ul>
       </section>
 
       <section class="card-section">
