@@ -34,25 +34,16 @@ jobs:
       - name: Show repo state
         run: ls -la
 
-      - name: Check candidates
-        run: python3 scripts/check_candidates.py
-
-      - name: Generate cards
+      - name: Check candidates freshness
+        # 沙箱 cron (7:50) 才是唯一渲染 + 推送者
+        # 本 workflow 不再生成 index.html，避免覆盖
         run: |
           if [ ! -f data/candidates.json ]; then
-            echo "::warning::data/candidates.json 不存在，今天跳过渲染"
+            echo "::warning::data/candidates.json 不存在，沙箱 cron 会在 7:50 生成"
             exit 0
           fi
-          python3 scripts/generate_today.py
-
-      - name: Show generated stats
-        run: |
-          echo "=== index.html ==="
-          wc -c index.html
-          echo "=== archive ==="
-          ls -la archive/
-          echo "=== downloads ==="
-          ls -la downloads/
+          echo "candidates.json 存在,首页由沙箱 cron 渲染后推送"
+          echo "本 Actions 只负责 Pages 部署,不重新渲染"
 
       - name: Upload artifacts
         if: always()
@@ -64,20 +55,3 @@ jobs:
             archive/
             downloads/
           retention-days: 7
-
-      - name: Commit and push
-        env:
-          SCHOLAR_DAILY_PAT: ${{ secrets.SCHOLAR_DAILY_PAT }}
-        run: |
-          git config user.name "daily-book-bot"
-          git config user.email "bot@daily-book.local"
-          git remote set-url origin "https://x-access-token:${SCHOLAR_DAILY_PAT}@github.com/${GITHUB_REPOSITORY}.git"
-          git add -A
-          if git diff --cached --quiet; then
-            echo "无变更（生成器幂等）"
-            exit 0
-          fi
-          git commit -m "chore: auto-generate $(date -u +%Y-%m-%d)"
-          # 拉取并 rebase 以解决 fetch first 问题
-          git pull --rebase --autostash origin main || git rebase --abort
-          git push

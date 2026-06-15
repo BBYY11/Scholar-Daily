@@ -52,9 +52,14 @@ def window_str() -> tuple[str, str]:
 
 
 def load_candidates() -> dict[str, list[dict[str, Any]]]:
-    if not CANDIDATES_FILE.exists():
+    # 优先读 candidates_today.json (fetch_today 输出)
+    # 没有则回退 candidates.json (首期锁定, 永远不被 fetch_today 覆盖)
+    today = DATA / "candidates_today.json"
+    first = DATA / "candidates.json"
+    path = today if today.exists() else first
+    if not path.exists():
         return {k: [] for k, _, _ in DISCIPLINES}
-    with CANDIDATES_FILE.open(encoding="utf-8") as f:
+    with path.open(encoding="utf-8") as f:
         data = json.load(f)
     return data
 
@@ -476,7 +481,8 @@ def main() -> int:
         tags.append(dzh)
 
     # 写首页
-    is_first = len(load_history()) == 0  # 历史为空 → 起点
+    # 首期判断: 历史为空 或 当天是 2026-06-15 (项目起点)
+    is_first = len(load_history()) <= 1 or date == "2026-06-15"  # 历史为空 → 起点
     index_html = render_index(cards_html, date, win_start, win_end, is_first=is_first)
     (ROOT / "index.html").write_text(index_html, encoding="utf-8")
 

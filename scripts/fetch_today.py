@@ -14,7 +14,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
-CANDIDATES_FILE = DATA / "candidates.json"
+CANDIDATES_FILE = DATA / "candidates_today.json"
+CANDIDATES_FILE_FIRST = DATA / "candidates.json"  # 首期锁定用, 不被 fetch_today 覆盖
 
 # 每个领域 1 个最权威期刊 (简化：避免 retry 错误)
 JOURNALS = {
