@@ -2,7 +2,6 @@ name: Daily Generate
 
 on:
   schedule:
-    # 每天 UTC 0:30 = 北京时间 8:30
     - cron: "30 0 * * *"
   workflow_dispatch:
   push:
@@ -47,10 +46,8 @@ jobs:
         run: |
           echo "=== index.html ==="
           wc -c index.html
-          echo
           echo "=== archive ==="
           ls -la archive/
-          echo
           echo "=== downloads ==="
           ls -la downloads/
 
@@ -66,12 +63,9 @@ jobs:
           retention-days: 7
 
       - name: Commit and push
+        env:
+          SCHOLAR_DAILY_PAT: ${{ secrets.SCHOLAR_DAILY_PAT }}
         run: |
-          echo "=== Pre-commit debug ==="
-          git status --short
-          echo "=== Diff stats ==="
-          git diff --cached --stat | head -20
-          echo
           git config user.name "daily-book-bot"
           git config user.email "bot@daily-book.local"
           git add -A
@@ -79,8 +73,6 @@ jobs:
             echo "无变更（生成器幂等）"
             exit 0
           fi
-          echo "=== Committing ==="
+          git remote set-url origin "https://x-access-token:${SCHOLAR_DAILY_PAT}@github.com/${GITHUB_REPOSITORY}.git"
           git commit -m "chore: auto-generate $(date -u +%Y-%m-%d)"
-          echo "=== Pushing ==="
-          git push 2>&1
-          echo "=== Push done with exit $? ==="
+          git push
