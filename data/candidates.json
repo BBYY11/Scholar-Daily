@@ -48,16 +48,7 @@
           "definition": "指当上游品牌方需求下降时，分包商员工比非分包商员工更快被解雇的机制。本文用'收入下降后的退出率差'做因果识别。"
         }
       ],
-      "illustrations": [
-        {
-          "url": "",
-          "caption": "示意：分包网络的金字塔结构（顶端的品牌方、中层的总包商、底层的分包商），原 ASR 第 3 页图 1"
-        },
-        {
-          "url": "",
-          "caption": "示意：分包商 vs 非分包商的雇佣持续时间分布（K-M 曲线），原 ASR 第 9 页图 3"
-        }
-      ],
+      "illustrations": [],
       "reading_detail": [
         {
           "type": "chapter_title",
@@ -198,16 +189,7 @@
           "definition": "指战后萨拉热窝出现的、能调动男性劳动力的女性角色。她们不直接劳动，但通过维护与男性的关系，把男性劳动分配给其他女性。中介身份本身构成一种被遮蔽的声望。"
         }
       ],
-      "illustrations": [
-        {
-          "url": "",
-          "caption": "示意：萨拉热窝战后公寓楼里的临时电线（作者田野照片），原 CA 第 3 页图 1"
-        },
-        {
-          "url": "",
-          "caption": "示意：萨拉热窝老城区的战后修缮街景（'修复'作为日常生活的隐喻），原 CA 第 6 页图 2"
-        }
-      ],
+      "illustrations": [],
       "reading_detail": [
         {
           "type": "chapter_title",
@@ -343,16 +325,7 @@
           "definition": "清代烈女传记常伴随的'显灵'叙事（梦境、奇兆、托梦）。徐马论证：这不是'迷信'，而是准司法的补充机制——在司法证据不足时，神异显灵提供了'超验'的认证。"
         }
       ],
-      "illustrations": [
-        {
-          "url": "",
-          "caption": "示意：徽州某贞节牌坊（明清烈女叙事的物质化体现），原 LIC 第 4 页图 1"
-        },
-        {
-          "url": "",
-          "caption": "示意：清代《洗冤集录》某版本的尸检示意图（'准司法'的文本对照），原 LIC 第 11 页图 2"
-        }
-      ],
+      "illustrations": [],
       "reading_detail": [
         {
           "type": "chapter_title",
@@ -504,16 +477,7 @@
           "definition": "本文核心方法论工具。指同一宗教信息对不同人群的差异化效果——过去论文声称对'宗教信徒'和'高虔诚度者'效果更大，本文用 HTE 检验后未发现该异质性。"
         }
       ],
-      "illustrations": [
-        {
-          "url": "",
-          "caption": "示意：58 个 treatment-outcome pairs 的标准化效应分布（森林图），原 APSR 第 4 页图 1"
-        },
-        {
-          "url": "",
-          "caption": "示意：12 种 estimand 的密度分布对比（原书第 8 页图 2）"
-        }
-      ],
+      "illustrations": [],
       "reading_detail": [
         {
           "type": "chapter_title",
