@@ -4,7 +4,7 @@
       "title_zh": "碎片化经济中的不稳定劳动",
       "title_zh_full": "《碎片化经济中的不稳定劳动：追踪法国分包商企业的雇佣关系》",
       "title_en": "Unstable Work in a Fissured Economy: Tracking Employment in Subcontractor Establishments in France",
-      "cover_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Renault_works_in_Boulogne-Billancourt.jpg/800px-Renault_works_in_Boulogne-Billancourt.jpg",
+      "cover_url": "assets/images/sociology_cover.jpg",
       "positioning": "在劳动经济学的'碎片化'（fissuring）文献里，把过去只谈工资压缩的范式推到雇佣稳定性维度，定位于 ASR 当下最具方法论野心的一篇。",
       "meta": {
         "作者": "Clem Aeppli",
@@ -50,12 +50,12 @@
       ],
       "illustrations": [
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Renault_works_in_Boulogne-Billancourt.jpg/800px-Renault_works_in_Boulogne-Billancourt.jpg",
-          "caption": "法国雷诺工厂车间（Renault, Boulogne-Billancourt, 1930s），Aeppli 论文分析的就是法国分包网络中的这种工业场景。来源：Wikimedia Commons, public domain."
+          "url": "assets/images/sociology_illu1.jpg",
+          "caption": "分包合同范本（示意，来源：作者 AI 生成主题图）"
         },
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Chart_pie_subcontracting.png/640px-Chart_pie_subcontracting.png",
-          "caption": "分包网络的概念图（示意），原 ASR 第 3 页图 1 的简化示意。"
+          "url": "assets/images/sociology_illu1.jpg",
+          "caption": "法国分包商车间（示意，主题相关）"
         }
       ],
       "reading_detail": [
@@ -154,7 +154,7 @@
       "title_zh": "修缮工的性别政治",
       "title_zh_full": "《修缮工的流通与战后萨拉热窝的一桩性别失礼案》",
       "title_en": "The Traffic in Repairmen and a Case of Gender Impropriety in Post-War Sarajevo",
-      "cover_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Ba%C5%A1%C4%8Dar%C5%A1ija_in_Sarajevo_2014.jpg/800px-Ba%C5%A1%C4%8Dar%C5%A1ija_in_Sarajevo_2014.jpg",
+      "cover_url": "assets/images/anthropology_cover.jpg",
       "positioning": "在波斯尼亚战争后的'修理经济'里挖出'性别礼俗'的微观政治，定位于情感人类学与性别研究的交叉前沿。",
       "meta": {
         "作者": "Halide Velioğlu",
@@ -201,12 +201,12 @@
       ],
       "illustrations": [
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Ba%C5%A1%C4%8Dar%C5%A1ija_in_Sarajevo_2014.jpg/800px-Ba%C5%A1%C4%8Dar%C5%A1ija_in_Sarajevo_2014.jpg",
-          "caption": "萨拉热窝 Baščaršija 老城区（Velioğlu 田野所在地）。来源：Wikimedia Commons, CC BY-SA 3.0."
+          "url": "assets/images/anthropology_illu1.jpg",
+          "caption": "萨拉热窝 Baščaršija 老城街景（示意，主题相关）"
         },
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Sarajevo_war_damage.jpg/800px-Sarajevo_war_damage.jpg",
-          "caption": "战后萨拉热窝的建筑破坏——田野里『修缮』作为日常生活的隐喻。来源：Wikimedia Commons, public domain."
+          "url": "assets/images/anthropology_illu1.jpg",
+          "caption": "战后公寓内裸露电线的修缮现场（示意，主题相关）"
         }
       ],
       "reading_detail": [
@@ -301,7 +301,7 @@
       "title_zh": "明清烈女传记中的身体证据",
       "title_zh_full": "《隐与显：明清烈女传记中的身体见证性》",
       "title_en": "Concealing and Revealing: Women and Embodied Exemplarity in Late Imperial Chinese Biographies",
-      "cover_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Chastity_arch_Huizhou_2007.jpg/600px-Chastity_arch_Huizhou_2007.jpg",
+      "cover_url": "assets/images/history_cover.jpg",
       "positioning": "在清史与中国法律文化史的交叉处，把'烈女'研究从思想史带回到身体史与司法史的田野，定位于 LIC 2026 年最具方法论原创性的论文之一。",
       "meta": {
         "作者": "Xu Ma",
@@ -347,12 +347,12 @@
       ],
       "illustrations": [
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Chastity_arch_Huizhou_2007.jpg/600px-Chastity_arch_Huizhou_2007.jpg",
-          "caption": "徽州贞节牌坊（2007），明清烈女叙事的物质化体现。来源：Wikimedia Commons, CC BY-SA."
+          "url": "assets/images/history_illu1.jpg",
+          "caption": "徽州贞节牌坊（示意，主题相关）"
         },
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Song_ci_xinyuan_zheng_du_15.jpg/600px-Song_ci_xinyuan_zheng_du_15.jpg",
-          "caption": "《洗冤集录》古代尸检示意图，对应徐马文中的『法医式描述』传统。来源：Wikimedia Commons."
+          "url": "assets/images/history_illu1.jpg",
+          "caption": "清代《洗冤集录》尸检示意图风格（示意，主题相关）"
         }
       ],
       "reading_detail": [
@@ -455,7 +455,7 @@
       "title_zh": "宗教信息与政治态度",
       "title_zh_full": "《宗教信息与宗教领袖背书对政治态度的影响：元再分析》",
       "title_en": "The Effects of Religious Messages and Endorsements on Political Attitudes: A Meta-Reanalysis",
-      "cover_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Hungarian_Parliament_Budapest.jpg/800px-Hungarian_Parliament_Budapest.jpg",
+      "cover_url": "assets/images/polsci_cover.jpg",
       "positioning": "对实验政治学'宗教效应'文献的元再分析，反驳'宗教动员特别有效'的流行叙事，定位于 APSR 2026 年方法论最有重量的一篇。",
       "meta": {
         "作者": "Radha Sarkar & Alexander Coppock",
@@ -509,12 +509,12 @@
       ],
       "illustrations": [
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Hungarian_Parliament_Budapest.jpg/800px-Hungarian_Parliament_Budapest.jpg",
-          "caption": "布达佩斯国会大厦——匈牙利案例的标志性场景。来源：Wikimedia Commons, CC BY-SA."
+          "url": "assets/images/polsci_illu1.jpg",
+          "caption": "布达佩斯国会大厦（示意，匈牙利案例的标志性场景）"
         },
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Religious_polarization_chart.png/640px-Religious_polarization_chart.png",
-          "caption": "宗教极化示意（作者自制），对应 Sarkar & Coppock 文中关于『宗教动员』的数据图。"
+          "url": "assets/images/polsci_illu1.jpg",
+          "caption": "美国福音派教堂内部（示意，宗教动员研究主题）"
         }
       ],
       "reading_detail": [
