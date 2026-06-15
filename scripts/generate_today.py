@@ -147,6 +147,51 @@ def render_card(card: dict[str, Any], disc_en: str, disc_zh: str) -> str:
         f'<div><span>{k}</span><span>{v}</span></div>' for k, v in meta.items()
     )
 
+    # 作者信息
+    author = card.get("author", {})
+    author_avatar = author.get("avatar_url", "")
+    author_name = author.get("name", card.get("meta", {}).get("作者", "佚名"))
+    author_aff = author.get("affiliation", "")
+    author_bio_html = ""
+    if author_avatar:
+        author_avatar_html = f'<img class="author-avatar" src="{author_avatar}" alt="{author_name}" />'
+    else:
+        initials = "".join([c for c in author_name if '\u4e00' <= c <= '\u9fff'])[:1] or author_name[:1]
+        author_avatar_html = f'<div class="author-avatar placeholder">{initials}</div>'
+    author_bio_html = f'''
+      <div class="author-card">
+        <div class="author-head">
+          {author_avatar_html}
+          <div class="author-info">
+            <div class="author-name">{author_name}</div>
+            {f'<div class="author-aff">{author_aff}</div>' if author_aff else ''}
+          </div>
+        </div>
+        <div class="author-bio">{author.get("bio", "")}</div>
+        {f'<div class="author-meta">{author.get("more", "")}</div>' if author.get("more") else ''}
+      </div>
+    '''
+
+    # 合著者
+    co_authors = card.get("co_authors", [])
+    co_authors_html = ""
+    if co_authors:
+        items = "".join(
+            f'''<div class="author-card co-author">
+              <div class="author-head">
+                <div class="author-avatar placeholder">{ca.get("name", "?")[0]}</div>
+                <div class="author-info">
+                  <div class="author-name">{ca.get("name", "")}</div>
+                  {f'<div class="author-aff">{ca.get("affiliation", "")}</div>' if ca.get("affiliation") else ''}
+                </div>
+              </div>
+              <div class="author-bio">{ca.get("bio", "")}</div>
+              {f'<div class="author-meta">{ca.get("more", "")}</div>' if ca.get("more") else ''}
+            </div>'''
+            for ca in co_authors
+        )
+        co_authors_html = items
+
     fallback_badge = (
         '<div class="discipline-tag" style="background:#888;">⚠ 已回退至 4 周窗口</div>'
         if card.get("fallback") else ''
@@ -166,6 +211,9 @@ def render_card(card: dict[str, Any], disc_en: str, disc_zh: str) -> str:
       </div>
 
       <div class="positioning">📍 {card.get("positioning", "")}</div>
+
+      {author_bio_html}
+      {co_authors_html}
 
       <section class="card-section">
         <h3>导 读</h3>
@@ -349,8 +397,15 @@ def make_markdown(card: dict[str, Any], disc_zh: str) -> str:
         "",
         f"> 中译：{card.get('title_zh_full', '')}",
         "",
-        "## 元信息",
+        "## 作者简介",
     ]
+    a = card.get("author", {})
+    if a:
+        lines.append(f"\n**{a.get('name', '')}** · {a.get('affiliation', '')}\n")
+        lines.append(a.get("bio", ""))
+        if a.get("more"):
+            lines.append(f"\n> {a.get('more', '')}")
+    lines += ["", "## 元信息"]
     for k, v in card.get("meta", {}).items():
         lines.append(f"- **{k}**：{v}")
     lines += [
