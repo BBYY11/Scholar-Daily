@@ -67,6 +67,11 @@ jobs:
 
       - name: Commit and push
         run: |
+          echo "=== Pre-commit debug ==="
+          git status --short
+          echo "=== Diff stats ==="
+          git diff --cached --stat | head -20
+          echo
           git config user.name "daily-book-bot"
           git config user.email "bot@daily-book.local"
           git add -A
@@ -74,7 +79,8 @@ jobs:
             echo "无变更（生成器幂等）"
             exit 0
           fi
-          # 使用 GITHUB_TOKEN 显式认证
-          git remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          echo "=== Committing ==="
           git commit -m "chore: auto-generate $(date -u +%Y-%m-%d)"
-          git push origin HEAD:main
+          echo "=== Pushing ==="
+          git push 2>&1
+          echo "=== Push done with exit $? ==="
