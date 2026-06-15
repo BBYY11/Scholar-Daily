@@ -5,7 +5,6 @@ on:
     # 每天 UTC 0:30 = 北京时间 8:30
     - cron: "30 0 * * *"
   workflow_dispatch:
-    # 允许手动触发
   push:
     branches: [main]
     paths:
@@ -30,10 +29,13 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Generate today's cards
-        env:
-          # 注：candidates.json 需由外部流程（人工或检索脚本）提前准备
-          # 此 workflow 仅做"渲染"动作
+      - name: Show repo state
+        run: ls -la
+
+      - name: Check candidates
+        run: python3 scripts/check_candidates.py
+
+      - name: Generate cards
         run: |
           if [ ! -f data/candidates.json ]; then
             echo "::warning::data/candidates.json 不存在，今天跳过渲染"
@@ -41,13 +43,35 @@ jobs:
           fi
           python3 scripts/generate_today.py
 
-      - name: Commit & Push
+      - name: Show generated stats
+        run: |
+          echo "=== index.html ==="
+          wc -c index.html
+          echo
+          echo "=== archive ==="
+          ls -la archive/
+          echo
+          echo "=== downloads ==="
+          ls -la downloads/
+
+      - name: Upload artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: scholar-daily-${{ github.run_id }}
+          path: |
+            index.html
+            archive/
+            downloads/
+          retention-days: 7
+
+      - name: Commit and push
         run: |
           git config user.name "daily-book-bot"
           git config user.email "bot@daily-book.local"
           git add -A
           if git diff --cached --quiet; then
-            echo "无变更，跳过提交"
+            echo "无变更（生成器幂等）"
           else
             git commit -m "chore: auto-generate $(date -u +%Y-%m-%d)"
             git push
