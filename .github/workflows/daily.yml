@@ -72,7 +72,9 @@ jobs:
           git add -A
           if git diff --cached --quiet; then
             echo "无变更（生成器幂等）"
-          else
-            git commit -m "chore: auto-generate $(date -u +%Y-%m-%d)"
-            git push
+            exit 0
           fi
+          # 使用 GITHUB_TOKEN 显式认证
+          git remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          git commit -m "chore: auto-generate $(date -u +%Y-%m-%d)"
+          git push origin HEAD:main
