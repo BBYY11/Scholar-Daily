@@ -48,16 +48,6 @@
           "definition": "指当上游品牌方需求下降时，分包商员工比非分包商员工更快被解雇的机制。本文用'收入下降后的退出率差'做因果识别。"
         }
       ],
-      "illustrations": [
-        {
-          "url": "assets/images/sociology_illu1.jpg",
-          "caption": "分包合同范本（示意，来源：作者 AI 生成主题图）"
-        },
-        {
-          "url": "assets/images/sociology_illu1.jpg",
-          "caption": "法国分包商车间（示意，主题相关）"
-        }
-      ],
       "reading_detail": [
         {
           "type": "chapter_title",
@@ -199,16 +189,6 @@
           "definition": "指战后萨拉热窝出现的、能调动男性劳动力的女性角色。她们不直接劳动，但通过维护与男性的关系，把男性劳动分配给其他女性。中介身份本身构成一种被遮蔽的声望。"
         }
       ],
-      "illustrations": [
-        {
-          "url": "assets/images/anthropology_illu1.jpg",
-          "caption": "萨拉热窝 Baščaršija 老城街景（示意，主题相关）"
-        },
-        {
-          "url": "assets/images/anthropology_illu1.jpg",
-          "caption": "战后公寓内裸露电线的修缮现场（示意，主题相关）"
-        }
-      ],
       "reading_detail": [
         {
           "type": "chapter_title",
@@ -343,16 +323,6 @@
           "term_en": "posthumous miracles",
           "page": 12,
           "definition": "清代烈女传记常伴随的'显灵'叙事（梦境、奇兆、托梦）。徐马论证：这不是'迷信'，而是准司法的补充机制——在司法证据不足时，神异显灵提供了'超验'的认证。"
-        }
-      ],
-      "illustrations": [
-        {
-          "url": "assets/images/history_illu1.jpg",
-          "caption": "徽州贞节牌坊（示意，主题相关）"
-        },
-        {
-          "url": "assets/images/history_illu1.jpg",
-          "caption": "清代《洗冤集录》尸检示意图风格（示意，主题相关）"
         }
       ],
       "reading_detail": [
@@ -505,16 +475,6 @@
           "term_en": "heterogeneous treatment effects",
           "page": 11,
           "definition": "本文核心方法论工具。指同一宗教信息对不同人群的差异化效果——过去论文声称对'宗教信徒'和'高虔诚度者'效果更大，本文用 HTE 检验后未发现该异质性。"
-        }
-      ],
-      "illustrations": [
-        {
-          "url": "assets/images/polsci_illu1.jpg",
-          "caption": "布达佩斯国会大厦（示意，匈牙利案例的标志性场景）"
-        },
-        {
-          "url": "assets/images/polsci_illu1.jpg",
-          "caption": "美国福音派教堂内部（示意，宗教动员研究主题）"
         }
       ],
       "reading_detail": [

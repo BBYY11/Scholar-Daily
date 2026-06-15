@@ -226,10 +226,7 @@ def render_card(card: dict[str, Any], disc_en: str, disc_zh: str) -> str:
         {concepts_html}
       </section>
 
-      <section class="card-section">
-        <h3>重要插图 / 图表</h3>
-        {illus_html}
-      </section>
+      {f'<section class="card-section"><h3>重要插图 / 图表</h3>{illus_html}</section>' if illus_html else ''}
 
       <section class="card-section reading-detail">
         <h3>精 读（Seminar）</h3>
