@@ -39,6 +39,15 @@ DISCIPLINES = [
     ("political_science", "政治学", "Political Science"),
 ]
 
+# 领域兜底封面 (跟 fetch_today.py 同步)
+# 跟 discipline 的顺序对齐
+DEFAULT_COVERS = {
+    "sociology": "/assets/images/sociology_cover.jpg",
+    "anthropology": "/assets/images/anthropology_cover.jpg",
+    "history": "/assets/images/history_cover.jpg",
+    "political_science": "/assets/images/polsci_cover.jpg",
+}
+
 
 def today_str() -> str:
     return datetime.now().strftime("%Y-%m-%d")
@@ -73,7 +82,7 @@ def pick_one(cands: list[dict[str, Any]], discipline: str) -> dict[str, Any] | N
 
 def render_card(card: dict[str, Any], disc_en: str, disc_zh: str) -> str:
     """渲染单张精读卡的 HTML"""
-    cover = card.get("cover_url")
+    cover = card.get("cover_url") or DEFAULT_COVERS.get(disc_en, "")
     cover_html = (
         f'<img src="{cover}" alt="cover" />' if cover
         else '<div class="cover-placeholder">封面占位<br/>（未搜到原书封面）</div>'
@@ -475,7 +484,7 @@ def main() -> int:
             )
             tags.append(f"{dzh}（无）")
             continue
-        cards_html.append(render_card(chosen, den, dzh))
+        cards_html.append(render_card(chosen, key, dzh))
         cards_data.append(chosen)
         disciplines_zh_used.append(dzh)
         tags.append(dzh)
