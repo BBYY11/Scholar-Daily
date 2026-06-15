@@ -1,0 +1,54 @@
+name: Daily Generate
+
+on:
+  schedule:
+    # 每天 UTC 0:30 = 北京时间 8:30
+    - cron: "30 0 * * *"
+  workflow_dispatch:
+    # 允许手动触发
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/**'
+      - 'data/candidates.json'
+      - '.github/workflows/daily.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Generate today's cards
+        env:
+          # 注：candidates.json 需由外部流程（人工或检索脚本）提前准备
+          # 此 workflow 仅做"渲染"动作
+        run: |
+          if [ ! -f data/candidates.json ]; then
+            echo "::warning::data/candidates.json 不存在，今天跳过渲染"
+            exit 0
+          fi
+          python3 scripts/generate_today.py
+
+      - name: Commit & Push
+        run: |
+          git config user.name "daily-book-bot"
+          git config user.email "bot@daily-book.local"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "无变更，跳过提交"
+          else
+            git commit -m "chore: auto-generate $(date -u +%Y-%m-%d)"
+            git push
+          fi

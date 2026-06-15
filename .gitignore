@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 数据 / 临时
+data/candidates.json
+data/candidates_preview.json
+data/history.jsonl
+
+# 系统
+.DS_Store
+Thumbs.db

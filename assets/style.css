@@ -1,0 +1,754 @@
+/* 每日一书 · 学术精读 — 样式 v2
+   设计语言：纸感（warm bg）、墨色（ink）、朱砂点缀（accent）
+   响应式断点：手机 <640px / Pad 640-1024px / 桌面 >1024px
+*/
+:root {
+  --bg: #faf8f2;
+  --bg-soft: #f4f0e6;
+  --ink: #1a1a1a;
+  --ink-soft: #4a4a4a;
+  --ink-mute: #888;
+  --ink-faint: #b8b0a0;
+  --accent: #8b2c2c;
+  --accent-soft: #c4543a;
+  --line: #e6e0d3;
+  --line-soft: #f0eadb;
+  --card-bg: #fffdf7;
+  --highlight: #f4eedd;
+  --serif-cn: "Source Han Serif SC", "Noto Serif CJK SC", "Songti SC", "STSong", serif;
+  --sans-cn: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+    "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  --mono: "SF Mono", "Menlo", "Consolas", monospace;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  font-family: var(--sans-cn);
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.8;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* =========================================================
+   Header
+   ========================================================= */
+.site-header {
+  border-bottom: 1px solid var(--line);
+  background: rgba(250, 248, 242, 0.92);
+  backdrop-filter: saturate(180%) blur(10px);
+  -webkit-backdrop-filter: saturate(180%) blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-family: var(--serif-cn);
+  font-weight: 600;
+  font-size: 19px;
+  letter-spacing: 1.5px;
+  color: var(--ink);
+}
+nav a {
+  margin-left: 28px;
+  color: var(--ink-soft);
+  font-size: 15px;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 56px 32px 96px;
+}
+
+/* =========================================================
+   Hero
+   ========================================================= */
+.hero {
+  text-align: center;
+  margin-bottom: 64px;
+  padding-bottom: 36px;
+  border-bottom: 1px dashed var(--line);
+}
+.hero-date {
+  font-family: var(--mono);
+  color: var(--ink-mute);
+  font-size: 13px;
+  letter-spacing: 2px;
+  margin: 0 0 12px;
+}
+.hero h1 {
+  font-family: var(--serif-cn);
+  font-size: 44px;
+  font-weight: 600;
+  margin: 8px 0 14px;
+  letter-spacing: 2px;
+  color: var(--ink);
+}
+.hero-sub {
+  color: var(--ink-soft);
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin: 0 0 6px;
+}
+.hero-window {
+  font-family: var(--mono);
+  color: var(--ink-mute);
+  font-size: 12px;
+  margin-top: 14px;
+  letter-spacing: 1px;
+}
+
+/* =========================================================
+   Cards
+   ========================================================= */
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 56px;
+}
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  padding: 56px 64px;
+  box-shadow: 0 1px 3px rgba(60, 40, 20, 0.04);
+}
+.card.loading { text-align: center; padding: 96px; }
+.loading-text { color: var(--ink-mute); }
+
+/* ----- Card Header ----- */
+.card-header {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 40px;
+  margin-bottom: 36px;
+  padding-bottom: 36px;
+  border-bottom: 1px solid var(--line);
+}
+.card-cover img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid var(--line);
+  box-shadow: 6px 6px 0 var(--bg-soft);
+}
+.card-cover .cover-placeholder {
+  width: 100%;
+  aspect-ratio: 2/3;
+  background: var(--bg-soft);
+  border: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 16px;
+  font-size: 13px;
+  color: var(--ink-mute);
+  box-shadow: 6px 6px 0 var(--line);
+}
+
+.discipline-tag {
+  display: inline-block;
+  font-size: 11px;
+  letter-spacing: 3px;
+  padding: 5px 12px;
+  background: var(--accent);
+  color: #fff;
+  margin-bottom: 16px;
+  font-family: var(--mono);
+}
+.discipline-tag.fallback {
+  background: var(--ink-mute);
+  margin-left: 8px;
+}
+
+.card h2 {
+  font-family: var(--serif-cn);
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0 0 10px;
+  line-height: 1.35;
+  letter-spacing: 0.5px;
+}
+.card-title-en {
+  font-family: "Georgia", "Times New Roman", serif;
+  font-style: italic;
+  color: var(--ink-soft);
+  font-size: 17px;
+  margin: 0 0 4px;
+  line-height: 1.5;
+}
+.card-title-zh {
+  color: var(--ink-mute);
+  font-size: 14px;
+  margin: 0 0 18px;
+}
+.meta {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6px 20px;
+  font-size: 13.5px;
+  color: var(--ink-soft);
+  margin-top: 16px;
+  font-family: var(--sans-cn);
+}
+.meta > div {
+  display: flex;
+  gap: 8px;
+  padding: 4px 0;
+  border-bottom: 1px dotted var(--line);
+}
+.meta > div span:first-child {
+  color: var(--ink-mute);
+  min-width: 80px;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.positioning {
+  background: var(--bg-soft);
+  border-left: 3px solid var(--accent);
+  padding: 18px 22px;
+  margin: 28px 0 0;
+  font-size: 15.5px;
+  font-style: italic;
+  color: var(--ink-soft);
+  line-height: 1.7;
+}
+
+/* =========================================================
+   Card Sections — 书评感
+   ========================================================= */
+.card-section {
+  margin-top: 44px;
+}
+.card-section h3 {
+  font-family: var(--serif-cn);
+  font-size: 13px;
+  letter-spacing: 6px;
+  color: var(--accent);
+  font-weight: 600;
+  margin: 0 0 22px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--line);
+  text-indent: 0.5em;
+}
+.card-section p { margin: 0 0 14px; text-align: justify; }
+.card-section p.lead { font-size: 17px; line-height: 1.9; }
+
+/* ----- 导读 ----- */
+.card-section.intro p {
+  text-indent: 2em;
+  font-size: 16px;
+  line-height: 1.95;
+  color: var(--ink);
+}
+
+/* =========================================================
+   核心概念释义 · 术语卡
+   ========================================================= */
+.concepts-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+  border-top: 1px solid var(--line);
+}
+.concept-item {
+  padding: 18px 0;
+  border-bottom: 1px dashed var(--line);
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 24px;
+  align-items: baseline;
+}
+.concept-term {
+  font-family: var(--serif-cn);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.6;
+}
+.concept-term-en {
+  display: block;
+  font-family: "Georgia", serif;
+  font-style: italic;
+  font-size: 13px;
+  color: var(--ink-mute);
+  font-weight: 400;
+  margin-top: 2px;
+}
+.concept-page {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--ink-mute);
+  background: var(--bg-soft);
+  padding: 1px 6px;
+  margin-left: 6px;
+  letter-spacing: 0.5px;
+  vertical-align: 2px;
+}
+.concept-def {
+  font-size: 14.5px;
+  line-height: 1.85;
+  color: var(--ink-soft);
+  text-align: justify;
+}
+.concept-def b {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* ----- 重要插图 ----- */
+.illustrations {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+  margin-top: 12px;
+}
+.illu-item figure { margin: 0; }
+.illu-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid var(--line);
+  background: var(--bg-soft);
+}
+.illu-item figcaption {
+  font-size: 12.5px;
+  color: var(--ink-mute);
+  margin-top: 10px;
+  line-height: 1.6;
+  padding: 0 4px;
+}
+
+/* =========================================================
+   ★ 精读块 · 书评感 ★
+   ========================================================= */
+.reading-detail {
+  font-family: var(--serif-cn);
+}
+.reading-detail p {
+  text-align: justify;
+  font-size: 16px;
+  line-height: 2.0;        /* 行距放宽，书评感 */
+  color: var(--ink);
+  margin: 0 0 18px;
+  letter-spacing: 0.2px;
+}
+.reading-detail p + p { text-indent: 2em; }   /* 段间不缩进，仅块内段落缩进 */
+/* 但首段（marker 后第一段）不缩进 */
+.reading-detail p:first-child,
+.reading-detail p.no-indent { text-indent: 0; }
+
+.reading-detail .marker {
+  display: inline-block;
+  font-family: var(--sans-cn);
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 8px;
+  background: var(--accent);
+  color: #fff;
+  margin-right: 10px;
+  letter-spacing: 2px;
+  vertical-align: 2px;
+  border-radius: 1px;
+}
+.reading-detail .marker.skip { background: var(--ink-mute); }
+.reading-detail .marker.note { background: #2c5b8b; }
+
+/* 章节小标题（"【第三章·算法作为管理者】" 这种） */
+.reading-detail .chapter-title {
+  display: block;
+  font-family: var(--serif-cn);
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--accent);
+  margin: 26px 0 12px;
+  padding-bottom: 6px;
+  border-bottom: 1px dotted var(--line);
+  letter-spacing: 1px;
+}
+
+/* 长引文块 */
+.reading-detail blockquote {
+  margin: 20px 0 20px 24px;
+  padding: 8px 0 8px 18px;
+  border-left: 3px solid var(--accent-soft);
+  font-size: 15px;
+  line-height: 1.95;
+  color: var(--ink-soft);
+  font-style: italic;
+}
+
+/* ----- 学术对话 ----- */
+ul.dialogue-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+ul.dialogue-list li {
+  padding: 14px 0;
+  border-bottom: 1px dashed var(--line);
+  font-size: 15px;
+  line-height: 1.8;
+}
+ul.dialogue-list li:last-child { border: none; }
+ul.dialogue-list b {
+  color: var(--ink);
+  font-family: "Georgia", serif;
+}
+.dialogue-relation {
+  display: inline-block;
+  font-size: 11px;
+  padding: 1px 6px;
+  background: var(--bg-soft);
+  color: var(--accent);
+  margin: 0 6px;
+  letter-spacing: 1px;
+}
+
+/* ----- 优秀评论 ----- */
+ul.review-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+ul.review-list li {
+  padding: 14px 0;
+  border-bottom: 1px dashed var(--line);
+}
+ul.review-list li:last-child { border: none; }
+.review-title {
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--ink);
+}
+.review-meta {
+  color: var(--ink-mute);
+  font-size: 12.5px;
+  margin-top: 4px;
+  font-family: var(--mono);
+  letter-spacing: 0.5px;
+}
+ul.review-list p {
+  margin: 8px 0 6px;
+  font-size: 14.5px;
+  line-height: 1.8;
+  color: var(--ink-soft);
+  text-align: justify;
+}
+ul.review-list a { font-size: 12.5px; }
+
+/* ----- 评分卡 ----- */
+.score-box {
+  margin-top: 20px;
+  padding: 28px 32px;
+  background: var(--bg-soft);
+  border: 1px solid var(--line);
+}
+.score-headline {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+.score-number {
+  font-family: "Georgia", serif;
+  font-size: 60px;
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1;
+}
+.score-max { color: var(--ink-mute); font-size: 14px; font-family: var(--mono); }
+.score-reason { font-size: 14.5px; color: var(--ink-soft); line-height: 1.8; }
+.score-breakdown {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-top: 18px;
+  font-size: 13px;
+  font-family: var(--mono);
+}
+.score-breakdown div {
+  color: var(--ink-soft);
+  padding: 8px 12px;
+  background: var(--card-bg);
+  border: 1px solid var(--line);
+}
+.score-breakdown b { color: var(--accent); font-weight: 600; }
+
+/* ----- 下载条 ----- */
+.download-bar {
+  margin-top: 64px;
+  padding: 28px;
+  background: var(--card-bg);
+  border: 1px solid var(--line);
+  text-align: center;
+}
+.download-bar p { margin: 0 0 14px; color: var(--ink-soft); font-size: 14px; }
+.btn-download {
+  display: inline-block;
+  padding: 12px 28px;
+  background: var(--ink);
+  color: #fff;
+  border: 1px solid var(--ink);
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-family: var(--sans-cn);
+}
+.btn-download:hover { background: var(--accent); border-color: var(--accent); text-decoration: none; }
+
+footer {
+  border-top: 1px solid var(--line);
+  text-align: center;
+  padding: 32px;
+  color: var(--ink-mute);
+  font-size: 12.5px;
+  font-family: var(--mono);
+  letter-spacing: 1px;
+}
+
+/* =========================================================
+   ★ 归档页 · 领域筛选 + 月份视图 ★
+   ========================================================= */
+.archive-controls {
+  max-width: 720px;
+  margin: 0 auto 32px;
+  padding: 0 16px;
+}
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+  align-items: center;
+}
+.filter-bar .filter-label {
+  font-size: 12px;
+  color: var(--ink-mute);
+  letter-spacing: 2px;
+  margin-right: 6px;
+}
+.filter-chip {
+  display: inline-block;
+  font-size: 12.5px;
+  padding: 6px 14px;
+  background: var(--bg-soft);
+  border: 1px solid var(--line);
+  color: var(--ink-soft);
+  cursor: pointer;
+  transition: all 0.15s;
+  font-family: var(--sans-cn);
+  letter-spacing: 1px;
+}
+.filter-chip:hover { background: var(--card-bg); }
+.filter-chip.active {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+}
+
+.timeline { max-width: 720px; margin: 0 auto; }
+.month-block { margin-bottom: 36px; }
+.month-header {
+  font-family: var(--serif-cn);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--accent);
+  margin: 0 0 14px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--line);
+  letter-spacing: 4px;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.month-header::after {
+  content: "−";
+  color: var(--ink-mute);
+  font-family: var(--mono);
+  font-size: 16px;
+}
+.month-block.collapsed .month-header::after { content: "+"; }
+.month-block.collapsed .month-body { display: none; }
+
+.timeline-item {
+  display: flex;
+  gap: 20px;
+  padding: 18px 0;
+  border-bottom: 1px dashed var(--line);
+  align-items: baseline;
+}
+.timeline-item.hidden { display: none; }
+.timeline-date {
+  font-family: var(--mono);
+  color: var(--ink-mute);
+  font-size: 13px;
+  min-width: 110px;
+  letter-spacing: 0.5px;
+}
+.timeline-tags { flex: 1; display: flex; flex-wrap: wrap; gap: 6px; }
+.timeline-tags span {
+  display: inline-block;
+  font-size: 11.5px;
+  padding: 2px 8px;
+  background: var(--bg-soft);
+  color: var(--ink-soft);
+  letter-spacing: 1px;
+}
+.timeline-tags span.match {
+  background: var(--accent);
+  color: #fff;
+}
+.timeline-tags span.nomatch { opacity: 0.35; }
+.timeline-link {
+  font-size: 13px;
+  color: var(--accent);
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+.timeline-empty {
+  text-align: center;
+  padding: 48px 0;
+  color: var(--ink-mute);
+  font-size: 14px;
+}
+
+/* =========================================================
+   散文页（about）
+   ========================================================= */
+.prose { max-width: 720px; margin: 0 auto; font-size: 16px; line-height: 1.95; }
+.prose h1 { font-family: var(--serif-cn); font-size: 36px; margin-bottom: 24px; }
+.prose h2 { font-family: var(--serif-cn); font-size: 22px; margin: 40px 0 14px; color: var(--accent); }
+.prose p, .prose li { color: var(--ink); margin: 0 0 14px; }
+.prose ul { padding-left: 24px; }
+.prose strong { color: var(--accent); }
+
+/* =========================================================
+   ★ 响应式 · 三档断点 ★
+   ========================================================= */
+
+/* Pad 横屏 / 小桌面 */
+@media (max-width: 1024px) {
+  main { padding: 48px 24px 80px; }
+  .card { padding: 44px 40px; }
+  .card-header { gap: 28px; }
+  .card h2 { font-size: 26px; }
+  .hero h1 { font-size: 38px; }
+  .score-number { font-size: 52px; }
+}
+
+/* Pad 竖屏 / 大手机 */
+@media (max-width: 768px) {
+  body { font-size: 15.5px; }
+  .header-inner { padding: 12px 20px; }
+  .logo { font-size: 17px; }
+  nav a { margin-left: 16px; font-size: 14px; }
+
+  main { padding: 32px 16px 64px; }
+  .hero { margin-bottom: 40px; padding-bottom: 24px; }
+  .hero h1 { font-size: 30px; letter-spacing: 1px; }
+  .hero-sub { font-size: 14px; }
+
+  .cards { gap: 32px; }
+  .card { padding: 28px 24px; }
+  .card-header {
+    grid-template-columns: 140px 1fr;
+    gap: 20px;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+  }
+  .card h2 { font-size: 22px; }
+  .card-title-en { font-size: 15px; }
+  .card-title-zh { font-size: 13px; }
+  .discipline-tag { font-size: 10px; padding: 4px 8px; letter-spacing: 2px; }
+  .meta { grid-template-columns: 1fr; gap: 2px; font-size: 13px; }
+  .meta > div { padding: 5px 0; }
+  .positioning { padding: 14px 16px; font-size: 14px; }
+
+  .card-section { margin-top: 32px; }
+  .card-section h3 { font-size: 12px; letter-spacing: 4px; margin-bottom: 16px; }
+  .card-section.intro p { font-size: 15px; line-height: 1.85; }
+
+  .illustrations { grid-template-columns: 1fr; gap: 18px; }
+  .concept-item { grid-template-columns: 1fr; gap: 8px; }
+  .concept-term { font-size: 15px; }
+  .concept-def { font-size: 14px; }
+  .reading-detail p { font-size: 15.5px; line-height: 1.95; }
+  .reading-detail .chapter-title { font-size: 16px; }
+
+  .score-box { padding: 20px; }
+  .score-number { font-size: 48px; }
+  .score-breakdown { grid-template-columns: 1fr 1fr; gap: 8px; font-size: 12px; }
+  .score-breakdown div { padding: 6px 8px; }
+
+  .download-bar { padding: 20px; }
+  .btn-download { padding: 10px 20px; font-size: 12.5px; }
+
+  .filter-chip { font-size: 12px; padding: 5px 10px; }
+  .month-header { font-size: 16px; letter-spacing: 2px; }
+  .timeline-item { flex-wrap: wrap; gap: 8px; padding: 14px 0; }
+  .timeline-date { min-width: 100%; font-size: 12.5px; }
+  .timeline-link { font-size: 12.5px; }
+}
+
+/* 手机 */
+@media (max-width: 480px) {
+  body { font-size: 15px; }
+  .header-inner { padding: 10px 14px; flex-wrap: wrap; gap: 8px; }
+  .logo { font-size: 16px; }
+  nav a { margin-left: 12px; font-size: 13.5px; }
+
+  main { padding: 24px 12px 56px; }
+  .hero { margin-bottom: 32px; }
+  .hero h1 { font-size: 24px; }
+  .hero-sub { font-size: 13px; }
+  .hero-window { font-size: 11px; }
+
+  .card { padding: 22px 18px; }
+  .card-header {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    text-align: left;
+  }
+  .card-cover { max-width: 160px; margin: 0 auto; }
+  .card h2 { font-size: 20px; }
+  .positioning { font-size: 13.5px; padding: 12px 14px; }
+
+  .card-section h3 { font-size: 11px; letter-spacing: 3px; }
+  .reading-detail p { font-size: 15px; line-height: 1.9; }
+  .reading-detail .marker { font-size: 10px; padding: 2px 6px; margin-right: 6px; }
+
+  .score-number { font-size: 42px; }
+  .score-breakdown { grid-template-columns: 1fr; }
+  .concept-item { padding: 14px 0; }
+  .concept-term { font-size: 14.5px; }
+  .concept-term-en { font-size: 12px; }
+  .concept-def { font-size: 13.5px; line-height: 1.75; }
+}
+
+/* 减少动效 */
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; }
+}
