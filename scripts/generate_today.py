@@ -489,9 +489,10 @@ def main() -> int:
     if cards_data:
         build_zip(date, cards_data, disciplines_zh_used)
 
-    # 追加历史
+    # 追加历史（同日期覆盖，避免重复）
     history = load_history()
-    history.insert(0, {"date": date, "tags": tags})
+    history = [h for h in history if h.get("date") != date]  # 去掉同日期旧记录
+    history.insert(0, {"date": date, "tags": tags})  # 插到最前
     save_history(history[:365 * 5])  # 保留 5 年
     update_archive_index(history[:365 * 5])
 
