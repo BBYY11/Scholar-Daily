@@ -263,9 +263,10 @@ def render_card(card: dict[str, Any], disc_en: str, disc_zh: str) -> str:
     </article>'''
 
 
-def render_index(cards_html: list[str], date: str, win_start: str, win_end: str) -> str:
+def render_index(cards_html: list[str], date: str, win_start: str, win_end: str, is_first: bool = False) -> str:
     """重写首页内容区 — 模板内嵌，不读文件，避免自覆盖。"""
     cards_block = "\n".join(cards_html)
+    first_badge = '<span class="first-issue-badge">起点 · 首期</span>' if is_first else ''
     return f'''<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -289,6 +290,7 @@ def render_index(cards_html: list[str], date: str, win_start: str, win_end: str)
   <main>
     <section class="hero">
       <p class="hero-date" id="today-date">{date}</p>
+      {first_badge}
       <h1>今日四份精读</h1>
       <p class="hero-sub">社会学 · 人类学 · 历史学 · 政治学 · 研究生 Seminar 标准</p>
       <p class="hero-window" id="window-info">时间窗口：{win_start} ~ {win_end}</p>
@@ -481,7 +483,8 @@ def main() -> int:
         tags.append(dzh)
 
     # 写首页
-    index_html = render_index(cards_html, date, win_start, win_end)
+    is_first = len(load_history()) == 0  # 历史为空 → 起点
+    index_html = render_index(cards_html, date, win_start, win_end, is_first=is_first)
     (ROOT / "index.html").write_text(index_html, encoding="utf-8")
 
     # 写每日归档页

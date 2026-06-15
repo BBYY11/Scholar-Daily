@@ -45,5 +45,22 @@
   </footer>
 
   <script src="assets/script.js"></script>
+  <script>
+  (function() {
+    const timeline = document.getElementById('archive-timeline');
+    if (!timeline) return;
+    const items = timeline.querySelectorAll('.timeline-item');
+    items.forEach(item => {
+      const date = item.querySelector('.timeline-date');
+      if (date && date.textContent.trim() === '2026-06-15') {
+        const first = document.createElement('span');
+        first.className = 'timeline-first';
+        first.textContent = '起点 · 首期';
+        date.appendChild(document.createTextNode(' '));
+        date.appendChild(first);
+      }
+    });
+  })();
+  </script>
 </body>
 </html>

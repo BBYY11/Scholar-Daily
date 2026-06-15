@@ -25,23 +25,50 @@
 
     <article class="prose">
       <p>这是一个为<strong>研究生及以上读者</strong>准备的"近 2 周学术新作精读"站。</p>
-      <p>每天 8:30 自动更新，覆盖<strong>社会学、人类学、历史学、政治学</strong>四个领域，每领域挑一本新书或一篇论文，做成 2000 字左右的 Seminar 级精读卡。</p>
+      <p>每天 8:30（北京时间）更新，覆盖<strong>社会学、人类学、历史学、政治学</strong>四个领域，每领域挑一本新书或一篇论文，做成约 2000 字的 Seminar 级精读卡。</p>
+
+      <h2>起点 · 首期：2026-06-15</h2>
+      <p>本站正式起点的"第一期"是 <strong>2026-06-15</strong>，由明小楼和"每日一书"共同校稿、推送。首期四张卡分别是：</p>
+      <ul>
+        <li><strong>社会学</strong> · Aeppli, <em>Unstable Work in a Fissured Economy</em>（ASR 2026-06-10）</li>
+        <li><strong>人类学</strong> · Velioğlu, <em>The Traffic in Repairmen…</em>（Cultural Anthropology 2026-05-20）</li>
+        <li><strong>历史学</strong> · Xu Ma, <em>Concealing and Revealing: Women and Embodied Exemplarity…</em>（Late Imperial China 2026-06-01）</li>
+        <li><strong>政治学</strong> · Sarkar &amp; Coppock, <em>The Effects of Religious Messages and Endorsements on Political Attitudes: A Meta-Reanalysis</em>（APSR 2026-06-10）</li>
+      </ul>
+      <p>首期检索时间窗口：<strong>2026-05-29 ~ 2026-06-14</strong>。所有元数据（DOI、作者、隶属）来自 <a href="https://openalex.org" target="_blank">OpenAlex</a> + 出版社官网，可逐一回查。</p>
+
       <h2>每张精读卡的结构</h2>
       <ul>
-        <li>元信息（封面、作者、出版社、ISBN/DOI、出版日期）</li>
-        <li>中英双语标题</li>
-        <li>一句话学科定位</li>
-        <li>导读（150–200 字）</li>
-        <li>重要插图（≥2 张，原书图表 / 田野地风貌 / 关键事件地标）</li>
-        <li>精读（2000 字左右，章节级拆解 + 必读 / 可跳标注）</li>
-        <li>学术对话（与近 3 年代表作的关系）</li>
-        <li>优秀评论（2–3 篇高质量书评）</li>
-        <li>推荐指数（0–100，论据 40 / 新颖 30 / 可读 15 / 学术影响 15）</li>
+        <li><strong>元信息</strong>：封面、作者、出版社、ISBN/DOI、出版日期</li>
+        <li><strong>作者简介</strong>：头像、姓名、单位、学术简历、ORCID / 个人页</li>
+        <li><strong>中英双语标题</strong>：原语言 + 准确中译</li>
+        <li><strong>一句话学科定位</strong>（30 字内）</li>
+        <li><strong>导读</strong>（150–200 字）</li>
+        <li><strong>核心概念释义</strong>（3–6 个非懂不可的关键术语，含中英对照 + 页码）</li>
+        <li><strong>重要插图</strong>（≥2 张：原书图表 / 田野地风貌 / 关键事件地标）</li>
+        <li><strong>精读</strong>（约 2000 字，章节级拆解 + 必读 / 可跳 / 关键脚注标注）</li>
+        <li><strong>学术对话</strong>（与近 3 年代表作的关系：补充 / 修正 / 颠覆 / 对话 / 可比）</li>
+        <li><strong>优秀评论</strong>（2–3 篇高质量书评 / 回应文献的摘要 + URL）</li>
+        <li><strong>推荐指数</strong>（0–100，论据 40 / 新颖 30 / 可读 15 / 学术影响 15）</li>
       </ul>
+
       <h2>推荐指数怎么算</h2>
-      <p>我不给"是不是名著"打分——只给"这本书在当下值不值得花时间"打分。论据扎实度 40 分、议题新颖度 30 分、可读性 15 分、对学术界的潜在影响 15 分。</p>
-      <h2>找不到的时候怎么办</h2>
-      <p>如果某个领域在 2 周窗口内没有合格新作，回退到 4 周内的高分新作，并在卡片顶部明示标注。</p>
+      <p>不给"是不是名著"打分——只给"这本书在当下值不值得花时间"打分。论据扎实度 40 分、议题新颖度 30 分、可读性 15 分、对学术界的潜在影响 15 分。</p>
+
+      <h2>检索时间窗口</h2>
+      <p>主窗口：最近 2 周（14 天）内初版或首次在线发表。<br>
+      兜底窗口：4 周内高分新作（卡片顶部会明示"已回退"）。<br>
+      由于 *Cultural Anthropology* 是季刊，5-20 出版的即为 6 月可获取的最新期——首期人类学那张卡明示了这一说明。</p>
+
+      <h2>技术栈</h2>
+      <ul>
+        <li>静态站点：纯 HTML / CSS / JS，GitHub Pages 托管</li>
+        <li>元数据：手工整理（OpenAlex API + 出版社官网 + Google Scholar）</li>
+        <li>生成器：<code>scripts/generate_today.py</code>（Python 3.11）</li>
+        <li>CI/CD：GitHub Actions，cron 每天 UTC 0:30（北京时间 8:30）自动跑</li>
+        <li>归档：永久保存；每期可下载 zip（Markdown + 图片）</li>
+      </ul>
+
       <h2>版权说明</h2>
       <p>书中图表版权归原出版方所有。本站仅作学术评介之用，所有引用均注明来源页码或 DOI。</p>
     </article>

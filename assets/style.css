@@ -94,6 +94,29 @@ main {
   letter-spacing: 2px;
   margin: 0 0 12px;
 }
+
+.first-issue-badge {
+  display: inline-block;
+  font-family: var(--serif-cn);
+  font-size: 12px;
+  letter-spacing: 4px;
+  padding: 5px 14px;
+  background: var(--accent);
+  color: #fff;
+  margin: 0 0 16px;
+}
+
+.timeline-first {
+  display: inline-block;
+  font-family: var(--serif-cn);
+  font-size: 11px;
+  letter-spacing: 2px;
+  padding: 2px 8px;
+  background: var(--accent);
+  color: #fff;
+  margin-left: 6px;
+  vertical-align: 2px;
+}
 .hero h1 {
   font-family: var(--serif-cn);
   font-size: 44px;
