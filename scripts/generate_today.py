@@ -492,7 +492,17 @@ def main() -> int:
     # 追加历史（同日期覆盖，避免重复）
     history = load_history()
     history = [h for h in history if h.get("date") != date]  # 去掉同日期旧记录
-    history.insert(0, {"date": date, "tags": tags})  # 插到最前
+    # 收集本次的 openalex_id 用于反查
+    seen_ids = []
+    for disc_cards in [cards_data]:
+        for c in disc_cards:
+            if c.get("openalex_id"):
+                seen_ids.append(c["openalex_id"])
+    history.insert(0, {
+        "date": date, "tags": tags,
+        "openalex_ids": seen_ids,
+        "window": f"{win_start} ~ {win_end}"
+    })
     save_history(history[:365 * 5])  # 保留 5 年
     update_archive_index(history[:365 * 5])
 
