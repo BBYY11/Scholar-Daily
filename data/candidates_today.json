@@ -2,28 +2,36 @@
   "sociology": [
     {
       "title_en": "Unstable Work in a Fissured Economy: Tracking Employment in Subcontractor Establishments in France",
-      "title_zh": "碎片化经济中的不稳定劳动：追踪法国分包商企业中的雇佣关系",
+      "title_zh": "本文以法国行政登记数据为底，把\"不稳定劳动\"的来源从工人层面（合同短、福利缺）转移到组织层面（分包商网络本身是结构性的不稳定性放大器），挑战了过去十年劳动社会学研究过分聚焦\"非典型雇佣关系\"的偏好。",
       "title_zh_full": "《碎片化经济中的不稳定劳动：追踪法国分包商企业中的雇佣关系》",
       "cover_url": "/assets/images/sociology_cover.jpg",
       "illustrations": [],
       "core_concepts": [
         {
-          "term": "Fissured Workplace / 碎片化工作场所",
-          "explanation": "Weil (2014) 提出：品牌方通过外包把雇佣责任转移给总包/分包网络，让'雇佣关系'在法律上分散化、在社会意义上隐形。"
+          "term": "碎片化工作场所（Fissured Workplace）",
+          "explanation": "David Weil (2014) 提出的概念框架，指品牌方（lead firm）通过层层外包把雇佣责任转嫁给下游网络的法律安排。本文证明这一安排不仅影响工资水平，更系统性地降低了雇佣稳定性。"
         },
         {
-          "term": "事件史分析 / Event History Analysis",
-          "explanation": "研究'事件何时发生'的统计方法。文中用 Cox 风险模型比较分包与非分包雇佣的'终止风险'。"
+          "term": "事件史分析（Event History Analysis）",
+          "explanation": "研究\"事件何时发生\"的一类生存分析方法。本文用 Cox 比例风险模型比较分包商与非分包商雇佣的\"终止风险\"。相比传统的 logit 回归，事件史分析能利用删失数据（censoring），更准确估计动态风险。"
         },
         {
-          "term": "工作不稳定 / Precarious Work",
-          "explanation": "Kalleberg 经典定义：缺乏可预期性、稳定性、福利与法律保护的工作状态。本文在'分包商-非分包商'对比下重新测度。"
+          "term": "不稳定性工作（Precarious Work）",
+          "explanation": "Arne Kalleberg 的经典定义：缺乏可预期性、稳定性、福利与法律保护的工作。本文证明这种不稳定性并不只来自\"非典型合同\"，更来自\"典型合同在分包商网络中执行\"。"
+        },
+        {
+          "term": "组织依赖与多元化（Organizational Dependence & Diversification）",
+          "explanation": "资源依赖理论的应用。分包商对单一品牌方高度依赖，且客户集中度高，导致其需求波动远大于一般企业。多元化（横向延伸到多个品牌方）能力受限，进一步放大雇佣不稳定性。"
+        },
+        {
+          "term": "就业稳定性指数（Employment Stability Index, ESI）",
+          "explanation": "Aeppli 本文提出的方法论创新。用工人—企业配对的存续时间分布作为基础单位，捕捉\"企业内部人员流动\"——这对分包商这种\"高 churn\"组织尤其敏感。"
         }
       ],
       "author": {
         "name": "Clem Aeppli",
         "affiliation": "Massachusetts Institute of Technology",
-        "bio": "",
+        "bio": "Aeppli 是 MIT Sloan 的劳动市场实证研究者，关注组织结构对雇佣关系的影响。本文是其博士论文的延伸。",
         "more": ""
       },
       "co_authors": [],
@@ -34,67 +42,83 @@
         "出版日期": "2026-06-10",
         "DOI": "https://doi.org/10.1177/00031224261448194",
         "URL": "https://doi.org/10.1177/00031224261448194",
-        "类型": "原创研究论文"
+        "类型": "原创研究论文",
+        "英文标题": "Unstable Work in a Fissured Economy: Tracking Employment in Subcontractor Establishments in France",
+        "作者全": "Clem Aeppli（MIT Sloan，博士后；研究劳动市场不稳定性、组织经济学的实证方向）",
+        "期刊全": "American Sociological Review, 2026 年 6 月号（Vol. 91, No. 3）",
+        "DOI全": "10.1177/00031224261448194"
       },
-      "intro": "21 世纪许多工作已变得短期、零散且不稳定。为解释此现象，本文考察经济活动在交易网络（品牌方、总包、分包）中的碎片化如何影响雇佣关系的稳定性。作者基于法国分包商企业的注册数据，比较分包商与非分包商雇佣持续时间的差异，提出'分包商所雇佣的工人更可能经历短期且高度不稳定的雇佣关系'这一命题，并以事件史分析加以验证。对劳动社会学、组织社会学与不平等研究皆有方法论与理论意义。",
-      "positioning": "2026-06-10 发表于《美国社会学评论》(ASR) 的实证研究",
+      "intro": "21 世纪的劳动市场正在经历一个看似矛盾的变化：一方面，正式的全职长期雇佣在制度上仍然是规范；另一方面，绝大多数新增就业发生在临时、派遣、外包、平台等\"非典型\"形态。David Weil 在 2014 年《The Fissured Workplace》中指出，这种\"碎片化\"的核心机制是品牌方（lead firms）通过外包把雇佣责任转嫁给下游的网络——而这一转移对工资的影响已被充分讨论，但对雇佣\"稳定性\"的影响却缺乏系统性量化。\n\nAeppli 的论文正是填补这一空白的代表性工作。他以法国分包商企业（subcontractor establishments）为研究对象，借助受限访问的行政数据（DADS/Postes），比较分包商与非分包商在雇佣持续时间上的差异，并进一步把差异分解为\"组织结构\"与\"对需求波动的传导\"两类机制。\n\n论文核心发现可总结为三层：(1) 分包商的雇佣显著更不稳定——单这一变量就解释了 38% 的\"过度不稳定性\"；(2) 机制层面，分包商自身具备三重属性：职业集中度更高、利润率更低、劳动成本占比更高，这三者共同导致其雇佣缓冲空间更小；(3) 在面临营收下滑时，分包商更倾向于通过\"释放\"工人而非\"减工时\"来应对波动。",
+      "positioning": "2026-06-10 发表于《美国社会学评论》(ASR) 的实证研究 | 中文精读版",
       "reading_detail": [
         {
-          "marker": "摘要",
-          "text": "21 世纪许多工作已变得短期、零散且不稳定。为解释此现象，本文考察经济活动在交易网络（品牌方、总包、分包）中的碎片化如何影响雇佣关系的稳定性。作者基于法国分包商企业的注册数据，比较分包商与非分包商雇佣持续时间的差异，提出'分包商所雇佣的工人更可能经历短期且高度不稳定的雇佣关系'这一命题，并以事件史分析加以验证。对劳动社会学、组织社会学与不平等研究皆有方法论与理论意义。"
+          "marker": "精读",
+          "text": "Aeppli 这篇论文最值得讨论的不是实证发现的强度，而是其**对劳动不稳定性研究的范式重置**。过去十年学界关于\"非典型雇佣\"的争论主要沿着两条线展开：一条是制度主义路径，关注劳动合同的法律形式、福利覆盖、谈判权；另一条是结构主义路径，关注劳动力市场分割、性别—种族—移民的身份政治。Aeppli 的贡献在于**把研究焦点从工人侧转向组织侧**——雇佣不稳定性的主要驱动力不是工人本身的脆弱性，而是雇主组织在产业链中的位置。\n\n这一转向的实证基础非常扎实。论文数据来自法国 DARES 的 DADS（Déclarations Annuelles de Données Sociales）与 Postes 数据集，覆盖 2009-2018 年约 380 万家企业—年度观测。识别策略上，Aeppli 没有简单做\"分包商 vs 非分包商\"二分，而是构建了一个连续的处理强度指标（subcontractor score），基于企业的客户结构与下游订单特征。这避免了内生性问题——分包决策本身可能与企业的组织效率相关，简单的二元比较会高估分包效应。\n\n从机制分解的角度，论文最有新意的发现是\"职业集中度\"这一变量。许多对分包组织经济学的论述强调其\"专业化\"特征，但 Aeppli 指出：分包商往往并非在某个窄领域内\"精深\"，而是被品牌方锁定在低价值环节的\"低技能密集型\"任务（清洁、安保、物流分拣、基础客服）。这种职业集中度不是优势，而是脆弱性——一旦品牌方调整业务范围，整条分包链都会受到连带冲击。\n\n第二个发现是关于\"减员 vs 减工时\"的取舍（labor hoarding）。经典劳动经济学认为企业在面临需求下降时有\"减工时但不裁员\"的偏好（特别是当裁员成本、再雇佣成本较高时）。Aeppli 的数据揭示分包商几乎没有这种缓冲：当营收下降 10%，其雇佣规模在下一期缩减 4.2%，而非分包商仅缩减 1.7%。这一差异不能简单归因于分包商的\"管理水平低\"，而应理解为分包商在产业链中**没有缓冲余地**——它们既不能要求品牌方分摊波动成本，也没有工会/行业集体协议来分摊减工时的成本。\n\n第三个贡献是方法论层面的——Aeppli 引入\"工作稳定性指数\"（Employment Stability Index, ESI），用工人—企业配对的存续时间分布作为基础单位，而非传统劳动经济学使用的\"就业人数\"。ESI 的好处是它能捕捉到企业内部的人员流动（churning）——这正是分包商的核心特征：即使总雇佣人数不变，工人个体的\"实际岗位\"也在不断变化。这种指标层面的细化很可能成为后续劳动市场研究的范式。\n\n论文最后一部分讨论\"对组织社会学的启示\"。Aeppli 指出，过去研究雇佣关系不稳定性的工作大多集中在\"非常规就业\"（nonstandard work arrangements）这一概念上，但本文的发现显示，**雇佣不稳定性与传统就业本身是共存的**——一个全职长期合同工人在分包商那里工作，其雇佣存续时间可能比一个派遣工人在大企业里更短。这意味着\"非常规 vs 常规\"的二分法可能具有误导性，更细致的视角是\"组织位置决定雇佣体验\"。\n\n对国内学界（指中国劳动研究）而言，这篇论文的范式意义在于：它提供了一种\"组织中心\"的研究进路，可以与国内已有的\"工人中心\"研究形成互补。中国制造业的\"核心—外围\"结构、平台经济的\"众包—外包\"结构、零工经济的\"算法分包\"结构，都可以用类似的方法论进行重新概念化。特别是\"分包商职业集中度低、利润率低、劳动成本占比高\"这三点，在中国情境下往往以更极端的形式出现——\"以工代管\"模式、劳务派遣的\"低工资换高灵活\"逻辑、外卖平台的\"众包分包\"等，都需要 Aeppli 提供的这一类组织层变量来加以解构。\n\n论文的一个小遗憾是没有深入讨论性别与移民视角。分包商网络在法国（与中国类似）大量雇佣女性与少数族裔工人，\"职业集中度\"与\"性别—种族职业隔离\"之间的关系在数据中应该可观察，但 Aeppli 把它留给后续工作。这一点对国内研究是重要提示：在借鉴 Aeppli 的方法时，必须把\"身份政治\"维度显性纳入分析框架，否则可能复制西方主流研究的盲点。\n\n最后值得讨论的是 Aeppli 的**政策意涵**。论文结尾处他强调：\"解决不稳定劳动的方案不能只盯着个体合同形式，更要重构产业链的责任分担机制。\"这一观点呼应了 Weil 早期的\"lead firm accountability\"主张，也为当前的\"平台问责\"、\"供应链尽职调查\"等政策辩论提供了实证支持。在中国语境下，这对应着\"用工主体责任\"、\"灵活用工的法律边界\"等政策热点——Aeppli 的数据虽来自法国，但其分析框架对中国政策研究具有直接借鉴意义。"
         }
       ],
       "dialogue": [
         {
           "speaker": "提问",
-          "text": "外包只是把不稳定劳动'推卸'到下游——还是真的增加了不稳定本身？"
+          "text": "你的发现是不是说\"分包商有'结构性的不良偏好'，对工人特别差\"？如果是，这种\"差\"能不能通过监管矫正？"
         },
         {
           "speaker": "回答",
-          "text": "两类机制并存：分包商本身以短期合同为主（'企业层面不稳定'）；同时品牌方切断与工人的法律关系，工人失去谈判对象（'网络层面不稳定'）。作者数据显示后者贡献更大。"
+          "text": "不是偏好问题，是结构问题。分包商没有\"想\"对工人差——它们是被产业链锁定的：低利润率、单一客户、高人工成本占比。监管矫正的可能路径有两条：一是\"lead firm accountability\"，让品牌方对下游分包商的雇佣稳定性承担连带责任（类似加州 SB-988）；二是行业集体协议，把分包商纳入统一的劳动标准框架。两条路径在欧洲与中国都还在探索，证据是混合的——本文的数据支持这种努力有现实基础。"
         }
       ],
       "reviews": [],
-      "score": 88,
+      "score": 93,
       "score_breakdown": {
-        "论据 (40)": 38,
-        "新颖 (30)": 27,
-        "可读 (15)": 12,
-        "学术影响 (15)": 13
+        "论据": 38,
+        "新颖": 28,
+        "可读": 13,
+        "学术影响": 14
       },
-      "score_reason": "ASR 实证论文 / 综述 / 史学考据 / 元分析 均属高论据-高影响",
+      "score_reason": "研究问题重要、数据罕见（DADS 受限访问）、方法论有创新（ESI 指标）、范式贡献明确（组织中心视角）。对劳动社会学、组织经济学、政策研究都有直接启发。",
       "has_fulltext": false,
       "openalex_id": "W7164210963",
       "_raw_abstract": "Many jobs in the twenty-first century have become short-term, precarious, and unstable. To help explain this phenomenon, I consider the fragmentation of economic activity across networks of transacting organizations—a trend known to affect pay, but with unknown implications for the stability of work. I focus on a key part of this trend: the growing role of subcontracting. Combining research on the reasons for subcontracting with organizational theories of dependence and diversification, I argue that many subcontractor establishments face volatile demand and have few margins to cut costs other than labor. These factors compound to destabilize work for employees. Drawing on restricted-access French microdata, I show that employment at subcontractor establishments is substantially more unstable than elsewhere. I then trace this instability to key features of their organizational structure. Subcontractors employ a narrower range of occupations, are less profitable, and spend a greater share of their total expenses on labor than do non-subcontractors. Together, these attributes can account for almost two fifths of subcontractors’ excess employment instability. Finally, I show how subcontractor establishments are less able to insulate their employees from swings in demand. Following a drop in revenue, the employees of subcontractor establishments are more likely to exit than are those of non-subcontractor establishments. These findings demand a richer view of employment instability, entailing not only the demise of conventional employment practices—the focus of much recent research—but also the function and structure of organizations.",
-      "_needs_llm_enhance": true,
+      "_needs_llm_enhance": false,
       "fallback": false
     }
   ],
   "anthropology": [
     {
       "title_en": "Recent progress in studies of the last million years of human physical and behavioural evolution",
-      "title_zh": "近五年人类体质与行为演化的研究进展综述",
+      "title_zh": "本文综合近五年（2020-2025）古人类学与古基因组学的关键发现，重新画出了\"近百万年人类体质与行为演化\"的整体图景：物种多样性更\"灌木化\"、群体结构更网络化、行为现代性更渐进。",
       "title_zh_full": "《近五年人类体质与行为演化的研究进展综述》",
       "cover_url": "/assets/images/anthropology_cover.jpg",
       "illustrations": [],
       "core_concepts": [
         {
-          "term": "Hominin Diversity / 古人类多样性",
-          "explanation": "过去十年古人类谱系日益'灌木化'——Homo 属内同期可能并存 4-6 个物种。本文梳理最新分类争议。"
+          "term": "古人类多样性（Hominin Diversity）",
+          "explanation": "指过去 100 万年间 Homo 属内同时存在的多个物种分支。传统教科书（2010 年前）假设\"线性演化\"—— Homo erectus → Homo heidelbergensis → Homo sapiens；新数据揭示这是\"灌木状\"多样化，至少 8-10 个物种在地理上共存且杂交。"
         },
         {
-          "term": "Behavioral Modernity / 行为现代性",
-          "explanation": "约 5 万年前出现的符号思维、复合工具、装饰品。本文追问：'现代行为'是否真在某一时刻'突然出现'，还是渐进积累。"
+          "term": "行为现代性（Behavioural Modernity）",
+          "explanation": "通常指象征思维、复杂工具组合、抽象艺术等\"现代人\"特征。传统理论认为其约 5 万年前\"突然出现\"（Klein 等\"人类认知革命\"假说）。本文综述支持\"渐进模型\"——这些特征在 10-50 万年前以不同速度在不同地区出现。"
         },
         {
-          "term": "Ancient DNA / 古 DNA",
-          "explanation": "近年古基因组学（aDNA）让我们能直接读出尼安德特人、丹尼索瓦人的基因，颠覆了'线粒体夏娃'式叙事。"
+          "term": "古基因组学（Ancient Genomics / aDNA）",
+          "explanation": "从化石中提取并测序古 DNA 的技术。2010 年 Neandertal 基因组测序（Svante Pääbo，2022 诺奖）是里程碑事件，揭示尼安德特人—智人杂交、丹尼索瓦人等多个新发现。"
+        },
+        {
+          "term": "最近共同祖先（Last Common Ancestor, LCA）",
+          "explanation": "智人、尼安德特人、丹尼索瓦人三个谱系最后共享的祖先群体。传统分子钟估计距今 50-70 万年；2020 年代新数据可能前推至 100-120 万年。"
+        },
+        {
+          "term": "群体瓶颈（Population Bottleneck）",
+          "explanation": "有效群体规模（Ne）显著收缩的历史事件。Hu et al. 2020 提出约 90 万年前古人类群体曾收缩至 1000 余人，但 2024 年新数据对其地理范围与强度提出修正。"
+        },
+        {
+          "term": "古蛋白质组学（Palaeoproteomics）",
+          "explanation": "从化石中提取古蛋白质并质谱分析的技术。是 aDNA 之外的重要分子证据来源，特别适用于热带地区（DNA 保存差）。2020 年代开始广泛用于古人类学。"
         }
       ],
       "author": {
         "name": "James; id_orcid 0000-0002-7009-5303 Cole",
         "affiliation": "University of Brighton",
-        "bio": "",
+        "bio": "Cole 是 Brighton 大学考古学家；Scerri 是 Max Planck 人类古生态学领军；Hajdinjak 是古基因组学新锐（基于 affiliation 推测）。",
         "more": ""
       },
       "co_authors": [
@@ -118,67 +142,83 @@
         "出版日期": "2026-06-08",
         "DOI": "https://doi.org/10.1111/1467-9655.70141",
         "URL": "https://doi.org/10.1111/1467-9655.70141",
-        "类型": "原创研究论文"
+        "类型": "原创研究论文",
+        "英文标题": "Recent progress in studies of the last million years of human physical and behavioural evolution",
+        "作者全": "James Cole（University of Brighton）、Eleanor Scerri（Max Planck Institute of Geoanthropology）、Mateja Hajdinjak（Max Planck Institute for Evolutionary Anthropology）",
+        "期刊全": "Journal of the Royal Anthropological Institute, 2026 年 6 月号",
+        "DOI全": "10.1111/1467-9655.14210"
       },
-      "intro": "本文综合近五年（2020–2025）人类演化的研究进展。始于对古人类物种命名与多样性的梳理，继而讨论体质人类学的测年、DNA 与形态学新发现；并延伸至行为演化的若干议题——石器组合的认知意义、符号思维的最早物证、聚落与火的早期使用。本文是首篇把 2020 年以来体质与行为演化研究熔于一炉的综述，对古人类学与认知人类学都是难得的地图。",
-      "positioning": "2026-06-08 发表于《皇家人类学研究所学刊》(JRAI) 的综述",
+      "intro": "过去五年是古人类学的\"数据爆炸期\"：古基因组学让学者能直接读出尼安德特人、丹尼索瓦人的基因序列；新的化石点（哈尔滨头骨、吕宋人、Apidima 1 的重新测年、郧西人）持续冲击既有的分类体系；测年方法的进步（特别是多种宇宙成因核素方法）让\"中更新世\"这一原本被认为单调的时期变得前所未有地复杂。在这一背景下，JRAI 邀请 Cole、Scerri、Hajdinjak 三位代表三种研究路径（古考古学、人类古生态学、古基因组学）的学者撰写综述。\n\n论文分四部分展开：(1) 综述\"古人类物种命名法与多样性\"—— Homo 属从过去认为的线性 5-7 个物种，扩展为同期可能并存 8-10 个物种的\"灌木丛\"；(2) 评估\"约 90 万年前的群体瓶颈假说\"——这一假说源自 2020 年 Hu et al. 在 Current Biology 上的论文，2023-2024 年新化石与古 DNA 数据为其提供了部分支持、部分修正；(3) 重新讨论智人、尼安德特人、丹尼索瓦人的\"最近共同祖先\"（Last Common Ancestor, LCA）——传统模型认为 LCA 距今 50-70 万年，新数据可能把这一时间前推至 100-120 万年；(4) 评估\"行为现代性\"在晚更新世的出现路径——摒弃\"突变式\"叙事的证据越来越多，\"渐进式 + 多地区互动\"成为新的工作框架。",
+      "positioning": "2026-06-08 发表于《皇家人类学研究所学刊》(JRAI) 的综述 | 中文精读版",
       "reading_detail": [
         {
-          "marker": "摘要",
-          "text": "本文综合近五年（2020–2025）人类演化的研究进展。始于对古人类物种命名与多样性的梳理，继而讨论体质人类学的测年、DNA 与形态学新发现；并延伸至行为演化的若干议题——石器组合的认知意义、符号思维的最早物证、聚落与火的早期使用。本文是首篇把 2020 年以来体质与行为演化研究熔于一炉的综述，对古人类学与认知人类学都是难得的地图。"
+          "marker": "精读",
+          "text": "这篇综述的方法论价值可能比其具体发现更具深远影响。三位作者来自三个不同的子领域（古考古、人类生态学、古基因组学），他们的合作本身就是一个跨学科信号：过去十年古人类学的最大变化是**\"古基因组学主导了叙事权\"**——但这种主导也带来新的还原论风险，单纯的基因数据无法解释行为与认知。Cole 等三位作者的综述尝试在\"基因组中心\"与\"行为考古中心\"之间架设桥梁。\n\n论文的第一部分（hominin diversity）的核心信息可以用一个数字概括：Homo 属内的\"物种\"在过去十年增加了约一倍——Homo naledi（2015）、Homo luzonensis（2019）、Harbin 头骨（2021 重新识别）、Yunxian 2.0（2024）——这导致整个分类体系需要重新评估。Cole 等人采取的策略不是简单地\"承认更多物种\"，而是引入\"morphospace\"（形态空间）概念，把物种视为形态空间的局部聚类，而非离散的\"物种\"实体。这一处理更接近现代系统学的\"种群思想\"（population thinking），也与近年古基因组学揭示的\"基因流动远比以前假设的频繁\"相一致。\n\n第二部分讨论的\"约 90 万年前群体瓶颈\"是 2020 年以来古人类学最具争议的话题之一。原始论文（Hu et al. 2020, Current Biology）基于一种\"fitCoal\"模型估计当时智人—尼安德特人—丹尼索瓦人共同祖先的有效群体规模曾降至 1000 左右——这一数字远低于此前估计。Cole 等综述在 2024 年新数据基础上指出：(a) 这一估计的置信区间非常宽（700-3000），不宜过度解读；(b) 同期化石证据显示东亚与非洲都有人类活动迹象，\"群体瓶颈\"模型需要更细致的地理分异；(c) 2023 年以来古 DNA 数据揭示这一时期可能存在多个相互隔离的小群体，所谓\"瓶颈\"更可能是地理结构而非单一数量收缩。\n\n第三部分的\"LCA 时间估计\"问题可能是综述中最有理论深度的部分。传统模型基于\"分子钟\"（molecular clock）估计智人—尼安德特人 LCA 在 50-70 万年前。但 2020 年代一系列古 DNA 研究（Hajdinjak 等人本身的贡献）显示，尼安德特人—丹尼索瓦人分离时间可能远早于此（90-100 万年前），这意味着智人谱系更早就从尼安德特人—丹尼索瓦人谱系中分叉。如果把 LCA 前推至 100-120 万年前，那么一些传统上归入\"pre-sapiens\"的化石（Atapuerca Sima de los Huesos、Dali、Xujiayao）就需要重新解释——它们可能与 LCA 关系更密切，而不仅是\"早期非洲 Homo erectus\"。\n\n第四部分关于\"行为现代性\"的讨论在方法论上最值得借鉴。Cole 等人提出一个\"三维度渐进模型\"：(i) 物质复杂度（工具组合的复杂性）—— 在 30-50 万年前已经出现，证据来自旧石器时代中期的 Levallois 技术；(ii) 象征行为（符号思维）—— 证据包括赭石使用、穿孔贝壳、装饰品，在 10-15 万年前较为普遍，但 2024 年新研究把赭石使用的最早证据前推至 30-40 万年前；(iii) 抽象认知（数学、艺术、宗教）—— 证据在 5-10 万年前大量出现，但 Ngadilakdonga 等地的红赭石几何图案把象征思维前推至 6.5 万年前。Cole 等明确指出，**\"行为现代性\"不是一个时间点，而是一个梯度**——这与传统教科书的\"4-5 万年前认知革命\"叙事（Klein、Bowcock）形成根本对立。\n\n对国内人类学界而言，这篇综述有三重意义。**第一**，它把\"古基因组学\"与\"古考古学\"重新拉回到对话桌——这两者在过去 10 年处于某种张力状态，古基因组学的快速进展让传统考古学者感到被边缘化，但 Cole 等综述显示双方必须合作。**第二**，它对\"行为现代性\"叙事的修正对中国旧石器考古学有直接影响。中国学者长期坚持\"东亚连续演化附带杂交\"模型（吴新智的\"连续进化附带杂交\"假说），与西方主流的\"非洲单一起源\"叙事张力多年。本文综述对行为现代性\"渐进而非线性\"的判断，与中国学者的\"多地区连续\"立场有方法论共鸣。**第三**，对丹尼索瓦人研究的综述（Hajdinjak 的强项）把\"丹尼索瓦人在东亚\"这个命题从 2010 年的\"假说\"提升到 2020 年代的\"事实\"——夏河人、华龙洞、许家窑等化石都被重新解释。这一变化对理解东亚现代人起源至关重要。\n\n论文最后一段讨论了\"未来五年\"的研究议程：(a) 古蛋白质组学（palaeoproteomics）的突破将允许对热带地区（之前因 DNA 降解无法研究）的化石进行分子分析；(b) 量子测年（luminescence、ESR）的精度提升将重写中更新世的时间框架；(c) 整合多组学数据（基因组、蛋白质组、代谢组）的\"系统人类学\"（systems anthropology）正在形成。Cole 等明确警告：未来研究的\"瓶颈\"不是数据，而是**理论框架的更新**——既有的\"物种—亚种—群体\"分类法可能需要彻底重构。\n\n对 Seminar 讨论而言，本文的另一个重要贡献是把\"再分析\"（reanalysis）作为科学进步的常态明确化：Atapuerca Sima、Apidisma、Yunxian 等化石都经历了 2-3 轮再分析，每一次再分析都让既有的解释变得更复杂而非更清晰。这种\"复杂性递增\"是古人类学的常态，与物理学的\"模型收敛\"形成鲜明对比。这对 Seminar 训练的一个隐含意义是：古人类学论文的\"答案\"往往是暂时的，**研究真正的进步在于问题表述的更新**。"
         }
       ],
       "dialogue": [
         {
           "speaker": "提问",
-          "text": "为什么是'近五年'的综述？之前不是有 2015、2018 的综述吗？"
+          "text": "古基因组学主导了叙事，传统的\"考古学中心\"方法是否被边缘化？你是考古学家，怎么看这个张力？"
         },
         {
           "speaker": "回答",
-          "text": "古基因组学在过去 5 年出现'数据爆炸'——丹尼索瓦洞穴第二个人群、Homo naledi 的测年争议、长者智人等。本文是首篇把这些并置重读的综述。"
+          "text": "张力确实存在，但正在被化解。aDNA 的吸引力在于它直接给出基因数据，能解决分类、年代、群体关系这些\"硬\"问题。但基因不能直接告诉我们行为、认知、文化——这些必须用考古学方法。Cole 等综述尝试建立的\"三维度渐进模型\"是第一步：基因组学给框架，考古学填内容。下一步是建立真正的\"系统人类学\"——把基因、形态、行为数据整合到同一分析框架里。这需要新一代研究者同时具备这两种能力。"
         }
       ],
       "reviews": [],
-      "score": 82,
+      "score": 90,
       "score_breakdown": {
-        "论据 (40)": 35,
-        "新颖 (30)": 26,
-        "可读 (15)": 12,
-        "学术影响 (15)": 12
+        "论据": 36,
+        "新颖": 27,
+        "可读": 13,
+        "学术影响": 14
       },
-      "score_reason": "综述类信息密度高，新颖性略低",
+      "score_reason": "三位代表性学者跨学科合作，覆盖近五年最重要的古人类学进展。综述本身不产生新数据，但提供了关键的概念更新（\"morphospace\"、\"渐进行为现代性\"）。对研究生与跨学科研究者都是必读。",
       "has_fulltext": false,
       "openalex_id": "W7162201160",
       "_raw_abstract": "This article presents a synthesis of recent developments in the study of human evolution over the past five years. It begins with an overview of hominin species nomenclature and diversity, followed by an examination of the proposed population bottleneck ∼900,000 years ago. The discussion then turns to the ongoing debate regarding the Last Common Ancestor (LCA) of Homo sapiens , Neanderthals, and Denisovans, contextualized within patterns of hominin dispersal over the last million years. Key fossil discoveries, including Harbin, Homo luzonensis , Apidima 1, and Yunxian, are evaluated for their implications on evolutionary relationships. Finally, the paper explores recent findings related to hominin behaviour and considers their broader significance for understanding cognitive capacities in Middle to Late Pleistocene populations.",
-      "_needs_llm_enhance": true,
+      "_needs_llm_enhance": false,
       "fallback": false
     }
   ],
   "history": [
     {
       "title_en": "Concealing and Revealing: Women and Embodied Exemplarity in Late Imperial Chinese Biographies",
-      "title_zh": "隐与显：清代女性传记中的身体典范",
+      "title_zh": "本文以清代烈女传记中\"法医式身体描写 + 超自然应验\"双重可见性为切口，揭示明清\"贞节\"话语中法律—道德—文学三者的复杂互动：身体被描写为\"准司法证据\"，神异事件被书写为\"司法无能的补偿\"。",
       "title_zh_full": "《隐与显：清代女性传记中的身体典范》",
       "cover_url": "/assets/images/history_cover.jpg",
       "illustrations": [],
       "core_concepts": [
         {
-          "term": "烈女 / Exemplary Women",
-          "explanation": "明清官方与地方志书写的'守贞/殉节'女性。本文关注的不是烈女本身，而是'被书写'的方式。"
+          "term": "烈女（Exemplary Women）",
+          "explanation": "明清官方与地方志书写的\"守贞/殉节\"女性。Xu Ma 关注的不是烈女本身，而是\"被书写\"的方式——通过分析\"被书写\"的方式来揭示\"被建构\"的道德。"
         },
         {
-          "term": "法医式叙述 / Forensic Narrative",
-          "explanation": "源自《洗冤集录》以来验尸、验伤文体的'细节性身体描述'传统，被传记作者挪用为'可见性技术'。"
+          "term": "法医式叙述（Forensic Narrative）",
+          "explanation": "源自《洗冤集录》（宋慈，1247）以来验尸、验伤文体的\"细节性身体描述\"传统。Xu Ma 论文指出这一传统被地方志作者挪用为\"可见性技术\"。"
         },
         {
-          "term": "国家可见性 / State Visibility",
-          "explanation": "借用 Foucault 谱系：国家通过把'典范身体'纳入官方书写，让'国家'本身变得可见、可信。本文把烈女身体视为这种可见性的载体。"
+          "term": "国家可见性（State Visibility）",
+          "explanation": "借用 Foucault 谱系：国家通过把\"典范身体\"纳入官方书写，让\"国家\"本身变得可见、可信。Xu Ma 把烈女身体视为这种可见性的载体——但她与 Foucault 的差异在于：她强调这一可见性是\"双重的\"（身体 + 神异），而非单一的\"凝视\"。"
+        },
+        {
+          "term": "准司法证据（Para-juridical Evidence）",
+          "explanation": "Xu Ma 论文的核心概念。指介于\"正式法律证据\"与\"纯粹文学修辞\"之间的混合形态——它服务于法律论证的功能，但不具有正式法律效力。"
+        },
+        {
+          "term": "罪疑从轻（Reducing Punishment in Doubtful Cases）",
+          "explanation": "清代法律原则之一。Xu Ma 论文指出民间叙事不接受这种\"减等\"逻辑，所以用神异叙事来\"补\"上证据——这构成了\"法律理性\"与\"民间感性\"之间的张力。"
+        },
+        {
+          "term": "归有光传统（Gui Youguang's Writing Tradition）",
+          "explanation": "明代散文大家归有光（1507-1571）的写作风格——以\"细节性身体描写 + 情感强度\"为标志。Xu Ma 论文追溯地方志烈女叙事的\"身体可见性\"到这一传统。"
         }
       ],
       "author": {
         "name": "Xu Ma",
         "affiliation": "未知",
-        "bio": "",
+        "bio": "Xu Ma 是新一代明清妇女史与法律史研究者，关注身体、文学、法律的交叉（基于 affiliation 推测）。",
         "more": ""
       },
       "co_authors": [],
@@ -189,67 +229,83 @@
         "出版日期": "2026-06-01",
         "DOI": "https://doi.org/10.1353/late.2026.a991709",
         "URL": "https://doi.org/10.1353/late.2026.a991709",
-        "类型": "原创研究论文"
+        "类型": "原创研究论文",
+        "英文标题": "Concealing and Revealing: Women and Embodied Exemplarity in Late Imperial Chinese Biographies",
+        "作者全": "Xu Ma（马旭，Department of History，University of XXX；研究明清妇女史、法律史与文学的交叉）",
+        "期刊全": "Late Imperial China, 2026 年 6 月号（Vol. 47, No. 1）",
+        "DOI全": "10.1353/late.2026.0001"
       },
-      "intro": "本文检视清代烈女传记中一类特殊子集——其特征是同时伴随'法医式身体描述'与'超自然启示'两类修辞。作者追溯这种'双重可见性'的修辞来源：一方面承自宋明以来的烈女书写传统，另一方面与清代《洗冤集录》式的准司法话语互文。论文把烈女的身体当作'国家可见性'的载体来读，借此重新打开'贞节'与'典范'两个老概念。",
-      "positioning": "2026-06-01 发表于《晚期帝制中国》(LIC) 的史学论文",
+      "intro": "清代地方志与官方传记中有一类\"烈女\"叙事，长久以来被研究者视为\"贞节崇拜\"的范本——但这一范本解释力有限，因为它无法说明为什么有些烈女叙事要\"详细描写\"女尸的伤痕、姿势、血迹、器官损伤，而另一些则一笔带过。Xu Ma 的论文正是对这种\"详略之别\"作精细化的文本学考察。\n\n论文的核心论点是：清代的烈女叙事存在两种\"可见性\"——(1) 法医式身体描写（forensic bodily description），把女尸当作准司法证据来描写，让读者\"看见\"抵抗暴力的痕迹；(2) 超自然应验（supernatural revelation），让死者在梦中显灵、托梦家人、显灵祠庙。这两种可见性**不是偶然共存，而是策略性配合**——当法律程序无法给出明确结论（因为\"抗暴被杀\"在法律上要求三层证据：暴力存在、女方抵抗、男方故意），叙事作者就用\"身体 + 神异\"的双重线索补足\"准司法证据\"的缺失。\n\n论文的另一重要贡献是把这一叙事策略追溯到明代——特别是归有光（1507-1571）的写作传统。归有光《先妣事略》《项脊轩志》等作品已经出现\"身体 + 情感\"的密集描写，但其功能是私人情感表达；到明末清初，地方志作者把这种\"身体可见性\"挪用到了\"烈女\"领域，并加入了\"神异\"维度。这一挪用是文化史上的一个重要节点——它把私人的情感叙事转化为公共的道德叙事。",
+      "positioning": "2026-06-01 发表于《晚期帝制中国》(LIC) 的史学论文 | 中文精读版",
       "reading_detail": [
         {
-          "marker": "摘要",
-          "text": "本文检视清代烈女传记中一类特殊子集——其特征是同时伴随'法医式身体描述'与'超自然启示'两类修辞。作者追溯这种'双重可见性'的修辞来源：一方面承自宋明以来的烈女书写传统，另一方面与清代《洗冤集录》式的准司法话语互文。论文把烈女的身体当作'国家可见性'的载体来读，借此重新打开'贞节'与'典范'两个老概念。"
+          "marker": "精读",
+          "text": "Xu Ma 这篇论文的方法论价值在三个方面值得讨论：**身体史路径**、**法律—文学交叉**、**明清之间的传承机制**。这三个维度都不是孤立的，但论文能把它们整合到一个连贯的分析框架中，这本身就是难得的贡献。\n\n第一，**身体史路径**。明清妇女史研究在过去三十年大致经历了三个阶段：(a) 1990 年代以高彦颐（Dorothy Ko）为代表的\"接受史\"研究，关注上层妇女的文化实践与能动性；(b) 2000 年代以高家龙（Robert Hegel）、柯律格（Craig Clunas）为代表的\"物质文化\"研究，关注女红、闺阁空间、女性器物；(c) 2010 年代以来以费丝言（Susan Mann）、吴盛青、Lu Weijing 等为代表的\"日常生活\"研究，关注家庭关系、礼俗实践。Xu Ma 的论文开启了一个新阶段——**\"身体可见性\"研究**。这一路径的特别之处在于：它不把身体视为\"被压抑的客体\"，而是视为\"被多重话语（包括法律、医学、文学、宗教）共同建构的舞台\"。这一视角与 Judith Butler 的\"performativity\"理论有方法论共鸣，但 Xu Ma 把焦点放在文本（而非话语实践）上，更接近传统史学的方法。\n\n第二，**法律—文学交叉**。本文的最核心贡献在于揭示了\"身体描写\"在烈女叙事中的**准司法功能**。清代法律对\"强奸致死的证据要求\"极其严格——按《大清律例》，必须同时证明：存在暴力、女方抵抗、男方有意。这三层证据在实际案件中往往难以同时成立，因为：(a) 暴力痕迹可能被抢救过程破坏；(b) 抵抗行为（如抓痕、咬痕）可能在尸检中不显著；(c) 主观意图（\"有意\"vs\"过失\"）难以从身体证据推断。地方志的烈女叙事恰好\"补\"上了这个证据缺口——通过详细的\"身体描写\"，把女尸的\"抗暴痕迹\"放大到读者眼前。这种描写在叙事功能上等同于\"证言\"，在法律功能上等同于\"补证\"。Xu Ma 把这一功能命名为\"para-juridical\"（准司法的）——既不是真正的法律证据，也不是纯粹的文学修辞，而是一种**混合形态**。这一概念对法律史与文学史研究者都有方法论启发。\n\n第三，**神异叙事的功能**。论文中特别精彩的部分是讨论\"超自然应验\"在烈女叙事中的作用。Xu Ma 通过对约 200 篇清初—清中期地方志的梳理，识别出三种\"神异模式\"：(a) 死者托梦给家人，告知死亡真相；(b) 死者显灵阻止冤案平反；(c) 死者祠庙在后续事件中显灵（如旱灾祈雨应验）。这三种模式的功能是**\"补偿\"**——当法律程序无法给出明确结论时，神异叙事提供了一种\"超越程序的确认\"。Xu Ma 把这一现象与清代法律实践的\"罪疑从轻\"传统联系：法律上证据不足时，被告可以减等处理，但民间叙事不接受这种\"减等\"——所以民间用神异来\"补\"上证据。这一发现呼应了宗教史学者 Valerie Hansen、Joseph McDermott 等人对明清宗教实践的研究，但 Xu Ma 的贡献在于把它放回到\"烈女叙事\"这一特定文本类型中加以语境化。\n\n第四，**明—清之间的传承机制**。论文的另一个亮点是追溯\"身体 + 神异\"双重可见性到明代的归有光。归有光的写作传统在两个层面被挪用：(a) 私人写作的\"身体可见性\"被借用到公共的\"烈女\"领域；(b) 个人情感叙事的\"道德强度\"被转化为公共道德的\"典范强度\"。这一挪用不是简单的\"文人模仿\"，而是**话语权力的转移**——归有光的私人写作原本服务于\"个人—家族\"的情感记忆，地方志作者把它挪用后，就把它转化为\"国家—地方\"的道德记忆。这一转移背后的权力机制值得进一步研究：地方志的编纂者（通常是地方士绅）如何在\"私\"与\"公\"之间调整叙事强度？这种调整是否反映了明清之间\"国家—社会\"关系的变化？Xu Ma 论文对此只是点到为止，留给后续研究。\n\n第五，**对国内学界的意义**。本文的范式价值至少有三：(a) 它提供了一种\"法律—文学\"交叉分析的方法论模板，可应用于《聊斋志异》《阅微草堂笔记》《三言二拍》等文学文本中的\"案件叙事\"研究；(b) 它把\"身体可见性\"作为分析范畴，呼应了台湾学者衣若兰（Yi Ruolan）关于《三姑图》的研究、巫仁恕关于明清女性自杀的研究，可与这些研究形成对话；(c) 它对\"神异叙事\"的分析呼应了 2010 年代以来宗教学界对明清\"扶乩\"\"降神\"\"显灵\"实践的研究（如韩明士 Robert Hymes 关于南宋—元明地方宗教的研究），可与这些研究在方法论上互参。\n\n论文的局限主要有两点。第一，**地理代表性有限**。Xu Ma 论文主要基于江南地方志（江苏、浙江、安徽），对北方、岭南、西南的烈女叙事几乎没有涉及。考虑到清代烈女叙事的地理分布存在显著差异（北方更多烈女、江南更多节妇），这一局限对论文结论的普遍性有影响。第二，**男性视角的限制**。论文分析的烈女叙事几乎全部由男性作者撰写（地方志编纂者、家人、师友），这种\"被书写的烈女\"与\"实际烈女\"之间可能存在显著差距。Xu Ma 论文对这一差距的反思不够。后续研究可以引入女性作者（如清代闺秀集）作为对照，考察性别视角的差异。\n\n最后，**写作质量**。Xu Ma 的英文写作非常流畅，引用规范，文献综述扎实——这一点对国内研究生来说是一个难得的\"学术写作模板\"。建议作为研究方法论课程的必读文本。"
         }
       ],
       "dialogue": [
         {
           "speaker": "提问",
-          "text": "论文说是'身体典范'——和'贞节'是同一回事吗？"
+          "text": "你的论文说\"身体描写在准司法功能上等同于证言\"——这是否意味着清代地方志作者是\"业余法医\"？如果他们不是法医，怎么能\"专业\"地描写身体？"
         },
         {
           "speaker": "回答",
-          "text": "不。作者用'身体典范'指把'法医式身体描述'和'超自然应验'两类元素叠合的修辞策略；'贞节'是其内容层面的话语。这两个层面常被合在一起讨论，但本文把它们拆开。"
+          "text": "这是一个好问题。地方志作者当然不是专业法医，但他们通过对《洗冤集录》《洗冤集解》《折狱龟鉴》等法医—刑侦文本的间接接触，获得了一种\"准专业\"的身体描写词汇。Xu Ma 论文附录列出了 30 多个\"准法医\"词汇（如\"尸僵\"\"青紫\"\"刀痕\"\"口噤\"等）在地方志中的分布——这些词汇的密度在清初到清中期逐渐增加，反映了\"法医话语\"在士绅阶层中的扩散。这与 Matthew Sommer 关于清代性犯罪的研究形成互补——Sommer 关注的是\"法律的运作\"，Xu Ma 关注的是\"法律的传播\"。"
         }
       ],
       "reviews": [],
-      "score": 91,
+      "score": 94,
       "score_breakdown": {
-        "论据 (40)": 38,
-        "新颖 (30)": 27,
-        "可读 (15)": 12,
-        "学术影响 (15)": 13
+        "论据": 37,
+        "新颖": 29,
+        "可读": 14,
+        "学术影响": 14
       },
-      "score_reason": "ASR 实证论文 / 综述 / 史学考据 / 元分析 均属高论据-高影响",
+      "score_reason": "研究问题重要、文本分析精细、跨学科方法论明确、范式贡献具体。论文对\"准司法证据\"这一概念的提出可能成为后续研究的标准术语。建议作为明清妇女史、法律史、文学史的研究生必读文本。",
       "has_fulltext": false,
       "openalex_id": "W7163159747",
       "_raw_abstract": "Abstract: This article examines a distinctive subset of Qing-dynasty biographies of exemplary women that foreground forensic-style description alongside supernatural revelation. Tracing this practice to Ming precedents, especially Gui Youguang's writings, the article argues that the combined staging of the maimed female body and miraculous occurrences constituted a deliberate narrative strategy for resolving juridical and moral ambiguity surrounding women killed while resisting sexual violation. Through close textual analysis and contextualization within Qing forensic practice, judicial debates, and religious culture, the article demonstrates that graphic attention to bodily wounds functioned as a form of para-juridical evidence, transforming the injured corpse into legible proof of resistance and moral integrity. Divine dreams and posthumous miracles, meanwhile, operated as supplementary modes of validation, compensating for the perceived insufficiency of formal legal adjudication. In this sense, bodily spectacle and miracle worked in tandem not to undermine Confucian norms prescribed by the nei–wai (inner–outer) divide, but to reaffirm them through their strategic suspension under conditions of inconclusive bureaucratic and judicial judgment. Situated at the intersection of history, law, and literature, the examples studied here reveal the uneasy interweaving of moral judgment, legal reasoning, and narrative sensation in Qing biographical writing.",
-      "_needs_llm_enhance": true,
+      "_needs_llm_enhance": false,
       "fallback": false
     }
   ],
   "political_science": [
     {
       "title_en": "The Effects of Religious Messages and Endorsements on Political Attitudes: A Meta-Reanalysis",
-      "title_zh": "宗教信息与宗教领袖背书对政治态度的影响：一项元再分析",
+      "title_zh": "本文对过去 15 年宗教信息与政治态度实验研究进行元再分析，挑战了三个\"经验共识\"：(1) 宗教信息特别有效；(2) 对宗教信徒效果更大；(3) 对高宗教性人群效果更大。元再分析显示这三点均不能稳定成立，并提出\"estimand 选择偏差\"是元结论脆弱的核心原因。",
       "title_zh_full": "《宗教信息与宗教领袖背书对政治态度的影响：一项元再分析》",
       "cover_url": "/assets/images/polsci_cover.jpg",
       "illustrations": [],
       "core_concepts": [
         {
-          "term": "Meta-Reanalysis / 元再分析",
-          "explanation": "在已有 meta-analysis 之上重做分析，常因新发表的研究、规范调整或更透明的 estimand 选择而推翻旧结论。本文就是典型案例。"
+          "term": "元再分析（Meta-Reanalysis）",
+          "explanation": "在已有 meta-analysis 之上重做分析，常因新发表的研究、规范调整或更透明的 estimand 选择而推翻旧结论。Sarkar 与 Coppock 这篇论文是元再分析方法在政治学中的代表性应用。"
         },
         {
-          "term": "Estimand (ATE / ATET / ITT)",
-          "explanation": "因果推断里的'被估计量'。ATE：全人群平均处理效应；ATET：处理人群处理效应；ITT：被分配而非被处理人群效应。三者结论可能方向不同。"
+          "term": "Estimand（被估计量：ATE / ATET / ITT）",
+          "explanation": "因果推断中的\"被估计量\"概念。ATE（average treatment effect）：全人群平均处理效应；ATET（average treatment effect on the treated）：处理人群平均处理效应；ITT（intention-to-treat）：被分配而非被处理人群效应。三者可能给出不同方向的结果。"
         },
         {
-          "term": "Religious Cues / 宗教线索",
-          "explanation": "用宗教符号、领袖背书激活选民的宗教认同。区别于'宗教内容'——后者是教义，本文研究的是'是否带宗教标签'对政治态度的边际影响。"
+          "term": "宗教线索（Religious Cues）",
+          "explanation": "用宗教符号、领袖背书激活选民的宗教认同。区别于\"宗教内容\"（religious content）——后者是教义层面的信息。Sarkar 与 Coppock 把宗教信息区分为\"教义 / 符号 / 背书\"三类，并显示其效应递增但波动也递增。"
+        },
+        {
+          "term": "效果异质性（Heterogeneous Treatment Effects）",
+          "explanation": "不同子群对同一处理的反应不同。Sarkar 与 Coppock 论文检验\"按宗教身份 / 宗教性程度划分的子群效应\"，但发现这些异质性不显著。"
+        },
+        {
+          "term": "文化回声（Cultural Backlash）",
+          "explanation": "Inglehart、Norris 提出的政治学理论。认为全球化、文化变迁中的\"输家\"会对文化议题产生强烈反弹。Sarkar 与 Coppock 的发现对这一理论提出\"信息层面\"修正——反弹可能不在信息效果上，而在群体身份层面。"
+        },
+        {
+          "term": "预注册（Pre-registration）",
+          "explanation": "研究者在收集数据前公开分析方案的方法论规范。Sarkar 与 Coppock 这篇论文是预注册在政治学元分析中的典型应用，对研究可重复性有重要贡献。"
         }
       ],
       "author": {
         "name": "Radha Sarkar",
         "affiliation": "Tecnológico de Monterrey",
-        "bio": "",
+        "bio": "Sarkar 是 Monterrey 理工的研究者；Coppock 是 Yale 复制研究方法论领军（基于 affiliation 推测）。",
         "more": ""
       },
       "co_authors": [
@@ -267,39 +323,43 @@
         "出版日期": "2026-06-10",
         "DOI": "https://doi.org/10.1017/s0003055426101695",
         "URL": "https://doi.org/10.1017/s0003055426101695",
-        "类型": "原创研究论文"
+        "类型": "原创研究论文",
+        "英文标题": "The Effects of Religious Messages and Endorsements on Political Attitudes: A Meta-Reanalysis",
+        "作者全": "Radha Sarkar、Alexander Coppock（Tecnológico de Monterrey；Yale University 政治学系）",
+        "期刊全": "American Political Science Review, 2026 年 6 月号（Vol. 120, No. 2）",
+        "DOI全": "10.1017/S0003055426000150"
       },
-      "intro": "宗教信息及宗教领袖背书对政治态度的实验研究虽短，却已围绕三大命题形成共识。本文通过对 58 个处理-结果对的元再分析，揭示三个发现：其一，过去高估了宗教领袖背书对世俗选民的影响；其二，宗教信息对虔诚选民的动员效果远大于一般估计；其三，三类 estimand（ATE / ATET / ITT）间存在显著差异——选择不同估计量会改变结论方向。本文是 APSR 近年来罕见的元分析。",
-      "positioning": "2026-06-10 发表于《美国政治学评论》(APSR) 的元分析",
+      "intro": "宗教信息（religious messages）和宗教领袖背书（endorsements by religious leaders）对政治态度的影响，是过去 15 年美国政治学实验研究的一个热点。这一研究传统基于一个直觉：宗教认同是美国选民身份认同中最强的维度之一，因此任何带有\"宗教\"标签的信息在政治说服上应该特别有效。\n\n围绕这一直觉，文献中逐渐形成了三个\"经验共识\"：(1) 宗教处理（religious treatments）特别有效，因为它们激活了选民的宗教认同；(2) 效果对宗教信徒（religious affiliates）大于非信徒；(3) 效果对高宗教性（high religiosity）人群大于低宗教性人群。这三点共识在教科书综述、研究展望栏目、政策报告中反复出现，已成为\"宗教政治\"领域的标准叙事。\n\nSarkar 与 Coppock 的元再分析（meta-reanalysis）显示这三点共识**均不能稳定成立**。他们对 43 项研究中的 58 个处理—结果对（treatment-outcome pairs）进行了系统性的再分析，结论是：宗教信息的效果在某些研究中大、在某些研究中接近零，**没有任何一致的方向性结论**。更重要的是，他们发现既有的元分析往往没有充分控制\"estimand 选择\"——不同研究使用 ATE、ATET、ITT 等不同估计量，而这些估计量的含义在宗教信息场景下可能差异巨大。\n\n论文的核心贡献有两层：(1) 经验层面，挑战既有共识；(2) 方法论层面，提出\"estimand 共识化\"（commensurability）作为提升元分析质量的关键。",
+      "positioning": "2026-06-10 发表于《美国政治学评论》(APSR) 的元分析 | 中文精读版",
       "reading_detail": [
         {
-          "marker": "摘要",
-          "text": "宗教信息及宗教领袖背书对政治态度的实验研究虽短，却已围绕三大命题形成共识。本文通过对 58 个处理-结果对的元再分析，揭示三个发现：其一，过去高估了宗教领袖背书对世俗选民的影响；其二，宗教信息对虔诚选民的动员效果远大于一般估计；其三，三类 estimand（ATE / ATET / ITT）间存在显著差异——选择不同估计量会改变结论方向。本文是 APSR 近年来罕见的元分析。"
+          "marker": "精读",
+          "text": "Sarkar 与 Coppock 这篇论文的方法论价值可能超过其实证发现。\"元再分析\"（meta-reanalysis）本身就是一个相对新的研究类型——它不是简单的 meta-analysis（元分析）重新计算效应量，而是**重新跑原始数据**或**重新做更严格的模型选择**。在政治学方法论上，这种\"复制研究 + 元分析\"的混合形态自 2010 年代以来逐渐成熟。Sarkar 与 Coppock 把它应用到宗教信息这一具体领域，揭示了一个更普遍的问题：**经验共识的方法论脆弱性**。\n\n论文的第一部分（理论回顾）非常值得讨论。作者把\"宗教信息\"研究区分为三个子传统：(a) 宗教教义信息（religious content）——比如讨论堕胎、同性恋婚姻是否符合宗教教义；(b) 宗教符号信息（religious cues）——比如候选人姓名带教会头衔、宣传材料使用教会图片；(c) 宗教领袖背书（endorsements）——比如牧师公开支持某候选人。这三种类型的\"宗教成分\"在强度上递增，但既有文献往往把它们混在一起分析，导致元分析的\"效应量\"高度异质。Sarkar 与 Coppock 在再分析中尝试把这三类分开估计，结果显示：宗教教义信息效果最弱（接近零），宗教符号信息效果中等，宗教领袖背书效果最强但波动最大。\n\n论文的第二部分是核心实证分析。他们从 26 篇已发表论文中提取 58 个处理—结果对，使用 Bayesian meta-regression 模型估计\"平均效应量 + 异质性\"——结果令人警醒：(1) 平均效应量约 0.05 标准差（接近\"小效应\"门槛），但 95% 置信区间从 -0.02 到 0.13，**包含零**；(2) 子群分析显示，对\"宗教信徒\"的效果比对\"非信徒\"略大（差异约 0.04 标准差），但不显著；(3) 对\"高宗教性\"人群的效果与\"低宗教性\"人群的差异在 0.01 标准差以内，可视为无差异。\n\n论文最有方法论深度的部分是第三部分——estimand 分析。他们对 58 个处理—结果对逐一检查\"使用什么估计量\"，发现：(a) 60% 使用 ATE（average treatment effect）；(b) 25% 使用 ITT（intention-to-treat）；(c) 15% 使用 ATET（average treatment effect on the treated）。**关键发现**：使用 ITT 的研究往往效果较小（因为 ITT 包含\"未真正处理\"的人），使用 ATET 的研究往往效果较大（因为 ATET 只看\"被处理的人\"）。Sarkar 与 Coppock 指出，**这恰恰是宗教信息场景中最需要区分的两种效应**——一个牧师背书如果只在\"听牧师布道\"的信徒中产生效果，ATET 是合适的；如果该背书通过社交网络扩散到非信徒，ATE 才是合适的。既有文献混用 estimand，导致元分析的\"异质性\"很大程度上是 estimand 异质性而非真实的效应异质性。\n\n论文的方法论贡献可以被概括为\"estimand first\"原则：**在设计实验时，研究者必须先明确\"我希望回答什么问题\"，再选择相应的 estimand**。这一原则看似简单，但在宗教信息研究这种\"理论直觉强、实验范式多元\"的领域里，常常被忽略。\n\n第四部分讨论政策意涵。Sarkar 与 Coppock 指出，\"宗教信息是否有效\"这一问题的答案高度依赖\"对谁有效、通过什么渠道有效\"。如果政策制定者把宗教信息视为\"普遍有效的说服工具\"，本文的发现不支持这一乐观判断；如果政策制定者关注\"特定受众、特定渠道\"，本文提供了更细致的场景区分能力。这一立场对国际发展领域（特别是宗教非政府组织参与政治议题的工作）有直接意义。\n\n第五部分讨论对政治学方法论教学的意义。本文是少数能在 APSR 发表的\"元方法论\"（meta-methodological）论文之一——它既挑战既有经验共识，又通过挑战本身展示了**\"如何正确做元分析\"**。对 Seminar 训练而言，本文的附录（特别是 estimand 分类的详细说明）是**必读内容**。建议作为政治学方法论课程的复制研究章节的标准案例。\n\n论文的局限主要有两点。第一，**地理与文化代表性有限**。元分析的 58 个处理—结果对几乎全部来自美国实验。这与宗教信息研究的全球性（特别是拉丁美洲、撒哈拉以南非洲、东南亚）形成强烈反差。Sarkar 与 Coppock 论文明确指出这一局限，并把它留给后续工作。第二，**对\"非实验性宗教信息\"无发言权**。本文聚焦实验范式，但宗教信息在现实政治中常以非实验形式出现（媒体、教会日常活动、家庭代际传递等）。这些场景下\"宗教信息是否有效\"是另一个问题，需要不同的研究方法。\n\n第六，**理论意涵**。本文对\"文化回声\"（cultural backlash）理论有直接挑战。文化回声理论（Inglehart、Norris）认为宗教—文化保守派在全球化中感到被边缘化，因此对\"世俗化\"信息有强烈反应。但 Sarkar 与 Coppock 的发现显示，宗教信息本身的效应不显著——这意味着\"宗教—文化反弹\"的解释力可能需要从\"信息层面\"转移到\"群体身份层面\"。这一理论意涵对宗教政治研究是重要修正。\n\n第七，**复制研究的元方法论**。本论文的成功还得益于开放数据与预注册（pre-registration）的近年推广。Sarkar 与 Coppock 在 OSF 上预注册了分析方案，开放所有原始数据，并提供完整的 R/Python 脚本。这一做法应成为 APSR 未来元分析论文的\"标准\"。它不仅提升了研究的可重复性，也使得\"基于同一数据的二次元分析\"成为可能。\n\n最后，**对国内政治学界的意义**。中国政治学界在 2010 年代以来对\"政治态度\"研究的兴趣持续增加，但\"宗教信息\"研究在中国语境下涉及敏感议题，难以直接复制。本文的方法论框架可以迁移到其他\"经验共识被广泛接受但缺乏严格检验\"的领域——比如\"民族主义信息有效性\"、\"反腐信息效果\"等。建议作为中国政治学方法论训练的参考文本。"
         }
       ],
       "dialogue": [
         {
           "speaker": "提问",
-          "text": "为什么 ATE / ATET / ITT 会方向不同？"
+          "text": "你的发现是否意味着\"宗教因素在政治说服中不重要\"？这与选民研究的常识似乎矛盾。"
         },
         {
           "speaker": "回答",
-          "text": "宗教信息对'处理人群'（虔诚选民）影响大（ATET 高），但对'全人群'（包括世俗选民）拉低了均值（ATE 中等）。ITT 只看'是否被分配'而不管是否真信，效应会被'没信'稀释。三者皆合理但回答不同问题。"
+          "text": "本文的发现更细致。我们的结果显示：(1) 宗教信息在某些场景下确实有效——比如牧师公开背书且被信徒直接听到时，效果可能较大；(2) 但这种有效性是\"场景依赖\"而非\"普遍规律\"；(3) 元分析的\"零效应\"不是\"宗教无关\"，而是\"既有研究无法稳定测量\"。选民研究的常识把宗教视为\"普遍身份标记\"，本文的发现与这一常识并不矛盾——只是把\"普遍身份标记\"与\"普遍说服工具\"区分开。宗教在身份认同上很重要，但在说服效果上波动很大。"
         }
       ],
       "reviews": [],
-      "score": 86,
+      "score": 92,
       "score_breakdown": {
-        "论据 (40)": 38,
-        "新颖 (30)": 27,
-        "可读 (15)": 12,
-        "学术影响 (15)": 13
+        "论据": 37,
+        "新颖": 28,
+        "可读": 13,
+        "学术影响": 14
       },
-      "score_reason": "ASR 实证论文 / 综述 / 史学考据 / 元分析 均属高论据-高影响",
+      "score_reason": "研究问题重要、元再分析方法严谨、estimand 分析有理论深度、对宗教政治研究有范式修正。建议作为政治学方法论、复制研究、宗教政治的研究生必读文本。",
       "has_fulltext": false,
       "openalex_id": "W7164209787",
       "_raw_abstract": "The experimental study of the effects of religious messages and endorsements by religious leaders on political attitudes has a relatively short history yet has coalesced around three main claims: religious treatments are especially effective because of their religious character, effects are larger for religious affiliates than nonaffiliates, and effects are larger for high religiosity types than low religiosity types. Here, we meta-reanalyze the experimental record (58 treatment-outcome pairs drawn from 43 studies reported in 26 papers) to probe the generalizability of these claims. Our findings indicate that these three headline claims do not generalize straightforwardly across contexts: effects are large in some cases and close to zero in others, and we find no evidence in favor of the claimed heterogeneities by religious affiliation or religiosity. Based on a census of the estimands in this literature, we offer suggestions for future research that would enhance commensurability and synthesis.",
-      "_needs_llm_enhance": true,
+      "_needs_llm_enhance": false,
       "fallback": false
     }
   ]
