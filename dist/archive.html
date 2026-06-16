@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>归档 · 每日一书</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">每日一书 · 学术精读</a>
+      <nav>
+        <a href="index.html">今日</a>
+        <a href="archive.html">归档</a>
+        <a href="about.html">关于</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>历史归档</h1>
+      <p class="hero-sub">按月份视图 · 按领域筛选 · 倒序排列</p>
+    </section>
+
+    <section class="archive-controls">
+      <div class="filter-bar" id="filter-bar">
+        <span class="filter-label">领域</span>
+        <span class="filter-chip active" data-filter="all">全部</span>
+        <span class="filter-chip" data-filter="社会学">社会学</span>
+        <span class="filter-chip" data-filter="人类学">人类学</span>
+        <span class="filter-chip" data-filter="历史学">历史学</span>
+        <span class="filter-chip" data-filter="政治学">政治学</span>
+      </div>
+    </section>
+
+    <section class="timeline" id="archive-timeline">
+      <p class="timeline-empty">暂无归档——明天 8:30 起将持续累积。</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>每日 8:30 自动更新 · 内容由"每日一书"生成 · 图表版权归原出版方</p>
+  </footer>
+
+  <script src="assets/script.js"></script>
+  <script>
+  (function() {
+    const timeline = document.getElementById('archive-timeline');
+    if (!timeline) return;
+    const items = timeline.querySelectorAll('.timeline-item');
+    items.forEach(item => {
+      const date = item.querySelector('.timeline-date');
+      if (date && date.textContent.trim() === '2026-06-15') {
+        const first = document.createElement('span');
+        first.className = 'timeline-first';
+        first.textContent = '起点 · 首期';
+        date.appendChild(document.createTextNode(' '));
+        date.appendChild(first);
+      }
+    });
+  })();
+  </script>
+</body>
+</html>

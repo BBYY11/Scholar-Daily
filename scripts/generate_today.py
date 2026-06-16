@@ -80,12 +80,26 @@ def pick_one(cands: list[dict[str, Any]], discipline: str) -> dict[str, Any] | N
     return sorted(cands, key=lambda x: x.get("score", 0), reverse=True)[0]
 
 
+# 4 个领域的标志色 (与 CSS 中 .card-discipline-* 对应)
+DISC_COLORS = {
+    "sociology": "#B23A48",        # 朱砂红
+    "anthropology": "#2E5266",     # 深海蓝
+    "history": "#6E4B3A",          # 青铜
+    "political_science": "#3F4D3A",  # 松绿
+}
+
 def render_card(card: dict[str, Any], disc_en: str, disc_zh: str) -> str:
-    """渲染单张精读卡的 HTML"""
-    cover = card.get("cover_url") or DEFAULT_COVERS.get(disc_en, "")
+    """渲染单张精读卡的 HTML — 纯文字版 (无封面图)"""
+    # 取代封面图: 领域色块 + 期刊名 + 卷期号
+    journal = card.get("meta", {}).get("期刊", "")
+    vol_iss = card.get("meta", {}).get("卷期", "")
+    color = DISC_COLORS.get(disc_en, "#333")
     cover_html = (
-        f'<img src="{cover}" alt="cover" />' if cover
-        else '<div class="cover-placeholder">封面占位<br/>（未搜到原书封面）</div>'
+        f'<div class="cover-text" style="background:{color}">'
+        f'<div class="cover-discipline">{disc_zh}</div>'
+        f'<div class="cover-journal">{journal}</div>'
+        f'<div class="cover-vol">{vol_iss}</div>'
+        f'</div>'
     )
 
     score = card.get("score", 0)
@@ -491,7 +505,7 @@ def main() -> int:
 
     # 写首页
     # 首期判断: 历史为空 或 当天是 2026-06-15 (项目起点)
-    is_first = len(load_history()) <= 1 or date == "2026-06-15"  # 历史为空 → 起点
+    is_first = date == "2026-06-15"  # 历史为空 → 起点
     index_html = render_index(cards_html, date, win_start, win_end, is_first=is_first)
     (ROOT / "index.html").write_text(index_html, encoding="utf-8")
 
