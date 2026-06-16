@@ -85,8 +85,10 @@
           const el = document.createElement('div');
           el.className = 'timeline-item';
           el.dataset.tags = (it.tags || []).join('|');
+          // 6.15 起点首期 特殊处理
+          const firstBadge = it.date === '2026-06-15' ? ' <span class="timeline-first">起点 · 首期</span>' : '';
           el.innerHTML = `
-            <div class="timeline-date">${it.date}</div>
+            <div class="timeline-date">${it.date}${firstBadge}</div>
             <div class="timeline-tags">${(it.tags || []).map(t => `<span>${t}</span>`).join('')}</div>
             <a class="timeline-link" href="archive/${it.date}.html">查看 →</a>
           `;
