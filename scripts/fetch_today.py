@@ -81,14 +81,19 @@ def paper_to_card(p, discipline, disc_idx):
     # authors
     auths = []
     affs = []
+    import re as _re
     for a in p.get("authorships", [])[:3]:
-        name = a.get("author", {}).get("display_name", "?")
-        if name:
-            auths.append(name)
-            for inst in a.get("institutions", [])[:1]:
-                inst_name = inst.get("display_name", "")
-                if inst_name:
-                    affs.append(inst_name)
+        # display_name 可能含元数据噪音 (如 "James; id_orcid 0000-0002-...")
+        # 用正则清洗: 截断到第一个 ";" 或 "(id" 等元数据 marker
+        raw_name = a.get("author", {}).get("display_name", "?") or "?"
+        name = _re.split(r';\s*(id_orcid|orcid|id\s*=|/orcid)', raw_name, maxsplit=1)[0].strip()
+        if not name or name == "?":
+            name = "Anonymous"
+        auths.append(name)
+        for inst in a.get("institutions", [])[:1]:
+            inst_name = (inst.get("display_name", "") or "").strip()
+            if inst_name:
+                affs.append(inst_name)
 
     # abstract (rebuild from inverted index)
     abs_ii = p.get("abstract_inverted_index")

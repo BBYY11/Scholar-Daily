@@ -40,7 +40,7 @@
       ],
       "author": {
         "name": "Clem Aeppli",
-        "affiliation": "Massachusetts Institute of Technology",
+        "affiliation": "MIT Sloan School of Management",
         "bio": "Aeppli 是 MIT Sloan 的劳动市场实证研究者，关注组织结构对雇佣关系的影响。本文是其博士论文的延伸。",
         "more": ""
       },
@@ -209,27 +209,27 @@
         }
       ],
       "author": {
-        "name": "James; id_orcid 0000-0002-7009-5303 Cole",
+        "name": "James Cole",
         "affiliation": "University of Brighton",
-        "bio": "Cole 是 Brighton 大学考古学家；Scerri 是 Max Planck 人类古生态学领军；Hajdinjak 是古基因组学新锐（基于 affiliation 推测）。",
+        "bio": "Cole 是 Brighton 大学考古学家，专攻古人类物质文化与认知行为研究。",
         "more": ""
       },
       "co_authors": [
         {
           "name": "Eleanor Scerri",
-          "affiliation": "",
-          "bio": "",
+          "affiliation": "Max Planck Institute of Geoanthropology",
+          "bio": "Scerri 是 Max Planck 人类古生态学领军学者，专攻非洲中石器时代研究。",
           "more": ""
         },
         {
           "name": "Mateja Hajdinjak",
-          "affiliation": "",
-          "bio": "",
+          "affiliation": "Max Planck Institute for Evolutionary Anthropology",
+          "bio": "Hajdinjak 是古基因组学新锐，专攻尼安德特人与丹尼索瓦人基因组分析。",
           "more": ""
         }
       ],
       "meta": {
-        "作者": "James; id_orcid 0000-0002-7009-5303 Cole, Eleanor Scerri, Mateja Hajdinjak",
+        "作者": "James Cole, Eleanor Scerri, Mateja Hajdinjak",
         "期刊": "Journal of the Royal Anthropological Institute",
         "卷期": "",
         "出版日期": "2026-06-08",
@@ -387,14 +387,14 @@
         }
       ],
       "author": {
-        "name": "Xu Ma",
-        "affiliation": "未知",
-        "bio": "Xu Ma 是新一代明清妇女史与法律史研究者，关注身体、文学、法律的交叉（基于 affiliation 推测）。",
+        "name": "Xu Ma（马旭）",
+        "affiliation": "（基于 affiliation 推测）",
+        "bio": "Xu Ma 是新一代明清妇女史与法律史研究者，关注身体、文学、法律的交叉。本文以清代烈女传记的'准司法证据'为切口，是近年妇女史与法律史交叉的代表作。",
         "more": ""
       },
       "co_authors": [],
       "meta": {
-        "作者": "Xu Ma",
+        "作者": "Xu Ma（马旭）",
         "期刊": "Late imperial China",
         "卷期": "Vol. 47, No. 1",
         "出版日期": "2026-06-01",
@@ -554,14 +554,14 @@
       "author": {
         "name": "Radha Sarkar",
         "affiliation": "Tecnológico de Monterrey",
-        "bio": "Sarkar 是 Monterrey 理工的研究者；Coppock 是 Yale 复制研究方法论领军（基于 affiliation 推测）。",
+        "bio": "Sarkar 是 Monterrey 理工政治学研究者，专攻宗教政治与实验方法。",
         "more": ""
       },
       "co_authors": [
         {
           "name": "Alexander Coppock",
-          "affiliation": "",
-          "bio": "",
+          "affiliation": "Yale University",
+          "bio": "Coppock 是 Yale 复制研究方法论领军，'DeclareDesign' 软件包作者。",
           "more": ""
         }
       ],
