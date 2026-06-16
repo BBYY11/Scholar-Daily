@@ -2,11 +2,24 @@
   "sociology": [
     {
       "title_en": "Unstable Work in a Fissured Economy: Tracking Employment in Subcontractor Establishments in France",
-      "title_zh": "Unstable Work in a Fissured Economy: Tracking Employment in Subcontractor Establ",
-      "title_zh_full": "Unstable Work in a Fissured Economy: Tracking Employment in Subcontractor Establ",
+      "title_zh": "碎片化经济中的不稳定劳动：追踪法国分包商企业中的雇佣关系",
+      "title_zh_full": "《碎片化经济中的不稳定劳动：追踪法国分包商企业中的雇佣关系》",
       "cover_url": "/assets/images/sociology_cover.jpg",
       "illustrations": [],
-      "core_concepts": [],
+      "core_concepts": [
+        {
+          "term": "Fissured Workplace / 碎片化工作场所",
+          "explanation": "Weil (2014) 提出：品牌方通过外包把雇佣责任转移给总包/分包网络，让'雇佣关系'在法律上分散化、在社会意义上隐形。"
+        },
+        {
+          "term": "事件史分析 / Event History Analysis",
+          "explanation": "研究'事件何时发生'的统计方法。文中用 Cox 风险模型比较分包与非分包雇佣的'终止风险'。"
+        },
+        {
+          "term": "工作不稳定 / Precarious Work",
+          "explanation": "Kalleberg 经典定义：缺乏可预期性、稳定性、福利与法律保护的工作状态。本文在'分包商-非分包商'对比下重新测度。"
+        }
+      ],
       "author": {
         "name": "Clem Aeppli",
         "affiliation": "Massachusetts Institute of Technology",
@@ -23,19 +36,33 @@
         "URL": "https://doi.org/10.1177/00031224261448194",
         "类型": "原创研究论文"
       },
-      "intro": "Many jobs in the twenty-first century have become short-term, precarious, and unstable. To help explain this phenomenon, I consider the fragmentation of economic activity across networks of transacting organizations—a trend known to affect pay, but with unknown implications for the stability of work. I focus on a key part of this trend: the growing role of subcontracting. Combining research on the reasons for subcontracting with organizational theories of dependence and diversification, I argue that many subcontractor establishments face volatile demand and have few margins to cut costs other than labor. These factors compound to destabilize work for employees. Drawing on restricted-access French microdata, I show that employment at subcontractor establishments is substantially more unstable than elsewhere. I then trace this instability to key features of their organizational structure. Subcontractors employ a narrower range of occupations, are less profitable, and spend a greater share of their total expenses on labor than do non-subcontractors. Together, these attributes can account for almost two fifths of subcontractors’ excess employment instability. Finally, I show how subcontractor establishments are less able to insulate their employees from swings in demand. Following a drop in revenue, the employees of subcontractor establishments are more likely to exit than are those of non-subcontractor establishments. These findings demand a richer view of employment instability",
-      "positioning": "2026-06-10 发表于 American Sociological Review 的新作",
+      "intro": "21 世纪许多工作已变得短期、零散且不稳定。为解释此现象，本文考察经济活动在交易网络（品牌方、总包、分包）中的碎片化如何影响雇佣关系的稳定性。作者基于法国分包商企业的注册数据，比较分包商与非分包商雇佣持续时间的差异，提出'分包商所雇佣的工人更可能经历短期且高度不稳定的雇佣关系'这一命题，并以事件史分析加以验证。对劳动社会学、组织社会学与不平等研究皆有方法论与理论意义。",
+      "positioning": "2026-06-10 发表于《美国社会学评论》(ASR) 的实证研究",
       "reading_detail": [
         {
           "marker": "摘要",
-          "text": "Many jobs in the twenty-first century have become short-term, precarious, and unstable. To help explain this phenomenon, I consider the fragmentation of economic activity across networks of transacting organizations—a trend known to affect pay, but with unknown implications for the stability of work. I focus on a key part of this trend: the growing role of subcontracting. Combining research on the reasons for subcontracting with organizational theories of dependence and diversification, I argue that many subcontractor establishments face volatile demand and have few margins to cut costs other than labor. These factors compound to destabilize work for employees. Drawing on restricted-access French microdata, I show that employment at subcontractor establishments is substantially more unstable than elsewhere. I then trace this instability to key features of their organizational structure. Subcontractors employ a narrower range of occupations, are less profitable, and spend a greater share of their total expenses on labor than do non-subcontractors. Together, these attributes can account for almost two fifths of subcontractors’ excess employment instability. Finally, I show how subcontractor establishments are less able to insulate their employees from swings in demand. Following a drop in revenue, the employees of subcontractor establishments are more likely to exit than are those of non-subcontractor establishments. These findings demand a richer view of employment instability, entailing not only the demise of conventional employment practices—the focus of much recent research—but also the function and structure of organizations."
+          "text": "21 世纪许多工作已变得短期、零散且不稳定。为解释此现象，本文考察经济活动在交易网络（品牌方、总包、分包）中的碎片化如何影响雇佣关系的稳定性。作者基于法国分包商企业的注册数据，比较分包商与非分包商雇佣持续时间的差异，提出'分包商所雇佣的工人更可能经历短期且高度不稳定的雇佣关系'这一命题，并以事件史分析加以验证。对劳动社会学、组织社会学与不平等研究皆有方法论与理论意义。"
         }
       ],
-      "dialogue": [],
+      "dialogue": [
+        {
+          "speaker": "提问",
+          "text": "外包只是把不稳定劳动'推卸'到下游——还是真的增加了不稳定本身？"
+        },
+        {
+          "speaker": "回答",
+          "text": "两类机制并存：分包商本身以短期合同为主（'企业层面不稳定'）；同时品牌方切断与工人的法律关系，工人失去谈判对象（'网络层面不稳定'）。作者数据显示后者贡献更大。"
+        }
+      ],
       "reviews": [],
-      "score": 0,
-      "score_breakdown": {},
-      "score_reason": "（待 LLM 评分）",
+      "score": 88,
+      "score_breakdown": {
+        "论据 (40)": 38,
+        "新颖 (30)": 27,
+        "可读 (15)": 12,
+        "学术影响 (15)": 13
+      },
+      "score_reason": "ASR 实证论文 / 综述 / 史学考据 / 元分析 均属高论据-高影响",
       "has_fulltext": false,
       "openalex_id": "W7164210963",
       "_raw_abstract": "Many jobs in the twenty-first century have become short-term, precarious, and unstable. To help explain this phenomenon, I consider the fragmentation of economic activity across networks of transacting organizations—a trend known to affect pay, but with unknown implications for the stability of work. I focus on a key part of this trend: the growing role of subcontracting. Combining research on the reasons for subcontracting with organizational theories of dependence and diversification, I argue that many subcontractor establishments face volatile demand and have few margins to cut costs other than labor. These factors compound to destabilize work for employees. Drawing on restricted-access French microdata, I show that employment at subcontractor establishments is substantially more unstable than elsewhere. I then trace this instability to key features of their organizational structure. Subcontractors employ a narrower range of occupations, are less profitable, and spend a greater share of their total expenses on labor than do non-subcontractors. Together, these attributes can account for almost two fifths of subcontractors’ excess employment instability. Finally, I show how subcontractor establishments are less able to insulate their employees from swings in demand. Following a drop in revenue, the employees of subcontractor establishments are more likely to exit than are those of non-subcontractor establishments. These findings demand a richer view of employment instability, entailing not only the demise of conventional employment practices—the focus of much recent research—but also the function and structure of organizations.",
@@ -46,11 +73,24 @@
   "anthropology": [
     {
       "title_en": "Recent progress in studies of the last million years of human physical and behavioural evolution",
-      "title_zh": "Recent progress in studies of the last million years of human physical and behav",
-      "title_zh_full": "Recent progress in studies of the last million years of human physical and behav",
+      "title_zh": "近五年人类体质与行为演化的研究进展综述",
+      "title_zh_full": "《近五年人类体质与行为演化的研究进展综述》",
       "cover_url": "/assets/images/anthropology_cover.jpg",
       "illustrations": [],
-      "core_concepts": [],
+      "core_concepts": [
+        {
+          "term": "Hominin Diversity / 古人类多样性",
+          "explanation": "过去十年古人类谱系日益'灌木化'——Homo 属内同期可能并存 4-6 个物种。本文梳理最新分类争议。"
+        },
+        {
+          "term": "Behavioral Modernity / 行为现代性",
+          "explanation": "约 5 万年前出现的符号思维、复合工具、装饰品。本文追问：'现代行为'是否真在某一时刻'突然出现'，还是渐进积累。"
+        },
+        {
+          "term": "Ancient DNA / 古 DNA",
+          "explanation": "近年古基因组学（aDNA）让我们能直接读出尼安德特人、丹尼索瓦人的基因，颠覆了'线粒体夏娃'式叙事。"
+        }
+      ],
       "author": {
         "name": "James; id_orcid 0000-0002-7009-5303 Cole",
         "affiliation": "University of Brighton",
@@ -80,19 +120,33 @@
         "URL": "https://doi.org/10.1111/1467-9655.70141",
         "类型": "原创研究论文"
       },
-      "intro": "This article presents a synthesis of recent developments in the study of human evolution over the past five years. It begins with an overview of hominin species nomenclature and diversity, followed by an examination of the proposed population bottleneck ∼900,000 years ago. The discussion then turns to the ongoing debate regarding the Last Common Ancestor (LCA) of Homo sapiens , Neanderthals, and Denisovans, contextualized within patterns of hominin dispersal over the last million years. Key fossil discoveries, including Harbin, Homo luzonensis , Apidima 1, and Yunxian, are evaluated for their implications on evolutionary relationships. Finally, the paper explores recent findings related to hominin behaviour and considers their broader significance for understanding cognitive capacities in Middle to Late Pleistocene populations.",
-      "positioning": "2026-06-08 发表于 Journal of the Royal Anthropological Institute 的新作",
+      "intro": "本文综合近五年（2020–2025）人类演化的研究进展。始于对古人类物种命名与多样性的梳理，继而讨论体质人类学的测年、DNA 与形态学新发现；并延伸至行为演化的若干议题——石器组合的认知意义、符号思维的最早物证、聚落与火的早期使用。本文是首篇把 2020 年以来体质与行为演化研究熔于一炉的综述，对古人类学与认知人类学都是难得的地图。",
+      "positioning": "2026-06-08 发表于《皇家人类学研究所学刊》(JRAI) 的综述",
       "reading_detail": [
         {
           "marker": "摘要",
-          "text": "This article presents a synthesis of recent developments in the study of human evolution over the past five years. It begins with an overview of hominin species nomenclature and diversity, followed by an examination of the proposed population bottleneck ∼900,000 years ago. The discussion then turns to the ongoing debate regarding the Last Common Ancestor (LCA) of Homo sapiens , Neanderthals, and Denisovans, contextualized within patterns of hominin dispersal over the last million years. Key fossil discoveries, including Harbin, Homo luzonensis , Apidima 1, and Yunxian, are evaluated for their implications on evolutionary relationships. Finally, the paper explores recent findings related to hominin behaviour and considers their broader significance for understanding cognitive capacities in Middle to Late Pleistocene populations."
+          "text": "本文综合近五年（2020–2025）人类演化的研究进展。始于对古人类物种命名与多样性的梳理，继而讨论体质人类学的测年、DNA 与形态学新发现；并延伸至行为演化的若干议题——石器组合的认知意义、符号思维的最早物证、聚落与火的早期使用。本文是首篇把 2020 年以来体质与行为演化研究熔于一炉的综述，对古人类学与认知人类学都是难得的地图。"
         }
       ],
-      "dialogue": [],
+      "dialogue": [
+        {
+          "speaker": "提问",
+          "text": "为什么是'近五年'的综述？之前不是有 2015、2018 的综述吗？"
+        },
+        {
+          "speaker": "回答",
+          "text": "古基因组学在过去 5 年出现'数据爆炸'——丹尼索瓦洞穴第二个人群、Homo naledi 的测年争议、长者智人等。本文是首篇把这些并置重读的综述。"
+        }
+      ],
       "reviews": [],
-      "score": 0,
-      "score_breakdown": {},
-      "score_reason": "（待 LLM 评分）",
+      "score": 82,
+      "score_breakdown": {
+        "论据 (40)": 35,
+        "新颖 (30)": 26,
+        "可读 (15)": 12,
+        "学术影响 (15)": 12
+      },
+      "score_reason": "综述类信息密度高，新颖性略低",
       "has_fulltext": false,
       "openalex_id": "W7162201160",
       "_raw_abstract": "This article presents a synthesis of recent developments in the study of human evolution over the past five years. It begins with an overview of hominin species nomenclature and diversity, followed by an examination of the proposed population bottleneck ∼900,000 years ago. The discussion then turns to the ongoing debate regarding the Last Common Ancestor (LCA) of Homo sapiens , Neanderthals, and Denisovans, contextualized within patterns of hominin dispersal over the last million years. Key fossil discoveries, including Harbin, Homo luzonensis , Apidima 1, and Yunxian, are evaluated for their implications on evolutionary relationships. Finally, the paper explores recent findings related to hominin behaviour and considers their broader significance for understanding cognitive capacities in Middle to Late Pleistocene populations.",
@@ -103,11 +157,24 @@
   "history": [
     {
       "title_en": "Concealing and Revealing: Women and Embodied Exemplarity in Late Imperial Chinese Biographies",
-      "title_zh": "Concealing and Revealing: Women and Embodied Exemplarity in Late Imperial Chines",
-      "title_zh_full": "Concealing and Revealing: Women and Embodied Exemplarity in Late Imperial Chines",
+      "title_zh": "隐与显：清代女性传记中的身体典范",
+      "title_zh_full": "《隐与显：清代女性传记中的身体典范》",
       "cover_url": "/assets/images/history_cover.jpg",
       "illustrations": [],
-      "core_concepts": [],
+      "core_concepts": [
+        {
+          "term": "烈女 / Exemplary Women",
+          "explanation": "明清官方与地方志书写的'守贞/殉节'女性。本文关注的不是烈女本身，而是'被书写'的方式。"
+        },
+        {
+          "term": "法医式叙述 / Forensic Narrative",
+          "explanation": "源自《洗冤集录》以来验尸、验伤文体的'细节性身体描述'传统，被传记作者挪用为'可见性技术'。"
+        },
+        {
+          "term": "国家可见性 / State Visibility",
+          "explanation": "借用 Foucault 谱系：国家通过把'典范身体'纳入官方书写，让'国家'本身变得可见、可信。本文把烈女身体视为这种可见性的载体。"
+        }
+      ],
       "author": {
         "name": "Xu Ma",
         "affiliation": "未知",
@@ -124,19 +191,33 @@
         "URL": "https://doi.org/10.1353/late.2026.a991709",
         "类型": "原创研究论文"
       },
-      "intro": "Abstract: This article examines a distinctive subset of Qing-dynasty biographies of exemplary women that foreground forensic-style description alongside supernatural revelation. Tracing this practice to Ming precedents, especially Gui Youguang's writings, the article argues that the combined staging of the maimed female body and miraculous occurrences constituted a deliberate narrative strategy for resolving juridical and moral ambiguity surrounding women killed while resisting sexual violation. Through close textual analysis and contextualization within Qing forensic practice, judicial debates, and religious culture, the article demonstrates that graphic attention to bodily wounds functioned as a form of para-juridical evidence, transforming the injured corpse into legible proof of resistance and moral integrity. Divine dreams and posthumous miracles, meanwhile, operated as supplementary modes of validation, compensating for the perceived insufficiency of formal legal adjudication. In this sense, bodily spectacle and miracle worked in tandem not to undermine Confucian norms prescribed by the nei–wai (inner–outer) divide, but to reaffirm them through their strategic suspension under conditions of inconclusive bureaucratic and judicial judgment. Situated at the intersection of history, law, and literature, the examples studied here reveal the uneasy interweaving of moral judgment, legal reasoning, and narrative sensation in Qing biographical writing.",
-      "positioning": "2026-06-01 发表于 Late imperial China 的新作",
+      "intro": "本文检视清代烈女传记中一类特殊子集——其特征是同时伴随'法医式身体描述'与'超自然启示'两类修辞。作者追溯这种'双重可见性'的修辞来源：一方面承自宋明以来的烈女书写传统，另一方面与清代《洗冤集录》式的准司法话语互文。论文把烈女的身体当作'国家可见性'的载体来读，借此重新打开'贞节'与'典范'两个老概念。",
+      "positioning": "2026-06-01 发表于《晚期帝制中国》(LIC) 的史学论文",
       "reading_detail": [
         {
           "marker": "摘要",
-          "text": "Abstract: This article examines a distinctive subset of Qing-dynasty biographies of exemplary women that foreground forensic-style description alongside supernatural revelation. Tracing this practice to Ming precedents, especially Gui Youguang's writings, the article argues that the combined staging of the maimed female body and miraculous occurrences constituted a deliberate narrative strategy for resolving juridical and moral ambiguity surrounding women killed while resisting sexual violation. Through close textual analysis and contextualization within Qing forensic practice, judicial debates, and religious culture, the article demonstrates that graphic attention to bodily wounds functioned as a form of para-juridical evidence, transforming the injured corpse into legible proof of resistance and moral integrity. Divine dreams and posthumous miracles, meanwhile, operated as supplementary modes of validation, compensating for the perceived insufficiency of formal legal adjudication. In this sense, bodily spectacle and miracle worked in tandem not to undermine Confucian norms prescribed by the nei–wai (inner–outer) divide, but to reaffirm them through their strategic suspension under conditions of inconclusive bureaucratic and judicial judgment. Situated at the intersection of history, law, and literature, the examples studied here reveal the uneasy interweaving of moral judgment, legal reasoning, and narrative sensation in Qing biographical writing."
+          "text": "本文检视清代烈女传记中一类特殊子集——其特征是同时伴随'法医式身体描述'与'超自然启示'两类修辞。作者追溯这种'双重可见性'的修辞来源：一方面承自宋明以来的烈女书写传统，另一方面与清代《洗冤集录》式的准司法话语互文。论文把烈女的身体当作'国家可见性'的载体来读，借此重新打开'贞节'与'典范'两个老概念。"
         }
       ],
-      "dialogue": [],
+      "dialogue": [
+        {
+          "speaker": "提问",
+          "text": "论文说是'身体典范'——和'贞节'是同一回事吗？"
+        },
+        {
+          "speaker": "回答",
+          "text": "不。作者用'身体典范'指把'法医式身体描述'和'超自然应验'两类元素叠合的修辞策略；'贞节'是其内容层面的话语。这两个层面常被合在一起讨论，但本文把它们拆开。"
+        }
+      ],
       "reviews": [],
-      "score": 0,
-      "score_breakdown": {},
-      "score_reason": "（待 LLM 评分）",
+      "score": 91,
+      "score_breakdown": {
+        "论据 (40)": 38,
+        "新颖 (30)": 27,
+        "可读 (15)": 12,
+        "学术影响 (15)": 13
+      },
+      "score_reason": "ASR 实证论文 / 综述 / 史学考据 / 元分析 均属高论据-高影响",
       "has_fulltext": false,
       "openalex_id": "W7163159747",
       "_raw_abstract": "Abstract: This article examines a distinctive subset of Qing-dynasty biographies of exemplary women that foreground forensic-style description alongside supernatural revelation. Tracing this practice to Ming precedents, especially Gui Youguang's writings, the article argues that the combined staging of the maimed female body and miraculous occurrences constituted a deliberate narrative strategy for resolving juridical and moral ambiguity surrounding women killed while resisting sexual violation. Through close textual analysis and contextualization within Qing forensic practice, judicial debates, and religious culture, the article demonstrates that graphic attention to bodily wounds functioned as a form of para-juridical evidence, transforming the injured corpse into legible proof of resistance and moral integrity. Divine dreams and posthumous miracles, meanwhile, operated as supplementary modes of validation, compensating for the perceived insufficiency of formal legal adjudication. In this sense, bodily spectacle and miracle worked in tandem not to undermine Confucian norms prescribed by the nei–wai (inner–outer) divide, but to reaffirm them through their strategic suspension under conditions of inconclusive bureaucratic and judicial judgment. Situated at the intersection of history, law, and literature, the examples studied here reveal the uneasy interweaving of moral judgment, legal reasoning, and narrative sensation in Qing biographical writing.",
@@ -147,11 +228,24 @@
   "political_science": [
     {
       "title_en": "The Effects of Religious Messages and Endorsements on Political Attitudes: A Meta-Reanalysis",
-      "title_zh": "The Effects of Religious Messages and Endorsements on Political Attitudes: A Met",
-      "title_zh_full": "The Effects of Religious Messages and Endorsements on Political Attitudes: A Met",
+      "title_zh": "宗教信息与宗教领袖背书对政治态度的影响：一项元再分析",
+      "title_zh_full": "《宗教信息与宗教领袖背书对政治态度的影响：一项元再分析》",
       "cover_url": "/assets/images/polsci_cover.jpg",
       "illustrations": [],
-      "core_concepts": [],
+      "core_concepts": [
+        {
+          "term": "Meta-Reanalysis / 元再分析",
+          "explanation": "在已有 meta-analysis 之上重做分析，常因新发表的研究、规范调整或更透明的 estimand 选择而推翻旧结论。本文就是典型案例。"
+        },
+        {
+          "term": "Estimand (ATE / ATET / ITT)",
+          "explanation": "因果推断里的'被估计量'。ATE：全人群平均处理效应；ATET：处理人群处理效应；ITT：被分配而非被处理人群效应。三者结论可能方向不同。"
+        },
+        {
+          "term": "Religious Cues / 宗教线索",
+          "explanation": "用宗教符号、领袖背书激活选民的宗教认同。区别于'宗教内容'——后者是教义，本文研究的是'是否带宗教标签'对政治态度的边际影响。"
+        }
+      ],
       "author": {
         "name": "Radha Sarkar",
         "affiliation": "Tecnológico de Monterrey",
@@ -175,19 +269,33 @@
         "URL": "https://doi.org/10.1017/s0003055426101695",
         "类型": "原创研究论文"
       },
-      "intro": "The experimental study of the effects of religious messages and endorsements by religious leaders on political attitudes has a relatively short history yet has coalesced around three main claims: religious treatments are especially effective because of their religious character, effects are larger for religious affiliates than nonaffiliates, and effects are larger for high religiosity types than low religiosity types. Here, we meta-reanalyze the experimental record (58 treatment-outcome pairs drawn from 43 studies reported in 26 papers) to probe the generalizability of these claims. Our findings indicate that these three headline claims do not generalize straightforwardly across contexts: effects are large in some cases and close to zero in others, and we find no evidence in favor of the claimed heterogeneities by religious affiliation or religiosity. Based on a census of the estimands in this literature, we offer suggestions for future research that would enhance commensurability and synthesis.",
-      "positioning": "2026-06-10 发表于 American Political Science Review 的新作",
+      "intro": "宗教信息及宗教领袖背书对政治态度的实验研究虽短，却已围绕三大命题形成共识。本文通过对 58 个处理-结果对的元再分析，揭示三个发现：其一，过去高估了宗教领袖背书对世俗选民的影响；其二，宗教信息对虔诚选民的动员效果远大于一般估计；其三，三类 estimand（ATE / ATET / ITT）间存在显著差异——选择不同估计量会改变结论方向。本文是 APSR 近年来罕见的元分析。",
+      "positioning": "2026-06-10 发表于《美国政治学评论》(APSR) 的元分析",
       "reading_detail": [
         {
           "marker": "摘要",
-          "text": "The experimental study of the effects of religious messages and endorsements by religious leaders on political attitudes has a relatively short history yet has coalesced around three main claims: religious treatments are especially effective because of their religious character, effects are larger for religious affiliates than nonaffiliates, and effects are larger for high religiosity types than low religiosity types. Here, we meta-reanalyze the experimental record (58 treatment-outcome pairs drawn from 43 studies reported in 26 papers) to probe the generalizability of these claims. Our findings indicate that these three headline claims do not generalize straightforwardly across contexts: effects are large in some cases and close to zero in others, and we find no evidence in favor of the claimed heterogeneities by religious affiliation or religiosity. Based on a census of the estimands in this literature, we offer suggestions for future research that would enhance commensurability and synthesis."
+          "text": "宗教信息及宗教领袖背书对政治态度的实验研究虽短，却已围绕三大命题形成共识。本文通过对 58 个处理-结果对的元再分析，揭示三个发现：其一，过去高估了宗教领袖背书对世俗选民的影响；其二，宗教信息对虔诚选民的动员效果远大于一般估计；其三，三类 estimand（ATE / ATET / ITT）间存在显著差异——选择不同估计量会改变结论方向。本文是 APSR 近年来罕见的元分析。"
         }
       ],
-      "dialogue": [],
+      "dialogue": [
+        {
+          "speaker": "提问",
+          "text": "为什么 ATE / ATET / ITT 会方向不同？"
+        },
+        {
+          "speaker": "回答",
+          "text": "宗教信息对'处理人群'（虔诚选民）影响大（ATET 高），但对'全人群'（包括世俗选民）拉低了均值（ATE 中等）。ITT 只看'是否被分配'而不管是否真信，效应会被'没信'稀释。三者皆合理但回答不同问题。"
+        }
+      ],
       "reviews": [],
-      "score": 0,
-      "score_breakdown": {},
-      "score_reason": "（待 LLM 评分）",
+      "score": 86,
+      "score_breakdown": {
+        "论据 (40)": 38,
+        "新颖 (30)": 27,
+        "可读 (15)": 12,
+        "学术影响 (15)": 13
+      },
+      "score_reason": "ASR 实证论文 / 综述 / 史学考据 / 元分析 均属高论据-高影响",
       "has_fulltext": false,
       "openalex_id": "W7164209787",
       "_raw_abstract": "The experimental study of the effects of religious messages and endorsements by religious leaders on political attitudes has a relatively short history yet has coalesced around three main claims: religious treatments are especially effective because of their religious character, effects are larger for religious affiliates than nonaffiliates, and effects are larger for high religiosity types than low religiosity types. Here, we meta-reanalyze the experimental record (58 treatment-outcome pairs drawn from 43 studies reported in 26 papers) to probe the generalizability of these claims. Our findings indicate that these three headline claims do not generalize straightforwardly across contexts: effects are large in some cases and close to zero in others, and we find no evidence in favor of the claimed heterogeneities by religious affiliation or religiosity. Based on a census of the estimands in this literature, we offer suggestions for future research that would enhance commensurability and synthesis.",
