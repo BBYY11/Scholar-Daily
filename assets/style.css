@@ -498,6 +498,11 @@ main {
 }
 .reading-detail .marker.skip { background: var(--ink-mute); }
 .reading-detail .marker.note { background: #2c5b8b; }
+.reading-detail .marker.key {
+  background: #c9302c;
+  color: #fff;
+  box-shadow: 0 0 0 2px rgba(201, 48, 44, 0.15);
+}
 
 /* 章节小标题（"【第三章·算法作为管理者】" 这种） */
 .reading-detail .chapter-title {
@@ -537,6 +542,43 @@ ul.dialogue-list li {
 }
 ul.dialogue-list li:last-child { border: none; }
 ul.dialogue-list b {
+  color: var(--accent);
+  font-family: var(--serif-cn);
+}
+.dialogue-qa {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 16px;
+  align-items: start;
+  padding: 16px 0;
+  border-bottom: 1px dashed var(--line);
+  line-height: 1.85;
+}
+.dialogue-qa:last-child { border: none; }
+.qa-speaker {
+  display: inline-block;
+  padding: 4px 12px;
+  font-family: var(--serif-cn);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-align: center;
+  border-radius: 2px;
+}
+.qa-speaker.qa-提问 {
+  background: var(--accent);
+  color: #fff;
+}
+.qa-speaker.qa-回答 {
+  background: #fff;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+}
+.qa-text {
+  font-size: 15px;
+  line-height: 1.85;
+  color: var(--ink);
+}
   color: var(--ink);
   font-family: "Georgia", serif;
 }

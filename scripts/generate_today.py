@@ -128,7 +128,6 @@ def render_card(card: dict[str, Any], disc_en: str, disc_zh: str) -> str:
             f'''<div class="concept-item">
               <div class="concept-term">
                 {c.get("term_zh", "")}
-                <span class="concept-page">第 {c.get("page", "")} 页</span>
                 <span class="concept-term-en">{c.get("term_en", "")}</span>
               </div>
               <div class="concept-def">{c.get("definition", "")}</div>
@@ -149,18 +148,34 @@ def render_card(card: dict[str, Any], disc_en: str, disc_zh: str) -> str:
             detail_html += f'<blockquote>{chunk.get("text", "")}</blockquote>'
         else:
             marker = chunk.get("marker", "")
-            cls = "skip" if marker == "可跳" else ("note" if marker == "关键脚注" else "")
-            marker_html = f'<span class="marker {cls}">{marker}</span>' if marker else ""
+            if marker == "可跳":
+                cls = "skip"
+                icon = "⏩"
+                marker_html = f'<span class="marker skip">{icon} {marker}</span>' if marker else ""
+            elif marker == "关键":
+                cls = "key"
+                icon = "⭐"
+                marker_html = f'<span class="marker key">{icon} {marker}</span>' if marker else ""
+            elif marker == "关键脚注":
+                cls = "note"
+                marker_html = f'<span class="marker note">{marker}</span>' if marker else ""
+            else:
+                marker_html = ""
             detail_html += f'<p class="no-indent">{marker_html}{chunk.get("text", "")}</p>'
 
     reviews_html = ""
 
-    dialogue_html = "".join(
-        f'<li><b>{d.get("work", "")}</b>（{d.get("year", "")}）'
-        f'<span class="dialogue-relation">{d.get("relation", "")}</span>'
-        f'：{d.get("note", "")}</li>'
-        for d in card.get("dialogue", [])
-    )
+    # 学术对话: 适配 提问-回答 格式
+    dialogue_html = ""
+    for d in card.get("dialogue", []):
+        speaker = d.get("speaker", "")
+        text = d.get("text", "")
+        dialogue_html += (
+            f'<li class="dialogue-qa">'
+            f'<span class="qa-speaker qa-{speaker}">{speaker}</span>'
+            f'<span class="qa-text">{text}</span>'
+            f'</li>'
+        )
 
     meta = card.get("meta", {})
     meta_html = "".join(
