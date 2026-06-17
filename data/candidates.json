@@ -162,7 +162,8 @@
       "score_reason": "研究问题重要、数据罕见（DADS 受限访问）、方法论有创新（ESI 指标）、范式贡献明确（组织中心视角）。对劳动社会学、组织经济学、政策研究都有直接启发。",
       "co_authors": [],
       "has_fulltext": false,
-      "_needs_llm_enhance": false
+      "_needs_llm_enhance": false,
+      "openalex_id": "W7164210963"
     }
   ],
   "anthropology": [
@@ -322,7 +323,8 @@
         }
       ],
       "has_fulltext": false,
-      "_needs_llm_enhance": false
+      "_needs_llm_enhance": false,
+      "openalex_id": "W7162201160"
     }
   ],
   "history": [
@@ -489,7 +491,8 @@
       "score_reason": "研究问题重要、文本分析精细、跨学科方法论明确、范式贡献具体。论文对\"准司法证据\"这一概念的提出可能成为后续研究的标准术语。建议作为明清妇女史、法律史、文学史的研究生必读文本。",
       "co_authors": [],
       "has_fulltext": false,
-      "_needs_llm_enhance": false
+      "_needs_llm_enhance": false,
+      "openalex_id": "W7163159747"
     }
   ],
   "political_science": [
@@ -681,7 +684,8 @@
       },
       "score_reason": "研究问题重要、元再分析方法严谨、estimand 分析有理论深度、对宗教政治研究有范式修正。建议作为政治学方法论、复制研究、宗教政治的研究生必读文本。",
       "has_fulltext": false,
-      "_needs_llm_enhance": false
+      "_needs_llm_enhance": false,
+      "openalex_id": "W7164209787"
     }
   ]
 }
