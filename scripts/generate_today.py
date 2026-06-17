@@ -520,7 +520,7 @@ def main() -> int:
 
     # 写首页
     # 首期判断: 历史为空 或 当天是 2026-06-15 (项目起点)
-    is_first = date == "2026-06-15"  # 历史为空 → 起点
+    is_first = date == "2026-06-16"  # 6.16 是真正的首期 (6.15 已删, 6.16 起为新起点)  # 历史为空 → 起点
     index_html = render_index(cards_html, date, win_start, win_end, is_first=is_first)
     (ROOT / "index.html").write_text(index_html, encoding="utf-8")
 
