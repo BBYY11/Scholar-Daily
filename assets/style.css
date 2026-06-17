@@ -396,12 +396,27 @@ main {
   border-top: 1px solid var(--line);
 }
 .concept-item {
-  padding: 18px 0;
+  padding: 14px 0;
   border-bottom: 1px dashed var(--line);
-  display: grid;
-  grid-template-columns: 220px 1fr;
-  gap: 24px;
-  align-items: baseline;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.concept-item:hover {
+  background: var(--bg-soft);
+}
+.concept-item[open] {
+  padding-bottom: 18px;
+}
+.concept-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  cursor: pointer;
+  outline: none;
+}
+.concept-summary::-webkit-details-marker {
+  display: none;
 }
 .concept-term {
   font-family: var(--serif-cn);
@@ -409,6 +424,7 @@ main {
   font-weight: 600;
   color: var(--ink);
   line-height: 1.6;
+  flex: 1;
 }
 .concept-term-en {
   display: block;
@@ -418,6 +434,28 @@ main {
   color: var(--ink-mute);
   font-weight: 400;
   margin-top: 2px;
+}
+.concept-toggle {
+  color: var(--accent);
+  font-size: 18px;
+  margin-left: 12px;
+  transition: transform 0.2s;
+  user-select: none;
+}
+.concept-item:not([open]) .concept-toggle {
+  transform: rotate(-90deg);
+}
+.concept-def {
+  font-size: 14.5px;
+  line-height: 1.85;
+  color: var(--ink-soft);
+  text-align: justify;
+  margin-top: 12px;
+  padding-left: 4px;
+  border-left: 3px solid var(--accent-soft);
+  padding: 10px 0 10px 16px;
+  background: var(--bg-soft);
+  margin-bottom: 0;
 }
 .concept-page {
   display: inline-block;

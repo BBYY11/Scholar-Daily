@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-每日一书 · 今日精读生成器
+每日一书 - 今日精读生成器
 
-输入：data/candidates.json（每个领域 2 周窗口内的候选书目/论文）
-输出：
-  - index.html（首页 4 张卡）
-  - archive/YYYY-MM-DD.html（每日归档）
-  - archive/index.json（归档索引）
-  - downloads/YYYY-MM-DD.zip（打包下载）
-  - data/history.jsonl（追加历史）
+输入: data/candidates.json(每个领域 2 周窗口内的候选书目/论文)
+输出: 
+  - index.html(首页 4 张卡)
+  - archive/YYYY-MM-DD.html(每日归档)
+  - archive/index.json(归档索引)
+  - downloads/YYYY-MM-DD.zip(打包下载)
+  - data/history.jsonl(追加历史)
 
 每日 8:30 由 cron 触发。
 """
@@ -54,7 +54,7 @@ def today_str() -> str:
 
 
 def window_str() -> tuple[str, str]:
-    """回看 14 天（2 周）窗口"""
+    """回看 14 天(2 周)窗口"""
     end = datetime.now() - timedelta(days=1)  # 含昨日
     start = end - timedelta(days=13)  # 14 天总跨度
     return start.strftime("%Y-%m-%d"), end.strftime("%Y-%m-%d")
@@ -74,7 +74,7 @@ def load_candidates() -> dict[str, list[dict[str, Any]]]:
 
 
 def pick_one(cands: list[dict[str, Any]], discipline: str) -> dict[str, Any] | None:
-    """简单策略：取评分最高的一项。若空，返回 None。"""
+    """简单策略: 取评分最高的一项。若空, 返回 None。"""
     if not cands:
         return None
     return sorted(cands, key=lambda x: x.get("score", 0), reverse=True)[0]
@@ -105,7 +105,7 @@ def render_card(card: dict[str, Any], disc_en: str, disc_zh: str) -> str:
     score = card.get("score", 0)
     score_breakdown = card.get("score_breakdown", {})
     sb_html = "".join(
-        f'<div><b>{k}</b>：{v}</div>' for k, v in score_breakdown.items()
+        f'<div><b>{k}</b>: {v}</div>' for k, v in score_breakdown.items()
     )
 
     illustrations = card.get("illustrations", [])
@@ -120,23 +120,26 @@ def render_card(card: dict[str, Any], disc_en: str, disc_zh: str) -> str:
         )
         illus_html = f'<div class="illustrations">{items}</div>'
 
-    # 核心概念释义
+    # 核心概念释义 — 折叠展开 (HTML <details>) 让用户决定看哪些
     concepts = card.get("core_concepts", [])
     concepts_html = ""
     if concepts:
         items = "".join(
-            f'''<div class="concept-item">
-              <div class="concept-term">
-                {c.get("term_zh", "")}
-                <span class="concept-term-en">{c.get("term_en", "")}</span>
-              </div>
+            f'''<details class="concept-item" open>
+              <summary class="concept-summary">
+                <span class="concept-term">
+                  {c.get("term_zh", "")}
+                  <span class="concept-term-en">{c.get("term_en", "")}</span>
+                </span>
+                <span class="concept-toggle">▾</span>
+              </summary>
               <div class="concept-def">{c.get("definition", "")}</div>
-            </div>'''
+            </details>'''
             for c in concepts
         )
         concepts_html = f'<div class="concepts-list">{items}</div>'
     else:
-        concepts_html = '<p style="color:var(--ink-mute);font-size:14px;font-style:italic;">本书无生概念，沿用常识术语即可。</p>'
+        concepts_html = '<p style="color:var(--ink-mute);font-size:14px;font-style:italic;">本书无生概念, 沿用常识术语即可。</p>'
 
     # 精读分章节 — 支持 chapter_title / marker / blockquote
     detail_html = ""
@@ -232,13 +235,13 @@ def render_card(card: dict[str, Any], disc_en: str, disc_zh: str) -> str:
         if card.get("fallback") else ''
     )
 
-    # 内容深度提示：精读字数 + 是否基于全文
+    # 内容深度提示: 精读字数 + 是否基于全文
     reading_chars = sum(len(c.get("text", "")) for c in card.get("reading_detail", []))
     has_fulltext = card.get("has_fulltext", False)
     if has_fulltext:
-        depth_badge = f'<div class="depth-badge fulltext">✓ 精读基于全文 · {reading_chars} 字</div>'
+        depth_badge = f'<div class="depth-badge fulltext">✓ 精读基于全文 - {reading_chars} 字</div>'
     else:
-        depth_badge = f'<div class="depth-badge abridged">⚡ 精读基于公开摘要（未读全文） · {reading_chars} 字 · 完整 2000 字版待全文获取</div>'
+        depth_badge = f'<div class="depth-badge abridged">⚡ 精读基于公开摘要(未读全文) - {reading_chars} 字 - 完整 2000 字版待全文获取</div>'
 
     return f'''<article class="card">
       <div class="card-header">
@@ -246,10 +249,10 @@ def render_card(card: dict[str, Any], disc_en: str, disc_zh: str) -> str:
         <div>
           {fallback_badge}
           {depth_badge}
-          <div class="discipline-tag">{disc_en.upper()} · {disc_zh}</div>
+          <div class="discipline-tag">{disc_en.upper()} - {disc_zh}</div>
           <h2>{card.get("title_zh", "")}</h2>
           <p class="card-title-en">{card.get("title_en", "")}</p>
-          <p class="card-title-zh">中译：{card.get("title_zh_full", "")}</p>
+          <p class="card-title-zh">中译: {card.get("title_zh_full", "")}</p>
           <div class="meta">{meta_html}</div>
         </div>
       </div>
@@ -272,7 +275,7 @@ def render_card(card: dict[str, Any], disc_en: str, disc_zh: str) -> str:
       {f'<section class="card-section"><h3>重要插图 / 图表</h3>{illus_html}</section>' if illus_html else ''}
 
       <section class="card-section reading-detail">
-        <h3>精 读（Seminar）</h3>
+        <h3>精 读(Seminar)</h3>
         {detail_html}
       </section>
 
@@ -294,27 +297,28 @@ def render_card(card: dict[str, Any], disc_en: str, disc_zh: str) -> str:
       </section>
 
       <p style="margin-top:24px;font-size:12px;color:var(--ink-mute);">
-        图表版权归原出版方，本文用于学术评介。原文页码/DOI 见上方元信息。
+        图表版权归原出版方, 本文用于学术评介。原文页码/DOI 见上方元信息。
       </p>
     </article>'''
 
 
 def render_index(cards_html: list[str], date: str, win_start: str, win_end: str, is_first: bool = False) -> str:
-    """重写首页内容区 — 模板内嵌，不读文件，避免自覆盖。"""
+    """重写首页内容区 — 模板内嵌, 不读文件, 避免自覆盖。"""
     cards_block = "\n".join(cards_html)
-    first_badge = '<span class="first-issue-badge">起点 · 首期</span>' if is_first else ''
+    first_badge = '<span class="first-issue-badge">起点 - 首期</span>' if is_first else ''
     return f'''<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>每日一书 · 学术精读</title>
+  <title>每日一书 - 学术精读</title>
+  <link rel="alternate" type="application/rss+xml" href="feed.xml" title="RSS 订阅">
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="header-inner">
-      <a href="index.html" class="logo">每日一书 · 学术精读</a>
+      <a href="index.html" class="logo">每日一书 - 学术精读</a>
       <nav>
         <a href="index.html">今日</a>
         <a href="archive.html">归档</a>
@@ -328,8 +332,8 @@ def render_index(cards_html: list[str], date: str, win_start: str, win_end: str,
       <p class="hero-date" id="today-date">{date}</p>
       {first_badge}
       <h1>今日四份精读</h1>
-      <p class="hero-sub">社会学 · 人类学 · 历史学 · 政治学 · 研究生 Seminar 标准</p>
-      <p class="hero-window" id="window-info">时间窗口：{win_start} ~ {win_end}</p>
+      <p class="hero-sub">社会学 - 人类学 - 历史学 - 政治学 - 研究生 Seminar 标准</p>
+      <p class="hero-window" id="window-info">时间窗口: {win_start} ~ {win_end}</p>
     </section>
 
     <section class="cards" id="today-cards">
@@ -337,13 +341,13 @@ def render_index(cards_html: list[str], date: str, win_start: str, win_end: str,
     </section>
 
     <section class="download-bar">
-      <p>下载今日全部内容（Markdown + 图片）</p>
+      <p>下载今日全部内容(Markdown + 图片)</p>
       <a class="btn-download" id="download-link" href="downloads/{date}.zip" download>⬇ 下载 ZIP 包</a>
     </section>
   </main>
 
   <footer>
-    <p>每日 8:30 自动更新 · 内容由"每日一书"生成 · 图表版权归原出版方</p>
+    <p>每日 8:30 自动更新 - 内容由"每日一书"生成 - 图表版权归原出版方</p>
   </footer>
 
   <script src="assets/script.js"></script>
@@ -352,19 +356,20 @@ def render_index(cards_html: list[str], date: str, win_start: str, win_end: str,
 
 
 def render_archive_day(cards_html: list[str], date: str, win_start: str, win_end: str) -> str:
-    """生成单日归档页（与首页同结构）"""
+    """生成单日归档页(与首页同结构)"""
     body = f'''<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>{date} 归档 · 每日一书</title>
+  <title>{date} 归档 - 每日一书</title>
+  <link rel="alternate" type="application/rss+xml" href="../feed.xml" title="RSS 订阅">
   <link rel="stylesheet" href="../assets/style.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="header-inner">
-      <a href="../index.html" class="logo">每日一书 · 学术精读</a>
+      <a href="../index.html" class="logo">每日一书 - 学术精读</a>
       <nav>
         <a href="../index.html">今日</a>
         <a href="../archive.html">归档</a>
@@ -376,9 +381,9 @@ def render_archive_day(cards_html: list[str], date: str, win_start: str, win_end
   <main>
     <section class="hero">
       <p class="hero-date">{date}</p>
-      <h1>{date} · 4 份精读</h1>
-      <p class="hero-sub">社会学 · 人类学 · 历史学 · 政治学</p>
-      <p class="hero-window">时间窗口：{win_start} ~ {win_end}</p>
+      <h1>{date} - 4 份精读</h1>
+      <p class="hero-sub">社会学 - 人类学 - 历史学 - 政治学</p>
+      <p class="hero-window">时间窗口: {win_start} ~ {win_end}</p>
     </section>
 
     <section class="cards">
@@ -386,13 +391,13 @@ def render_archive_day(cards_html: list[str], date: str, win_start: str, win_end
     </section>
 
     <section class="download-bar">
-      <p>下载当日全部内容（Markdown + 图片）</p>
+      <p>下载当日全部内容(Markdown + 图片)</p>
       <a class="btn-download" href="../downloads/{date}.zip" download>⬇ 下载 ZIP 包</a>
     </section>
   </main>
 
   <footer>
-    <p>每日 8:30 自动更新 · 内容由"每日一书"生成 · 图表版权归原出版方</p>
+    <p>每日 8:30 自动更新 - 内容由"每日一书"生成 - 图表版权归原出版方</p>
   </footer>
 </body>
 </html>'''
@@ -400,7 +405,7 @@ def render_archive_day(cards_html: list[str], date: str, win_start: str, win_end
 
 
 def update_archive_index(history: list[dict[str, Any]]) -> None:
-    """按月份分块，方便前端渲染。"""
+    """按月份分块, 方便前端渲染。"""
     ARCHIVE.mkdir(parents=True, exist_ok=True)
     idx_path = ARCHIVE / "index.json"
     months: dict[str, list[dict[str, Any]]] = {}
@@ -412,6 +417,75 @@ def update_archive_index(history: list[dict[str, Any]]) -> None:
         json.dumps([{"month": m, "items": items} for m, items in ordered], ensure_ascii=False, indent=2),
         encoding="utf-8",
     )
+
+
+def _xml_escape(s: str) -> str:
+    """XML 转义"""
+    return (s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+            .replace(chr(34), "&quot;").replace(chr(39), "&apos;"))
+
+
+def generate_rss(history: list[dict[str, Any]],
+                 cards_data: list[dict[str, Any]],
+                 disciplines_zh: list[str],
+                 date: str, win_start: str, win_end: str) -> None:
+    """生成 RSS 2.0 feed.xml -- given recent 30 entries."""
+    SITE_URL = "https://bbyy11.github.io/Scholar-Daily"
+    FEED_TITLE = "每日一书 - 学术精读"
+    FEED_DESC = "每天 4 张学术精读卡 (社会学/人类学/历史学/政治学)"
+    FEED_AUTHOR = "每日一书"
+
+    items = []
+    # 当日卡 (用 cards_data)
+    if cards_data:
+        for c in cards_data:
+            title_zh = c.get("title_zh") or c.get("title_en", "")
+            journal = c.get("meta", {}).get("期刊", "")
+            intro = (c.get("intro") or "")[:500]
+            url = f"{SITE_URL}/archive/{date}.html"
+            pub_date = date + "T08:00:00+0800"
+            item = f"""    <item>
+      <title>{_xml_escape(title_zh)}</title>
+      <link>{url}</link>
+      <guid isPermaLink="false">{date}-{c.get('openalex_id', '')}</guid>
+      <pubDate>{pub_date}</pubDate>
+      <category>{_xml_escape(c.get("meta", {}).get("学科", ""))}</category>
+      <description>{_xml_escape(intro)}</description>
+    </item>"""
+            items.append(item)
+
+    # 历史 days (简短 — 只列日期 + 4 tags)
+    for h in history[:14]:  # 过去 14 天
+        if h["date"] == date:
+            continue  # 今天已在 cards_data
+        url = f"{SITE_URL}/archive/{h['date']}.html"
+        tags = h.get("tags", [])
+        pub_date = h["date"] + "T08:00:00+0800"
+        item = f"""    <item>
+      <title>{_xml_escape(h["date"])} - {len(tags)} 学科</title>
+      <link>{url}</link>
+      <guid isPermaLink="false">{h['date']}-archive</guid>
+      <pubDate>{pub_date}</pubDate>
+      <category>{_xml_escape(", ".join(tags))}</category>
+      <description>归档: {h["date"]}</description>
+    </item>"""
+        items.append(item)
+
+    items_xml = "\n".join(items)
+    rss = f"""<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{_xml_escape(FEED_TITLE)}</title>
+    <link>{SITE_URL}/</link>
+    <description>{_xml_escape(FEED_DESC)}</description>
+    <language>zh-CN</language>
+    <lastBuildDate>{datetime.now().strftime("%a, %d %b %Y %H:%M:%S +0800")}</lastBuildDate>
+    <atom:link href="{SITE_URL}/feed.xml" rel="self" type="application/rss+xml" />
+{items_xml}
+  </channel>
+</rss>
+"""
+    (ROOT / "feed.xml").write_text(rss, encoding="utf-8")
 
 
 def load_history() -> list[dict[str, Any]]:
@@ -428,24 +502,24 @@ def save_history(history: list[dict[str, Any]]) -> None:
 
 
 def make_markdown(card: dict[str, Any], disc_zh: str) -> str:
-    """把单张卡导出为 Markdown，便于下载阅读"""
+    """把单张卡导出为 Markdown, 便于下载阅读"""
     lines = [
         f"# {card.get('title_zh', '')}",
-        f"**{disc_zh}** · {card.get('title_en', '')}",
+        f"**{disc_zh}** - {card.get('title_en', '')}",
         "",
-        f"> 中译：{card.get('title_zh_full', '')}",
+        f"> 中译: {card.get('title_zh_full', '')}",
         "",
         "## 作者简介",
     ]
     a = card.get("author", {})
     if a:
-        lines.append(f"\n**{a.get('name', '')}** · {a.get('affiliation', '')}\n")
+        lines.append(f"\n**{a.get('name', '')}** - {a.get('affiliation', '')}\n")
         lines.append(a.get("bio", ""))
         if a.get("more"):
             lines.append(f"\n> {a.get('more', '')}")
     lines += ["", "## 元信息"]
     for k, v in card.get("meta", {}).items():
-        lines.append(f"- **{k}**：{v}")
+        lines.append(f"- **{k}**: {v}")
     lines += [
         "",
         f"## 一句话定位\n{card.get('positioning', '')}",
@@ -456,7 +530,7 @@ def make_markdown(card: dict[str, Any], disc_zh: str) -> str:
     ]
     for c in card.get("core_concepts", []):
         lines.append(
-            f"\n**{c.get('term_zh', '')}**（{c.get('term_en', '')}） · 第 {c.get('page', '')} 页\n\n"
+            f"\n**{c.get('term_zh', '')}**({c.get('term_en', '')}) - 第 {c.get('page', '')} 页\n\n"
             f"{c.get('definition', '')}"
         )
     lines += ["", "## 精读"]
@@ -468,16 +542,16 @@ def make_markdown(card: dict[str, Any], disc_zh: str) -> str:
         "## 学术对话",
     ]
     for d in card.get("dialogue", []):
-        lines.append(f"- **{d.get('work', '')}**（{d.get('year', '')}）— {d.get('relation', '')}：{d.get('note', '')}")
+        lines.append(f"- **{d.get('work', '')}**({d.get('year', '')})— {d.get('relation', '')}: {d.get('note', '')}")
     lines += ["", "## 优秀评论"]
     for r in card.get("reviews", []):
-        lines.append(f"- **{r.get('title', '')}** — {r.get('author', '')} · {r.get('venue', '')}")
+        lines.append(f"- **{r.get('title', '')}** — {r.get('author', '')} - {r.get('venue', '')}")
         lines.append(f"  {r.get('summary', '')}")
         if r.get("url"):
-            lines.append(f"  链接：{r['url']}")
+            lines.append(f"  链接: {r['url']}")
     lines += [
         "",
-        f"## 推荐指数：{card.get('score', 0)}/100",
+        f"## 推荐指数: {card.get('score', 0)}/100",
         card.get("score_reason", ""),
     ]
     return "\n".join(lines)
@@ -509,9 +583,9 @@ def main() -> int:
         chosen = pick_one(cands, key)
         if not chosen:
             cards_html.append(
-                f'<article class="card loading"><p class="loading-text">【{dzh}】今天暂无合格新作（窗口 {win_start} ~ {win_end}）</p></article>'
+                f'<article class="card loading"><p class="loading-text">【{dzh}】今天暂无合格新作(窗口 {win_start} ~ {win_end})</p></article>'
             )
-            tags.append(f"{dzh}（无）")
+            tags.append(f"{dzh}(无)")
             continue
         cards_html.append(render_card(chosen, key, dzh))
         cards_data.append(chosen)
@@ -533,7 +607,7 @@ def main() -> int:
     if cards_data:
         build_zip(date, cards_data, disciplines_zh_used)
 
-    # 追加历史（同日期覆盖，避免重复）
+    # 追加历史(同日期覆盖, 避免重复)
     history = load_history()
     history = [h for h in history if h.get("date") != date]  # 去掉同日期旧记录
     # 收集本次的 openalex_id 用于反查
@@ -549,6 +623,9 @@ def main() -> int:
     })
     save_history(history[:365 * 5])  # 保留 5 年
     update_archive_index(history[:365 * 5])
+
+    # 生成 RSS feed.xml (RSS 2.0 + Atom 兼容)
+    generate_rss(history[:30], cards_data, disciplines_zh_used, date, win_start, win_end)
 
     print(f"[ok] {date} generated. {len(cards_data)} cards. window {win_start} ~ {win_end}")
     return 0

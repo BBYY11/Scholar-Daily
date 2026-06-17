@@ -51,10 +51,15 @@ DEFAULT_COVERS = [
 
 def fetch_papers(source_id, win_start, win_end, per_page=4):
     """拉某期刊近 2 周论文"""
+    # type 排除: editorial / letter / erratum / book-review / retraction
+    # referenced_works_count 论文质量: 排除 < 30 (短文/笔记)
+    # OpenAlex filter 支持: type, referenced_works_count
     url = (
         f"https://api.openalex.org/works"
         f"?filter=primary_location.source.id:{source_id},"
-        f"from_publication_date:{win_start},to_publication_date:{win_end}"
+        f"from_publication_date:{win_start},to_publication_date:{win_end},"
+        f"type:article|review,"
+        f"referenced_works_count:30-9999"
         f"&sort=publication_date:desc&per-page={per_page}"
     )
     req = urllib.request.Request(url, headers={
