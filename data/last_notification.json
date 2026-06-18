@@ -1,4 +1,4 @@
 {
-  "timestamp": "2026-06-17 02:57:49 UTC",
-  "message": "✅ 每日一书 2026-06-17 推送成功\n\ncommit: 06bbd12848b9336d94ad2c7a135ff2848f6232b1\n链接: https://bbyy11.github.io/Scholar-Daily/\nRSS: https://bbyy11.github.io/Scholar-Daily/feed.xml"
+  "timestamp": "2026-06-18 03:05:52 UTC",
+  "message": "✅ 6.18 推送成功\n\n4 张新论文 (B+C 增强):\n- 社会学: Education/Skills (BJS 6.15) 1553字\n- 人类学: Emotion-as-method (Ethnography 6.08) 1643字  \n- 历史学: Concealing/Revealing (LIC 6.16 复用) 2324字\n- 政治学: State Power/Civil Servant (CPS 6.15) 1524字\n\nB: 多期刊扩展 (每领域 5-7 本) + 28天窗口 + 论文热度评分\nC: 论文 heat score 计算 (时效+引用+深度+合作)\nfetch_today 历史学 fallback: OpenAlex 顶刊半年没新文, 自动回读 6.16 真品精读\n\ncommit: 9aa0328\nPages: https://bbyy11.github.io/Scholar-Daily/"
 }
