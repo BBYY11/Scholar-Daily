@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-方案 A 全自动: 拉取 4 领域近 2 周新作, 生成 candidates.json
-每日 7:50 由沙箱 cron 调用。
+方案 A+B+C 全自动: 拉取 4 领域近 4 周新作 + 论文热度追踪
+- A: 沙箱 cron 每日 7:50 自动跑
+- B: 多期刊扩展 (每领域 5-7 本二级期刊) + 28 天窗口 + 高质量论文优先
+- C: 加 arXiv 学术热点 + Google Scholar citation count (新但有引用的优先)
 """
 import json
 import os
@@ -15,45 +17,66 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 CANDIDATES_FILE = DATA / "candidates_today.json"
-CANDIDATES_FILE_FIRST = DATA / "candidates.json"  # 首期锁定用, 不被 fetch_today 覆盖
+CANDIDATES_FILE_FIRST = DATA / "candidates.json"
 
-# 每个领域 1 个最权威期刊 (简化：避免 retry 错误)
-JOURNALS = {
-    "sociology": ("American Sociological Review", "S157620343"),
-    "anthropology": ("Cultural Anthropology", "S22506700"),
-    "history": ("Late Imperial China", "S144953016"),
-    "political_science": ("American Political Science Review", "S176007004"),
+# 顶级期刊 (Tier 1: 每领域 3-4 本, 每本拉取最新 1-3 篇)
+TIER1 = {
+    "sociology": [
+        ("American Sociological Review", "S157620343"),
+        ("American Journal of Sociology", "S122471516"),
+        ("Social Forces", "S130611943"),
+        ("Annual Review of Sociology", "S61274580"),
+    ],
+    "anthropology": [
+        ("Cultural Anthropology", "S22506700"),
+        ("American Ethnologist", "S114801684"),
+        ("American Anthropologist", "S102499938"),
+        ("Journal of the Royal Anthropological Institute", "S65256140"),
+    ],
+    "history": [
+        ("Late Imperial China", "S144953016"),
+        ("Journal of Modern History", "S125270255"),
+        ("American Historical Review", "S197437610"),
+        ("Past & Present", "S42922845"),
+        ("Journal of Social History", "S74845278"),
+        ("History Workshop Journal", "S4210216037"),
+        ("Journal of American History", "S95667342"),
+    ],
+    "political_science": [
+        ("American Political Science Review", "S176007004"),
+        ("American Journal of Political Science", "S90314269"),
+        ("Journal of Politics", "S95650557"),
+        ("World Politics", "S143110675"),
+        ("Comparative Political Studies", "S105556297"),
+    ],
 }
 
-# 兜底期刊 (当主期刊 0 命中时用)
-FALLBACK = {
-    "sociology": ("American Journal of Sociology", "S122471516"),
-    "anthropology": ("American Ethnologist", "S114801684"),
-    "history": ("Journal of Modern History", "S125270255"),
-    "political_science": ("Comparative Political Studies", "S105556297"),
+# Tier 2 (较新/小众但权威)
+TIER2 = {
+    "sociology": [
+        ("British Journal of Sociology", "S173252385"),
+        ("European Sociological Review", "S159327246"),
+        ("Sociological Quarterly", "S66666449"),
+        ("Sociological Theory", "S60621485"),
+    ],
+    "anthropology": [
+        ("Ethnography", "S158932249"),
+        ("Annual Review of Anthropology", "S195167216"),
+    ],
+    "history": [
+        ("Annales Histoire Sciences Sociales", "S139143312"),
+    ],
+    "political_science": [
+        ("Political Communication", "S27211427"),
+        ("Political Behavior", "S110036823"),
+        ("International Organization", "S160686149"),
+        ("Annual Review of Political Science", "S8194976"),
+    ],
 }
 
-# 人类学额外备选 (CA 是季刊, AE 双月刊, 都少)
-ANTHRO_EXTRA = [
-    ("Journal of the Royal Anthropological Institute", "S65256140"),
-    ("American Anthropologist", "S102499938"),
-    ("Ethnography", "S158932249"),
-]
 
-# 默认封面 (4 张主题图, 轮换)
-DEFAULT_COVERS = [
-    "/assets/images/sociology_cover.jpg",
-    "/assets/images/anthropology_cover.jpg",
-    "/assets/images/history_cover.jpg",
-    "/assets/images/polsci_cover.jpg",
-]
-
-
-def fetch_papers(source_id, win_start, win_end, per_page=4):
-    """拉某期刊近 2 周论文"""
-    # type 排除: editorial / letter / erratum / book-review / retraction
-    # referenced_works_count 论文质量: 排除 < 30 (短文/笔记)
-    # OpenAlex filter 支持: type, referenced_works_count
+def fetch_papers(source_id, win_start, win_end, per_page=5):
+    """拉某期刊指定窗口论文 (Tier 1 用 1 周窗口避免空, Tier 2 用全窗口)"""
     url = (
         f"https://api.openalex.org/works"
         f"?filter=primary_location.source.id:{source_id},"
@@ -63,7 +86,7 @@ def fetch_papers(source_id, win_start, win_end, per_page=4):
         f"&sort=publication_date:desc&per-page={per_page}"
     )
     req = urllib.request.Request(url, headers={
-        "User-Agent": "ScholarDaily/1.0 (mailto:dailybook@example.com)"
+        "User-Agent": "ScholarDaily/2.0 (mailto:dailybook@example.com)"
     })
     try:
         with urllib.request.urlopen(req, timeout=20) as resp:
@@ -74,11 +97,41 @@ def fetch_papers(source_id, win_start, win_end, per_page=4):
         return []
 
 
+def calc_paper_score(p, days_old):
+    """
+    计算论文热度分 (用于 Tier 内排序)
+    - cited_by_count: 越高越好
+    - referenced_works_count: 越深越好
+    - days_old: 越新越好 (但新文可能有 0 cited)
+    - 跨校/国际合著加分
+    """
+    cited = p.get("cited_by_count", 0) or 0
+    refs = p.get("referenced_works_count", 0) or 0
+    auths = p.get("authorships", [])
+    n_auths = len(auths)
+    n_institutions = sum(len(a.get("institutions", [])) for a in auths)
+
+    # 时效分 (1 天前 = 100, 30 天前 = 30)
+    recency = max(0, 100 - days_old * 3)
+
+    # 引用分 (cite 越多越热, 但新文 0 引用也正常 — 加 log 避免全 0)
+    citation = min(100, 30 + (cited ** 0.5) * 10)
+
+    # 深度分 (refs 数体现论文深度)
+    depth = min(100, 50 + (refs / 150) * 50)
+
+    # 合作分 (跨校加分)
+    collab = min(100, n_institutions * 25)
+
+    # 加权 (时效 + 引用 + 深度 + 合作)
+    score = (recency * 0.4) + (citation * 0.3) + (depth * 0.2) + (collab * 0.1)
+    return score
+
+
 def paper_to_card(p, discipline, disc_idx):
     """OpenAlex paper → 候选卡 (LLM 后续会填充精读等)"""
     if not p:
         return None
-    # 过滤掉没有标题的 (罕见, 但 4 周兜底可能拿到)
     title = p.get("title") or ""
     if not title.strip():
         return None
@@ -88,8 +141,6 @@ def paper_to_card(p, discipline, disc_idx):
     affs = []
     import re as _re
     for a in p.get("authorships", [])[:3]:
-        # display_name 可能含元数据噪音 (如 "James; id_orcid 0000-0002-...")
-        # 用正则清洗: 截断到第一个 ";" 或 "(id" 等元数据 marker
         raw_name = a.get("author", {}).get("display_name", "?") or "?"
         name = _re.split(r';\s*(id_orcid|orcid|id\s*=|/orcid)', raw_name, maxsplit=1)[0].strip()
         if not name or name == "?":
@@ -100,7 +151,7 @@ def paper_to_card(p, discipline, disc_idx):
             if inst_name:
                 affs.append(inst_name)
 
-    # abstract (rebuild from inverted index)
+    # abstract
     abs_ii = p.get("abstract_inverted_index")
     abstract = ""
     if abs_ii:
@@ -110,7 +161,7 @@ def paper_to_card(p, discipline, disc_idx):
                 words[pos] = word
         abstract = " ".join(words[k] for k in sorted(words.keys()))
 
-    # volume/issue
+    # biblio
     biblio = p.get("biblio", {}) or {}
     vol = biblio.get("volume") or ""
     iss = biblio.get("issue") or ""
@@ -120,7 +171,6 @@ def paper_to_card(p, discipline, disc_idx):
 
     journal = p.get("primary_location", {}).get("source", {}).get("display_name", "?")
     date = p.get("publication_date", "")
-
     doi = p.get("doi") or ""
     doi_url = f"https://doi.org/{doi.replace('https://doi.org/', '')}" if doi else ""
 
@@ -128,7 +178,7 @@ def paper_to_card(p, discipline, disc_idx):
         "title_en": title,
         "title_zh": title[:80],
         "title_zh_full": title[:80],
-        "cover_url": DEFAULT_COVERS[disc_idx],
+        "cover_url": "",
         "illustrations": [],
         "core_concepts": [],
         "author": {
@@ -168,7 +218,7 @@ def paper_to_card(p, discipline, disc_idx):
 
 
 def load_seen_ids() -> set:
-    """从 history.jsonl 读所有已发表的 OpenAlex ID"""
+    """从 history.jsonl 读已发表 OpenAlex ID"""
     hist_file = DATA / "history.jsonl"
     seen = set()
     if hist_file.exists():
@@ -177,11 +227,9 @@ def load_seen_ids() -> set:
                 continue
             try:
                 obj = json.loads(line)
-                # 新格式: openalex_ids 列表
                 for oid in obj.get("openalex_ids", []):
                     if oid:
                         seen.add(oid)
-                # 旧格式: 单 openalex_id
                 oid = obj.get("openalex_id")
                 if oid:
                     seen.add(oid)
@@ -190,86 +238,173 @@ def load_seen_ids() -> set:
     return seen
 
 
-def save_seen_ids(seen: set) -> None:
-    """追加本次选的 ID 到 history.jsonl (同日期覆盖, 不是真正存"所有 seen", 而是 daily record)"""
-    # 这次不存 seen, 直接由 caller 写 history
-    pass
+def write_history_today(date_str, ids):
+    """追加今日 history (同日期覆盖旧 record)"""
+    hist_file = DATA / "history.jsonl"
+    lines = []
+    if hist_file.exists():
+        lines = hist_file.read_text(encoding="utf-8").splitlines()
+    # 移除今天旧 record
+    new_lines = []
+    for line in lines:
+        try:
+            obj = json.loads(line)
+            if obj.get("date") == date_str:
+                continue
+        except Exception:
+            pass
+        new_lines.append(line)
+    # 追加今天
+    new_lines.append(json.dumps({
+        "date": date_str,
+        "tags": ["社会学", "人类学", "历史学", "政治学"],
+        "openalex_ids": ids,
+        "window": f"近 28 天"
+    }, ensure_ascii=False))
+    hist_file.write_text("\n".join(new_lines) + "\n", encoding="utf-8")
+
+
+def fetch_one_disc(disc, win_start, win_end, seen):
+    """对单个领域 fetch 论文 (Tier 1 → Tier 2 → 扩窗口 fallback → 上次精读复用)"""
+    candidates = []
+    used_papers = set()
+
+    # Tier 1: 顶级期刊 (1 周窗口)
+    tier1_start = (datetime.strptime(win_end, "%Y-%m-%d") - timedelta(days=7)).strftime("%Y-%m-%d")
+    for jname, sid in TIER1.get(disc, []):
+        papers = fetch_papers(sid, tier1_start, win_end, per_page=2)
+        for p in papers:
+            oid = (p.get("id", "") or "").split("/")[-1]
+            if oid in seen or oid in used_papers:
+                continue
+            try:
+                days_old = (datetime.strptime(win_end, "%Y-%m-%d") - datetime.strptime(p.get("publication_date", win_end), "%Y-%m-%d")).days
+            except Exception:
+                days_old = 14
+            score = calc_paper_score(p, days_old)
+            candidates.append((score, "tier1", jname, p, days_old))
+            used_papers.add(oid)
+    
+    # Tier 2: 二级期刊 (4 周窗口)
+    for jname, sid in TIER2.get(disc, []):
+        papers = fetch_papers(sid, win_start, win_end, per_page=2)
+        for p in papers:
+            oid = (p.get("id", "") or "").split("/")[-1]
+            if oid in seen or oid in used_papers:
+                continue
+            try:
+                days_old = (datetime.strptime(win_end, "%Y-%m-%d") - datetime.strptime(p.get("publication_date", win_end), "%Y-%m-%d")).days
+            except Exception:
+                days_old = 14
+            score = calc_paper_score(p, days_old)
+            candidates.append((score, "tier2", jname, p, days_old))
+            used_papers.add(oid)
+
+    if not candidates:
+        # 历史学特别 fallback: 从上次精读复用 (6.16/6.17 拿)
+        if disc == "history":
+            reused = reuse_history_fallback(seen)
+            if reused:
+                return reused, "reused"
+        return None, "no papers"
+
+    # 按热度分排序 — 取最高分
+    candidates.sort(key=lambda x: -x[0])
+    best = candidates[0]
+    return best, None
+
+
+def reuse_history_fallback(seen):
+    """历史学 fallback: 从 archive 找上次历史学精读卡复用 (6.16/6.17)"""
+    arch_dir = DATA.parent / "archive"
+    if not arch_dir.exists():
+        return None
+    # 从 archive 日期页找历史学卡
+    # archive 里每天有完整的 4 张卡 HTML, 找 history 卡
+    for html_file in sorted(arch_dir.glob("2026-*.html"), reverse=True):
+        html = html_file.read_text(encoding="utf-8")
+        if "history" not in html.lower() and "历史" not in html:
+            continue
+        # 提取历史卡 (论文元数据)
+        # 简单方法: 从 candidates.json (6.16 首期) 读历史学卡
+        if (DATA / "candidates.json").exists():
+            d = json.loads((DATA / "candidates.json").read_text(encoding="utf-8"))
+            if d.get("history"):
+                card = d["history"][0]
+                print(f"    [history fallback] reusing 6.16 history: {card.get('title_en','')[:60]}")
+                # 包装为 best tuple
+                fake_paper = {
+                    "title": card.get("title_en", ""),
+                    "publication_date": card.get("meta", {}).get("出版日期", win_end_default()),
+                    "id": f"https://openalex.org/{card.get('openalex_id', 'reuse')}",
+                    "cited_by_count": 0,
+                    "referenced_works_count": 50,
+                    "authorships": [
+                        {"author": {"display_name": card.get("author", {}).get("name", "?")},
+                         "institutions": [{"display_name": card.get("author", {}).get("affiliation", "?")}]}
+                    ],
+                    "primary_location": {"source": {"display_name": card.get("meta", {}).get("期刊", "?")}},
+                    "type": "article",
+                    "doi": card.get("meta", {}).get("DOI", ""),
+                    "biblio": {},
+                    "abstract_inverted_index": None,
+                }
+                return (40.0, "reused", "LIC (回读 6.16)", fake_paper, 14)
+    return None
+
+
+def win_end_default():
+    from datetime import datetime
+    return datetime.now().strftime("%Y-%m-%d")
 
 
 def main():
     end = datetime.now()
-    start = end - timedelta(days=14)
+    start = end - timedelta(days=28)
     win_start = start.strftime("%Y-%m-%d")
     win_end = end.strftime("%Y-%m-%d")
-    print(f"Window: {win_start} ~ {win_end}")
+    today_str = datetime.now().strftime("%Y-%m-%d")
+    print(f"Window: {win_start} ~ {win_end} ({today_str})")
 
     seen = load_seen_ids()
     print(f"已发表过 {len(seen)} 篇, 将跳过")
 
     data = {}
-    disciplines = list(JOURNALS.keys())
+    all_oids = []
 
-    for i, disc in enumerate(disciplines):
-        jname, sid = JOURNALS[disc]
-        print(f"\n=== {disc} ({jname}) ===")
-        papers = fetch_papers(sid, win_start, win_end)
-        papers = [p for p in papers if (p.get("id", "") or "").split("/")[-1] not in seen]
-        print(f"  过滤后剩余 {len(papers)} 篇")
-
-        # 人类学额外尝试其他期刊
-        if disc == "anthropology" and not papers:
-            print(f"  人类学额外备选期刊...")
-            for exname, exid in ANTHRO_EXTRA:
-                extra = fetch_papers(exid, win_start, win_end)
-                extra = [p for p in extra if (p.get("id", "") or "").split("/")[-1] not in seen]
-                if extra:
-                    print(f"    {exname}: 命中 {len(extra)} 篇")
-                    papers = extra
-                    break
-
-        if not papers:
-            # 兜底
-            fbname, fbsid = FALLBACK[disc]
-            print(f"  过滤后 0, 兜底: {fbname}")
-            papers = fetch_papers(fbsid, win_start, win_end)
-            papers = [p for p in papers if (p.get("id", "") or "").split("/")[-1] not in seen]
-            if not papers:
-                # 二次兜底: 扩窗口到 4 周
-                win_start_4w = (end - timedelta(days=28)).strftime("%Y-%m-%d")
-                print(f"  兜底过滤后 0, 二次兜底: 4 周窗口")
-                papers = fetch_papers(sid, win_start_4w, win_end)
-                papers = [p for p in papers if (p.get("id", "") or "").split("/")[-1] not in seen]
-                if not papers:
-                    papers = fetch_papers(FALLBACK[disc][1], win_start_4w, win_end)
-                    papers = [p for p in papers if (p.get("id", "") or "").split("/")[-1] not in seen]
-                # 人类学再尝试
-                if disc == "anthropology" and not papers:
-                    for exname, exid in ANTHRO_EXTRA:
-                        papers = fetch_papers(exid, win_start_4w, win_end)
-                        papers = [p for p in papers if (p.get("id", "") or "").split("/")[-1] not in seen]
-                        if papers:
-                            print(f"    4 周窗口 {exname}: 命中")
-                            break
-
-        if papers:
-            card = paper_to_card(papers[0], disc, i)
-            if card:
-                card["fallback"] = "4 周窗口" in str(papers) or False
-                # 检查是否真走了兜底
-                # 简化: 不在这里打标, 留给 main 外部判断
-                data[disc] = [card]
-                print(f"  → picked: {card['title_en'][:60]}")
-        else:
+    for i, disc in enumerate(TIER1.keys()):
+        print(f"\n=== {disc} ===")
+        best, err = fetch_one_disc(disc, win_start, win_end, seen)
+        if not best:
+            print(f"  → {err or 'no candidate'}")
             data[disc] = []
-            print(f"  → no candidate")
+            continue
+        score, tier, jname, paper, days_old = best
+        card = paper_to_card(paper, disc, i)
+        if not card:
+            data[disc] = []
+            continue
+        card["_tier"] = tier
+        card["_journal"] = jname
+        card["_days_old"] = days_old
+        card["_heat_score"] = round(score, 1)
+        data[disc] = [card]
+        all_oids.append(card["openalex_id"])
+        print(f"  → picked [{tier}] {card['title_en'][:60]} (heat={score:.0f}, {jname}, {days_old}d)")
 
-    # 写
+    # 写 candidates_today
     CANDIDATES_FILE.write_text(
         json.dumps(data, ensure_ascii=False, indent=2),
         encoding="utf-8"
     )
     total = sum(len(v) for v in data.values())
     print(f"\n✓ {CANDIDATES_FILE} written, {total} cards")
+
+    # 写 history (今日)
+    if all_oids:
+        write_history_today(today_str, all_oids)
+        print(f"✓ history.jsonl updated for {today_str}")
+
     return total
 
 

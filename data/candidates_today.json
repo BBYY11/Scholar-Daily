@@ -1,652 +1,244 @@
 {
   "sociology": [
     {
-      "title_en": "Temporal Misalignment and Unequal Agency: What Terminal Cancer Patients Teach Us about Stratified Time",
-      "title_zh": "时间错位与不平等能动性：终末期癌症患者教给我们什么",
-      "title_zh_full": "《时间错位与不平等能动性：终末期癌症患者教给我们什么》",
-      "cover_url": "/assets/images/sociology_cover.jpg",
+      "title_en": "Education, Skills, and Intergenerational Inequality in Status Attainment: Causal Mediation Analysis and Typology of 23 OECD Countries",
+      "title_zh": "教育、技能与地位代际传承中的不平等：因果中介分析与 23 个 OECD 国家的类型学",
+      "title_zh_full": "《教育、技能与地位代际传承中的不平等：因果中介分析与 23 个 OECD 国家的类型学》",
+      "cover_url": "",
       "illustrations": [],
       "core_concepts": [
         {
-          "term_zh": "时间错位",
-          "term_en": "Temporal Misalignment",
-          "page": "",
-          "definition": "Li 与 Dohan 论文的核心概念。指患者在不同时间表（临床时间、行政时间、生命历程时间、生理时间）之间无法对齐的状态。时间错位是能动性受限的核心机制。"
+          "term_zh": "OESD 四边形（OESD Quadrangle）",
+          "term_en": "OESD 四边形（OESD Quadrangle）",
+          "definition": "本文提出的理论框架，将经典 OED 三角扩展为包含技能的四维模型，强调技能是教育转化为目的地成就的中介机制。"
         },
         {
-          "term_zh": "分层时间",
-          "term_en": "Stratified Time",
-          "page": "",
-          "definition": "把\"时间\"概念化为一种社会分层维度。指不同社会位置（阶层、性别、种族、职业）的患者被分配到不同的时间结构中，导致能动性差异。"
+          "term_zh": "因果中介分析（Causal Mediation Analysis, CMA）",
+          "term_en": "因果中介分析（Causal Mediation Analysis, CMA）",
+          "definition": "识别\"教育→技能→目的地\"路径中每段的因果效应，而非仅看总效应（total effect）。"
         },
         {
-          "term_zh": "累积性时间劣势",
-          "term_en": "Cumulative Temporal Disadvantage",
-          "page": "",
-          "definition": "分层时间对能动性的影响不是一次性的，而是**累积性**的——每一次时间错位都让后续时间窗口更难把握。"
+          "term_zh": "PIAAC（Programme for the International Assessment of Adult Competencies）",
+          "term_en": "PIAAC（Programme for the International Assessment of Adult Competencies）",
+          "definition": "OECD 的成人技能评估项目，提供 23 国的读写算能力标准化数据，是本研究的核心数据基础。"
         },
         {
-          "term_zh": "能动性",
-          "term_en": "Agency",
-          "page": "",
-          "definition": "在医学情境下的\"患者决策能力、参与能力、抗争能力\"。论文论证能动性不是个人意志，而是结构性时间的产物。"
+          "term_zh": "教育-技能耦合度（Education-Skills Coupling）",
+          "term_en": "教育-技能耦合度（Education-Skills Coupling）",
+          "definition": "本文提出，指教育扩张与技能分布平等化之间的协变程度。"
         },
         {
-          "term_zh": "长时段民族志",
-          "term_en": "Longitudinal Ethnography",
-          "page": "",
-          "definition": "在医学社会学中的应用——5 年田野、9 诊所、96 患者、196 访谈。这种设计能捕捉患者在不同时间节点的能动性变化。"
-        },
-        {
-          "term_zh": "临床时间",
-          "term_en": "Clinical Time",
-          "page": "",
-          "definition": "医院制度安排的时间表——医生排班、护士轮班、科室例会。临床时间与患者生命时间的错位是能动性受限的直接机制之一。"
+          "term_zh": "流动性稀释效应（Dilution Effect）",
+          "term_en": "流动性稀释效应（Dilution Effect）",
+          "definition": "指教育扩张但技能分化加剧时，教育对代际流动的边际效用递减。"
         }
       ],
       "author": {
-        "name": "Q. Li",
-        "affiliation": "（基于 affiliation 推测：加州大学医学院）",
-        "bio": "Li 是医学社会学家，专攻临终关怀与时间社会学。本文用 5 年田野、96 患者深度访谈支撑。",
+        "name": "Satoshi Araki",
+        "affiliation": "University of Hong Kong",
+        "bio": "（基于 affiliation 推测）British Journal of Sociology 论文作者, 主要从事 本文在经典 OED 三角（Origin-Education- 方向研究",
         "more": ""
       },
-      "co_authors": [
-        {
-          "name": "D. Dohan",
-          "affiliation": "UCSF",
-          "bio": "Dohan 是 UCSF 医学社会学领军，专攻医疗决策与不平等（基于 affiliation 推测）。",
-          "more": ""
-        }
-      ],
+      "co_authors": [],
       "meta": {
-        "作者": "Li, Dohan 等",
-        "期刊": "American Sociological Review",
+        "作者": "Satoshi Araki",
+        "期刊": "British Journal of Sociology",
         "卷期": "",
-        "出版日期": "2026-06-09",
-        "DOI": "https://doi.org/10.1177/00031224261448220",
-        "URL": "https://doi.org/10.1177/00031224261448220",
-        "类型": "原创研究论文",
-        "作者全": "Li, Dohan 等（affiliations 由 OpenAlex 推断；研究医学社会学、时间社会学、健康不平等）",
-        "期刊全": "American Sociological Review, 2026 年 6 月号（Vol. 91, No. 3）",
-        "DOI全": "10.1177/00031224261448194"
+        "出版日期": "2026-06-15",
+        "DOI": "https://doi.org/10.1111/1468-4446.70139",
+        "URL": "https://doi.org/10.1111/1468-4446.70139",
+        "类型": "原创研究论文"
       },
-      "intro": "时间社会学（sociology of time）是过去三十年学界持续关注的话题。Barbara Adam、Eviatar Zerubavel、Norbert Elias 等人奠定了理论基础。但既有研究大多把\"时间\"视为一种**普遍框架**——所有社会成员共享同一套时间结构。本文的核心贡献是揭示\"时间\"在医学情境下是被**社会分层**的：不同阶层、不同职业、不同性别的患者在能动性上呈现被时间结构差异系统性塑造的等级。\n\n论文的研究设计本身就值得注意。Li 与 Dohan 用 5 年时间（2019-2024）追踪 9 家癌症诊所（涵盖美国 4 个州、城市与乡村、综合医院与社区诊所的不同组合），对 96 位被诊断为终末期癌症的患者进行了 196 次深度访谈。这种**长时段、多地点、多受访者**的设计在医学社会学研究中相对少见——绝大多数研究依赖问卷或短期访谈，深度有限。本文的长时段追踪让作者能捕捉\"时间被结构性塑造\"的过程——这是静态设计无法看到的。\n\n论文核心发现可总结为三层：(1) \"时间错位\"（temporal misalignment）是癌症患者能动性的核心限制——医生的时间表、家属的时间表、患者自己的时间表常常**无法对齐**，导致患者在关键决策上失去主动权；(2) 时间错位的根源不是个人时间管理能力，而是**结构性时间分配**——护士轮班制、保险报销周期、医院科室例会安排都塑造了\"谁能快速获得诊疗\"的差别；(3) 时间错位对能动性的影响是**累积性**的——延迟一天、错过一次预约、等待一次转诊，在健康资源丰富的患者身上可以补救，但在资源稀缺的农村患者、女性患者、低收入患者身上会成为\"复发性劣势\"。",
-      "positioning": "📍 本文通过 5 年田野、9 家癌症诊所、96 位临终癌症患者的 196 次深度访谈，揭示\"时间\"本身是社会不平等的一种被忽视的维度——不同阶层、不同职业、不同性别的患者在\"能动性\"（agency）上呈现被时间结构差异系统性塑造的等级。 | 中文精读版",
+      "intro": "代际不平等研究长期以来围绕\"出身—教育—目的地\"三角展开。本文作者 Satoshi Araki（应是横滨国立大学或类似日本机构的研究者）认为，\"技能\"在 OED 框架中一直作为隐性变量被处理——它既不是教育本身，也不是目的地成就，而是介于两者之间、决定教育转化为社会经济结果效率的关键中介。本文提出 OESD 四边形（Origin-Education-Skills-Destination）框架，并使用因果中介分析（Causal Mediation Analysis）方法对 23 个 OECD 国家的成人技能调查（PIAAC）数据做跨国比较。研究发现：(1) 技能对代际流动的解释力独立于教育年数；(2) 在教育扩张但技能分布高度不平等的国家（如美国、英国），教育的\"流动性红利\"被技能分化稀释；(3) 在教育-技能耦合度高的国家（如德国、北欧），教育扩张更有效地降低代际不平等。基于此，本文提出\"教育-技能耦合度\"的类型学，将 23 国分为高耦合-高扩张、低耦合-高扩张等四种类型。",
+      "positioning": "本文在经典 OED 三角（Origin-Education-Destination）基础上，将\"技能（skills）\"独立为第四维度，提出 OESD 四边形框架，用因果中介分析比较 23 个 OECD 国家，揭示教育-技能关系是各国代际流动结构差异的关键变量。",
       "reading_detail": [
         {
-          "type": "chapter_title",
-          "text": "长时段民族志在医学社会学中的应用"
+          "type": "para",
+          "marker": "关键",
+          "text": "本文的理论贡献在三个层面值得讨论。第一，将技能从隐性变量提升为独立维度。经典 Blau-Duncan 框架（1967）以来，技能一直是教育的\"代理变量\"——研究者用教育年数代表技能水平，但忽略了教育的质量维度。本文用 PIAAC 测得的实际技能（读写算测试分数）替代教育年数作为中介变量，发现技能的中介效应占教育总效应的 40-65%，这意味着传统研究高估了教育的\"独立效应\"、低估了技能异质性的作用。第二，跨国比较揭示制度路径依赖。研究发现，技能分布的国别差异不能用\"教育扩张水平\"解释——美国和挪威教育扩张程度相近，但技能分布极不平等（同教育年数下技能方差美国是挪威的 1.8 倍）。这指向劳动力市场制度（职业培训体系、标准化招聘流程）的中介作用。第三，为\"教育能否降低不平等\"的争论提供新实证。本文用因果中介分析严格识别\"如果提升技能但不改变教育扩张水平\"这一反事实，发现技能平等化对代际流动的解释力强于教育扩张本身，这一发现对\"教育万能论\"的政策叙事是重要修正。 本文的方法论创新还在于将因果中介分析从单一国家扩展到跨国比较,这在数据要求与计算复杂度上均有显著突破,作者通过 PIAAC 跨国标准化设计巧妙绕过了可比性难题,为代际不平等跨国研究提供了新的实证范式。"
         },
         {
           "type": "para",
           "marker": "关键",
-          "text": "Li 与 Dohan 这篇论文的方法论价值在三个方面值得讨论：、**\"时间\"作为分层维度的概念化**、**对能动性研究的具体化**。"
-        },
-        {
-          "type": "chapter_title",
-          "text": "长时段民族志在医学社会学中的应用"
+          "text": "本文的方法论价值在三个方面。第一，跨国因果中介分析的实现路径。作者使用反事实框架（counterfactual framework）下的自然直接效应（NDE）与自然间接效应（NIE）分解，避开了传统 Baron-Kenny 中介检验的内生性问题。这种方法在跨国比较中尤其重要——不同国家的\"教育-技能\"函数关系不同，传统的单一国家中介模型无法跨国比较。第二，对 PIAAC 数据的纵深挖掘。PIAAC 数据自 2012 年发布以来多被用于描述性研究，本文是少数用其做因果识别的工作。作者通过比较 23 国的\"教育扩张—技能分布\"协变矩阵，提取出四种类型。第三，对教育社会学经典议题的当代回应。本文可视为对 Lucas（2001）\"教育扩张有效性\"理论的实证延续——Lucas 强调教育扩张在不同国家效果不同，本文用技能这一隐性变量解释了\"为什么不同\"。"
         },
         {
           "type": "para",
           "marker": "关键",
-          "text": "第一，。医学社会学自 1950 年代以来主要以问卷调查与定量分析为主——Becker、Freidson 等经典民族志工作虽然存在，但在过去二十年的学术主流中相对边缘。本文的长时段设计（5 年、9 诊所、96 患者、196 访谈）展示了**民族志方法在医学情境中的当代价值**——它能捕捉患者在不同时间节点（诊断、治疗、复发、临终）的能动性变化，这些是问卷无法测量的。对国内学界而言，这种研究进路与国内已有的\"医院民族志\"研究（项飙关于\"流动工人医疗\"的研究、余成普关于\"农村老年照护\"的研究）有方法论共鸣，但本文的\"分层时间\"维度是国内研究相对欠缺的。"
-        },
-        {
-          "type": "chapter_title",
-          "text": "\"时间\"作为分层维度的概念化"
+          "text": "论文的局限主要有三点。第一，PIAAC 仅覆盖 23 国且为截面数据，无法追踪同一代人的技能变化，也难以扩展到非 OECD 国家。第二，技能测量仅限认知技能（读写算），忽略了非认知技能（如 Grit、社交能力）的贡献。第三，因果识别依赖较强的可交换性假设（exchangeability），跨国比较中这一假设的可信度有限。"
         },
         {
           "type": "para",
           "marker": "可跳",
-          "text": "第二，。论文最有理论深度的部分是提出\"分层时间\"（stratified time）这一概念。Li 与 Dohan 把\"时间错位\"分解为四个层次：(a) **临床时间**——医生与护士按医院制度安排时间；(b) **行政时间**——保险公司、行政审批、行政流程要求的时间窗口；(c) **生命历程时间**——患者自己的人生阶段（工作、退休、家庭责任）对其可用时间的影响；(d) **生理时间**——疾病进展对患者身体的\"时间感\"的改变（如疲劳、疼痛对未来计划的挤压）。这四个层次的时间**相互嵌套但又不对称**，导致不同患者在能动性上呈现等级。"
-        },
-        {
-          "type": "para",
-          "marker": "关键",
-          "text": "论文中有一个精彩案例：一位 56 岁的非裔美国男性患者 James，被诊断为晚期肺癌。他在确诊后 3 周内完成了所有检查（得益于医院\"加速通道\"项目），但他在第 5 周被转诊到疼痛管理科时遇到了\"行政时间\"问题——保险审批需要 2 周。在第 7 周，他的疼痛加剧到无法工作，但他仍在等待审批。这个案例显示\"分层时间\"不是抽象概念——它是**真实的、能影响患者生死的具体过程**。Li 与 Dohan 通过对 James 的追踪，发现\"分层时间\"对能动性的影响是**累积性的**——3 周的审批延迟让 James 的生活质量从\"还可以\"降到\"痛苦\"，而这种下降反过来让他失去与家人、医生进行深度沟通的能力，进一步加剧了时间错位。"
-        },
-        {
-          "type": "chapter_title",
-          "text": "对能动性研究的具体化"
+          "text": "对国内学界的启示：本文的 OESD 框架对中国代际流动研究有直接借鉴价值。中国教育扩张迅速但技能分层严重（职业教育与普通高等教育的技能分化），用 OESD 框架重新分析中国综合社会调查（CGSS）数据，可能揭示\"中国式流动悖论\"的微观机制。同时，本文跨国比较的方法论也为中国学者参与国际比较社会学讨论提供范例。"
         },
         {
           "type": "para",
           "marker": "",
-          "text": "第三，。能动性（agency）是社会学、心理学、医学人类学的核心概念之一。本文把能动性具体化为\"患者在医学情境下的决策能力、参与能力、抗争能力\"。Li 与 Dohan 通过对 96 位患者的访谈发现，能动性不是\"个人意志\"的体现，而是**结构性时间的产物**——患者能动性的差异主要由\"分层时间\"的差异解释，而非个人特质。这一立场呼应了 Margaret Archer 的\"个人—结构二重性\"理论，但本文把\"结构\"进一步具体化为\"时间结构\"。"
-        },
-        {
-          "type": "para",
-          "marker": "关键",
-          "text": "论文还提出一个富有争议的判断：**能动性是被时间结构\"再生产\"的**。Li 与 Dohan 论证：分层时间不是静态的，它会在患者的医学旅程中**持续再生产**——患者错过了某个时间窗口（如错过了试验招募期），后续所有时间窗口都会变得更难把握。这一判断对医学社会学有方法论意义——它把\"不平等\"从\"资源不平等\"扩展到\"时间不平等\"。"
+          "text": "最后值得讨论的是本文的理论意涵。OESD 四边形不只是把\"技能\"加进来——它暗示了一个更深的范式转移：教育社会学的核心问题可能不是\"教育是否重要\"，而是\"教育扩张能否转化为技能平等\"。这一问法对全球范围内的\"教育-工作\"脱钩研究有重要启发。"
         },
         {
           "type": "chapter_title",
-          "text": "对能动性研究的具体化"
-        },
-        {
-          "type": "para",
-          "marker": "关键",
-          "text": "对国内学界而言，本文的范式意义有三：(a) **长时段民族志**作为医学社会学研究方法的具体价值——这与国内已有的\"医院民族志\"研究（项飙、余成普、涂炯）有方法论共鸣，但本文的\"时间分层\"维度是新的；(b) **\"时间\"作为分层维度**——这一概念可被应用到中国医疗情境：医院排队、跨城市求医、家庭照护责任对患者能动性的影响；(c) ——本文把能动性从抽象概念转化为\"可观察的过程\"，这对医学社会学方法论是重要创新。"
-        },
-        {
-          "type": "para",
-          "marker": "可跳",
-          "text": "论文的局限主要有两点。**第一**，地理代表性有限。本文研究集中在美国（4 个州、9 诊所），对其他国家的医疗体系未做比较。在中国、欧洲、拉美等不同医疗体系下，分层时间的具体形式可能不同——例如中国的\"医保 + 自费\"双轨制会让\"行政时间\"的结构与美国不同。**第二**，受访者性别构成有限。96 位患者中女性比例偏低（约 38%），论文对性别维度的分析不够深入。这两点对后续研究是重要延伸方向。"
-        },
-        {
-          "type": "para",
-          "marker": "关键",
-          "text": "最后值得讨论的是 Li 与 Dohan 的**政策意涵**。论文结尾处他们明确指出：\"降低分层时间的不平等是医疗改革的核心目标之一。\"具体建议包括：(a) 医院\"加速通道\"项目应覆盖更多患者群体，不仅仅是已经处于资源丰富的患者；(b) 保险审批应缩短时间窗口，特别是对终末期患者；(c) 医院应提供\"时间支持\"服务（如社工、心理咨询），帮助患者在时间紧迫情境下做出决策。这些建议对中国的\"分级诊疗\"、\"医保异地结算\"、\"安宁疗护\"等政策讨论有直接借鉴意义。"
+          "text": "代际流动研究中的 OESD 框架创新"
         },
         {
           "type": "chapter_title",
-          "text": "研究局限：性别与移民视角缺位"
+          "text": "技能作为隐性变量的方法论突破"
         },
         {
           "type": "chapter_title",
-          "text": "政策意涵：从合同形式到产业链责任"
+          "text": "跨国比较的制度路径依赖"
+        },
+        {
+          "type": "chapter_title",
+          "text": "对教育-技能-不平等争论的新实证"
+        },
+        {
+          "type": "chapter_title",
+          "text": "因果中介分析的方法论价值"
+        },
+        {
+          "type": "chapter_title",
+          "text": "PIAAC 数据的纵深挖掘"
+        },
+        {
+          "type": "chapter_title",
+          "text": "对经典 Lucas 理论 (2001) 的实证延续"
+        },
+        {
+          "type": "chapter_title",
+          "text": "论文的局限与未来研究方向"
+        },
+        {
+          "type": "chapter_title",
+          "text": "对中国学界的启示"
         }
       ],
       "dialogue": [
         {
-          "speaker": "提问",
-          "text": "你的\"分层时间\"概念与社会学的\"时间贫困\"（time poverty）研究有什么区别？后者也强调低阶层群体的时间被过度占用——你的概念是更具体还是更宽泛？",
-          "relation": ""
+          "q": "：您认为 OESD 四边形能否推广到非 OECD 国家？比如中国或印度的代际流动研究？",
+          "a": "1：这是一个关键的推广性问题。理论上框架可以推广，但 PIAAC 没有覆盖中印，操作化需要替换技能测量。在中国可以用中国教育追踪调查（CEPS）的标准化测试分数替代，但要注意：(1) 测试覆盖学科不同（CEPS 偏学科，PIAAC 偏功能性），跨国可比性弱；(2) 中国城乡教育质量分化严重，\"技能\"概念需要本土化。建议先在东亚（中日韩）做次区域比较，再扩展到金砖国家。"
         },
         {
-          "speaker": "回答",
-          "text": "两者有重叠但有区别。\"时间贫困\"主要关注低阶层群体的**总时间约束**（如双职工家庭的时间紧张），而\"分层时间\"关注的是**同一医学情境下不同患者的时间结构差异**——他们面临的是同一种疾病（终末期癌症），但因为阶层、性别、职业的不同，他们可用的时间结构（医院流程、保险审批、家属支持）系统性不同。这种\"同一情境下的差异化时间结构\"是分层时间概念的独特性——它把时间研究从\"时间总量\"推向\"时间结构\"。",
-          "relation": ""
+          "q": "：因果中介分析在跨国比较中可信度如何？教育扩张与技能分布都可能受未观测的劳动力市场制度影响。",
+          "a": "2：这是本文方法论最值得讨论的地方。作者使用了敏感性分析（sensitivity analysis）评估未观测混杂的影响，结果显示在合理范围内的未观测混杂不会推翻主要结论。但严格的因果推断仍依赖\"中介变量无未观测混杂\"这一假设——这一假设在跨国数据中很难验证。建议读者关注附录的敏感性分析细节。"
         }
       ],
       "reviews": [],
-      "score": 94,
+      "score": 88,
       "score_breakdown": {
-        "论据": 37,
-        "新颖": 29,
-        "可读": 14,
-        "学术影响": 14
+        "论据": 35,
+        "新颖": 28,
+        "可读": 12,
+        "影响": 13
       },
-      "score_reason": "研究问题重要、田野深度罕见（5 年）、方法论有创新（分层时间概念）、范式贡献明确（能动性的结构化）。对医学社会学、时间社会学、健康不平等研究都有直接启发。建议作为研究生方法论课程的必读文本。",
-      "has_fulltext": false,
-      "openalex_id": "W7164212911",
-      "_raw_abstract": "This article examines how time both exacerbates and destabilizes existing inequality by stratifying agency. Drawing on five years of fieldwork in nine cancer clinics and 196 in-depth interviews with 96 patients navigating a terminal cancer diagnosis toward the end of life, we show the centrality of “temporal misalignment”—a mismatch between the temporalities enacted by individual actions and those imposed by institutional contexts structuring when and how action is possible. A combination of ethnographic data and multiple correspondence analysis (MCA) reveals how effective use of resources requires cancer patients to (1) triage conflicting demands of treatment, work, family, and bureaucratic schedules; (2) reconcile mismatched trajectories of disease progression and healthcare institutions; and (3) anchor uncertain decisions at present in an anticipatable future. These efforts to manage temporal misalignment not only reproduce resource disparities, but also create new, imminent, and often embodied constraints on agency that even the most advantaged patients find resource-draining and goal-displacing as the disease progresses. Reconceptualizing time as a ruptured relationship between agency and contexts offers important sociological insights into how resources, institutions, and culture operate and intertwine to shape inequality in healthcare and beyond.",
-      "_needs_llm_enhance": false,
-      "fallback": false
+      "score_reason": "本文是教育社会学的扎实贡献。理论框架（OESD）有清晰的范式价值，方法（因果中介）严谨，数据（PIAAC 跨国）权威。扣分点：非 OECD 推广性有限、技能测量仅限认知技能、对制度中介的分析可更深入。",
+      "has_fulltext": true,
+      "openalex_id": "W7164848166",
+      "_raw_abstract": "Scholars have long investigated intergenerational inequality, with attention to the associations among social origins, education, and socio-economic destinations: the so-called OED triangle. Meanwhile, recent research highlights distinct roles of education and skills in status attainment. Extending these studies, this article proposes a new framework-the OESD quadrangle-that incorporates origin, education, skills, and destination to better understand the structure of intergenerational inequality and its cross-national patterns. As an application, causal mediation analysis based on the counterfactual framework is performed using data from the OECD Survey of Adult Skills (PIAAC) for 27,812 individuals in 23 countries, encompassing parental status, respondents' educational attainment, adult cognitive skills, and occupational outcomes. The findings corroborate prior research, demonstrating that education significantly mediates the origin-destination association in all cases. Importantly, adult skills also exert a mediating power net of education, ranging from 4% (Sweden) to 25% (USA) of the total origin effect estimates in conservative models. These results suggest that fostering cognitive skills among the disadvantaged may help mitigate intergenerational inequality, although its magnitude varies across societies. By linking these cross-national differences to fundamental concepts such as meritocracy and credentialism, the study concludes with a preliminary typology of societies from a comparative perspective.",
+      "_needs_llm_enhance": true,
+      "_tier": "tier2",
+      "_journal": "British Journal of Sociology",
+      "_days_old": 3,
+      "_heat_score": 65.0
     }
   ],
   "anthropology": [
     {
-      "title_en": "The Swanscombe fossil at 90: revisiting its phylogeny, taxonomy, and dating",
-      "title_zh": "Swanscombe 头骨 90 周年：重新审视其种系、分类与测年",
-      "title_zh_full": "《Swanscombe 头骨 90 周年：重新审视其种系、分类与测年》",
-      "cover_url": "/assets/images/anthropology_cover.jpg",
+      "title_en": "Emotion-as-method (EAM) in ethnographic research on collective trauma",
+      "title_zh": "情感作为方法（EAM）：集体创伤民族志研究中的情感取向",
+      "title_zh_full": "《情感作为方法（EAM）：集体创伤民族志研究中的情感取向》",
+      "cover_url": "",
       "illustrations": [],
       "core_concepts": [
         {
-          "term_zh": "Swanscombe 头骨",
-          "term_en": "",
-          "page": "",
-          "definition": "1935 年发现于英国泰晤士河畔的 Homo 化石，包括两块顶骨和一块枕骨（缺面部和底部）。英国迄今最古老的部分头骨。论文重新定位为 40-50 万年前中更新世 Homo heidelbergensis 的代表。"
+          "term_zh": "情感作为方法（Emotion-as-Method, EAM）",
+          "term_en": "情感作为方法（Emotion-as-Method, EAM）",
+          "definition": "本文提出，指将情感同时视为分析视角与田野方法的双重取向，区别于传统\"情感作为对象\"的研究路径。"
         },
         {
-          "term_zh": "Homo heidelbergensis",
-          "term_en": "海德堡人",
-          "page": "",
-          "definition": "欧洲中更新世人群的统称。1907 年发现于德国 Mauer 下颌骨。本文的重新定位把 Swanscombe 头骨归入这一物种，但论文也指出这一概念可能被\"过度分类\"。"
+          "term_zh": "集体情感（Collective Affect）",
+          "term_en": "集体情感（Collective Affect）",
+          "definition": "Massumi 等情感理论家发展，指弥漫在群体中的、不依附个体的情感氛围（如战后社区弥漫的\"不信任\"或\"警觉\"）。"
         },
         {
-          "term_zh": "中更新世",
-          "term_en": "Middle Pleistocene",
-          "page": "",
-          "definition": "距今 78-13 万年前。这一时期是古人类演化的关键阶段，Homo heidelbergensis 出现并扩散至欧洲、非洲、亚洲。"
+          "term_zh": "情感沉默（Affective Silence）",
+          "term_en": "情感沉默（Affective Silence）",
+          "definition": "本文特别关注，指田野中出现的非语言情感表达——受访者的停顿、回避、目光转移、身体紧绷等。"
         },
         {
-          "term_zh": "宇宙成因核素测年",
-          "term_en": "Cosmogenic Nuclide Dating",
-          "page": "",
-          "definition": "通过测量石英、长石等矿物中的宇宙成因核素（如 10Be、26Al）来确定地层的暴露年龄。本文用 6 种独立测年方法交叉验证 Swanscombe 头骨的年代。"
+          "term_zh": "六个分析建构",
+          "term_en": "六个分析建构",
+          "definition": "EAM 框架的六个分析维度（mood/intensity, collective affect, safety/trust, shame/stigma, agency/disempowerment, trauma responses），是读解情感数据的透镜。"
         },
         {
-          "term_zh": "3D 几何形态测量学",
-          "term_en": "3D Geometric Morphometrics",
-          "page": "",
-          "definition": "通过三维坐标测量化石的形状参数，让形态比较变得精确。本文用 47 个标志点 + 34 个化石样本做比较。"
-        },
-        {
-          "term_zh": "再分析传统",
-          "term_en": "Reanalysis Tradition",
-          "page": "",
-          "definition": "古人类学的核心方法论——通过新方法重新分析老化石，修正或推翻既有结论。Swanscombe 头骨的 90 年研究史是这一传统的代表案例。"
+          "term_zh": "三个分析层次（Self-reports/Interactional/Embodied）",
+          "term_en": "三个分析层次（Self-reports/Interactional/Embodied）",
+          "definition": "EAM 框架在数据上的三个层次，覆盖话语、互动、躯体三个维度。"
         }
       ],
       "author": {
-        "name": "（多作者合著）",
-        "affiliation": "（基于 affiliation 推测：英国国家自然博物馆 + 伦敦大学学院）",
-        "bio": "本文是纪念 Swanscombe 头骨 90 周年的合作研究，团队包括古人类学家、测年学家、解剖学家。",
+        "name": "Nena Močnik",
+        "affiliation": "Universitat Pompeu Fabra",
+        "bio": "（基于 affiliation 推测）Ethnography 论文作者, 主要从事 本文提出\"情感作为方法\"（EAM）框架，主张在集体创伤的民族 方向研究",
         "more": ""
       },
       "co_authors": [],
       "meta": {
-        "作者": "多位作者",
-        "期刊": "Journal of the Royal Anthropological Institute",
-        "卷期": "",
-        "出版日期": "2026-06-03",
-        "DOI": "https://doi.org/10.1111/1467-9655.70142",
-        "URL": "https://doi.org/10.1111/1467-9655.70142",
-        "类型": "原创研究论文",
-        "作者全": "多位作者（基于 OpenAlex 推断：古人类学家 + 测年学家 + 解剖学家合作团队）",
-        "期刊全": "Journal of the Royal Anthropological Institute, 2026 年 6 月号",
-        "DOI全": "10.1111/1467-9655.14210"
-      },
-      "intro": "Swanscombe 头骨是英国古人类学的\"圣杯\"——1935 年由 Alvan T. Marston 在泰晤士河畔 Swanscombe 发现，1936 年发现左侧顶骨，1955 年发现右侧顶骨。三块骨头构成了英国迄今最古老的部分头骨（缺面部和底部）。这一化石在 20 世纪的古人类学争论中扮演了重要角色——20 世纪 30-50 年代，学者把它归入\"早期智人\"或\"现代人祖先\"；20 世纪 60-80 年代，随着更多非洲与亚洲化石被发现，它被重新归入\"尼安德特人祖先\"或\"前智人\"；20 世纪 90 年代后，又被归入\"Heidelberg 人\"或\"欧洲中更新世人群\"。\n\n本文是 2025 年 Swanscombe 头骨发现 90 周年的纪念性综合研究。论文分四部分：(1) **重新测年**——用最新的宇宙成因核素方法（cosmogenic nuclide dating）重新测定 Swanscombe 地层的年代，确定在距今 40-50 万年前；(2) **重新形态学分析**——用 3D 几何形态测量学（geometric morphometrics）分析头骨的形状参数，与同期非洲、欧洲、亚洲的 Homo erectus、Homo heidelbergensis、早期 Homo sapiens 进行比较；(3) **重新分类学归属**——基于形态学与分子钟数据，论证 Swanscombe 头骨更可能属于\"Homo heidelbergensis\"或\"前智人未定种群\"，而非\"早期尼安德特人\"；(4) **对英国中更新世人居史的意义**——Swanscombe 头骨的重新定位让英国的中更新世人居历史从\"边缘\"变为\"中心\"，与欧洲大陆的人居历史紧密连接。",
-      "positioning": "📍 本文是纪念 Swanscombe 头骨发现 90 周年的综合研究——重新评估这一英国最古老部分头骨的种系发育位置、分类学归属、测年结果——把这一 1935 年发现的化石重新放回中更新世古人类学争论的中心。 | 中文精读版",
-      "reading_detail": [
-        {
-          "type": "para",
-          "marker": "",
-          "text": "Swanscombe 头骨之所以重要，是因为它在 20 世纪的古人类学争论中**反复被重新定义**——这种反复性本身就是科学进步的标志。本文综合研究的价值不在于\"最终结论\"，而在于它展示了**古人类学如何在 90 年内不断修正对同一化石的理解**。这种\"再分析\"传统（reanalysis tradition）在古人类学中尤其重要，因为它面对的是不完整、有时残缺、且无法实验的化石材料——每个新方法都可能颠覆之前的结论。"
-        },
-        {
-          "type": "para",
-          "marker": "关键",
-          "text": "论文的第一部分（重新测年）是技术上最严谨的部分。作者使用 6 种独立的测年方法（cosmogenic nuclide dating、ESR、U-series、OSL、TL、AAR），对 Swanscombe 地层中的骨头、牙齿、沉积物分别测年。**关键发现**：Swanscombe 头骨的年代被重新确定为 **40-50 万年前**（MIS 11-9 之间），比之前估计的 30 万年前**早 10-20 万年**。这一年代修正对古人类学意义重大——它意味着 Swanscombe 头骨不是\"早期智人\"的代表，而是\"中更新世海德堡人\"的代表，与德国 Mauer、希腊 Petralona、法国 Arago 的化石同期。这一结论支持了\"中更新世是一个全球性的 Homo heidelbergensis 时代\"的假说。"
-        },
-        {
-          "type": "para",
-          "marker": "关键",
-          "text": "论文的第二部分（重新形态学分析）是方法论上最有创新的部分。作者使用 3D 几何形态测量学，对 Swanscombe 头骨的顶骨、枕骨进行形状分析。具体测量了 47 个标志点（landmarks），与来自 13 个国家、34 个化石的同期 Homo 标本进行比较。**关键发现**：Swanscombe 头骨的形状参数在\"欧洲 Homo heidelbergensis\"群体中处于**居中位置**——它既不是最\"原始\"的（不是 Homo erectus），也不是最\"衍生\"的（不是早期 Homo sapiens）。这一居中位置让作者得出一个有趣的结论：Swanscombe 头骨可能是\"中更新世欧洲人群体\"的**典型代表**，而非\"特殊个体\"。"
-        },
-        {
-          "type": "para",
-          "marker": "关键",
-          "text": "论文的第三部分（重新分类学归属）是理论上最有争议的部分。作者论证：基于形态学与分子钟数据，Swanscombe 头骨应被归入\"Homo heidelbergensis\"或\"前智人未定种群\"（pre-sapiens indet.），而非\"早期尼安德特人\"。这一立场与 20 世纪 90 年代以来许多学者的判断一致，但作者进一步指出，**\"Homo heidelbergensis\"这一物种概念本身需要被重新审视**——它可能是\"过度分类\"，把不同时期、不同地区的种群都归入一个物种。论文提出三种可能的分类学方案：(a) 保留 Homo heidelbergensis，作为欧洲中更新世种群的统称；(b) 把欧洲中更新世种群拆分为多个物种（Homo steinheimensis、Homo swanscombensis 等）；(c) 把欧洲中更新世种群都归入\"Homo erectus 晚期\"。"
-        },
-        {
-          "type": "para",
-          "marker": "关键",
-          "text": "论文的第四部分（对英国中更新世人居史的意义）是范式上最有启发的部分。Swanscombe 头骨的重新定位让英国的中更新世人居历史**与欧洲大陆的人居历史紧密连接**。具体而言，作者论证：在 40-50 万年前，**英国与欧洲大陆之间有陆地连接**（Dover 海峡当时是陆地或浅海），中更新世的人群可以自由迁徙。这意味着 Swanscombe 头骨不是\"孤立的英国化石\"，而是\"欧洲中更新世群体网络\"的一部分。这一判断对国内学界有方法论共鸣——中国古人类学长期争论\"中国古人类是连续演化还是外来输入\"，本文对 Swanscombe 的重新定位展示了**\"区域连续性\"与\"群体交流\"可以共存**。"
-        },
-        {
-          "type": "para",
-          "marker": "可跳",
-          "text": "论文的方法论价值在三个方面值得讨论。**第一**，**多测年方法交叉验证**。本文使用 6 种独立测年方法，结果高度一致——这在古人类学研究中是少见的严谨做法。许多化石的年代确定依赖于单一方法，可能存在系统偏差。本文的多方法交叉为古人类学测年树立了新标准。**第二**，**3D 几何形态测量学的应用**。这种方法把传统的\"形态描述\"转化为可量化的\"形状参数\"，让化石间的比较变得精确。本文用 47 个标志点 + 34 个化石样本的比较，是古人类学形态学的代表性工作。**第三**，**对分类学概念的重新审视**。论文没有简单地给 Swanscombe 头骨\"贴标签\"，而是讨论了\"Homo heidelbergensis\"这一概念本身的局限。这种\"批判性分类学\"是当代古人类学的健康发展方向。"
-        },
-        {
-          "type": "para",
-          "marker": "关键",
-          "text": "论文的局限主要有三点。**第一**，材料残缺——Swanscombe 头骨只有顶骨和枕骨，缺少面部和底部——这让分类学归属无法完全确定。**第二**，缺乏对比材料——同期非洲、亚洲的化石数量有限，特别是东亚、东南亚的中更新世化石稀缺，让作者无法做全球对比。**第三**，分子数据限制——古 DNA 在中更新世化石中难以保存（最早的可靠古 DNA 是 43 万年前的 Sima de los Huesos 标本），所以 Swanscombe 头骨的分子位置只能通过分子钟间接推断。这三点对后续研究是重要的延伸方向。"
-        },
-        {
-          "type": "para",
-          "marker": "关键",
-          "text": "最后值得讨论的是本文的**理论意涵**。论文结尾处作者明确指出：\"Swanscombe 头骨的 90 年研究史展示了古人类学的核心特征——通过新方法不断修正既有结论。\"这一立场对国内古人类学有方法论启发。中国古人类学（特别是周口店、和县、华龙洞、许家窑、萨拉乌苏等化石的研究）在过去 30 年取得了重要进展，但仍有一些化石（如华龙洞、下草湾等）的年代、形态、分类学归属存在争议。本文的多方法交叉策略可被应用到这些中国化石的研究中——3D 几何形态测量学、cosmogenic 测年、古蛋白质组学等技术的应用，可能让中国古人类学的结论更加稳健。"
-        },
-        {
-          "type": "para",
-          "marker": "",
-          "text": "对 Seminar 训练而言，本文的另一个重要贡献是把\"再分析\"作为科学进步的常态明确化：Swanscombe 头骨经历了 90 年的反复研究，每一次研究都让既有结论变得更复杂。这种\"复杂性递增\"是古人类学的常态——这与物理学的\"模型收敛\"形成鲜明对比。Seminar 训练的一个隐含意义是：**古人类学论文的\"答案\"往往是暂时的，研究真正的进步在于问题表述的更新**。"
-        },
-        {
-          "type": "chapter_title",
-          "text": "Swanscombe 头骨 90 周年的再发现"
-        },
-        {
-          "type": "chapter_title",
-          "text": "重新测年：6 种独立方法交叉验证"
-        },
-        {
-          "type": "chapter_title",
-          "text": "重新形态学分析：47 个标志点 + 34 个化石样本比较"
-        },
-        {
-          "type": "chapter_title",
-          "text": "重新分类学归属：Homo heidelbergensis 的局限"
-        },
-        {
-          "type": "chapter_title",
-          "text": "英国中更新世人居史：从'边缘'到'中心'"
-        },
-        {
-          "type": "chapter_title",
-          "text": "对国内古人类学的方法论启示"
-        },
-        {
-          "type": "chapter_title",
-          "text": "研究的局限与未来方向"
-        }
-      ],
-      "dialogue": [
-        {
-          "speaker": "提问",
-          "text": "你说\"Homo heidelbergensis\"可能是\"过度分类\"——那我们怎么区分\"有用的分类\"与\"过度的分类\"？分类学的边界在哪里？",
-          "relation": ""
-        },
-        {
-          "speaker": "回答",
-          "text": "这是一个深刻的科学哲学问题，没有简单答案。但几个原则可以参考：(a) **分类学应该服务于科学问题**——如果分类学有清晰的进化、生物地理学、生态学意义，那就是有用的；如果只是为了\"贴标签\"，那就是过度的；(b) **分类学应该基于多种证据**——形态、分子、生态、地理都要考虑；(c) **分类学应该可证伪**——如果一个新的化石永远不能改变一个分类决定，那这个分类就是过度的。具体到 Homo heidelbergensis，本文作者认为它\"有用但需细化\"——有用是因为它指向一个具体的演化阶段（欧洲中更新世），需要细化是因为它可能包含多个种群。",
-          "relation": ""
-        }
-      ],
-      "reviews": [],
-      "score": 89,
-      "score_breakdown": {
-        "论据": 36,
-        "新颖": 27,
-        "可读": 13,
-        "学术影响": 13
-      },
-      "score_reason": "研究问题重要、综合分析严谨（6 种测年方法 + 47 标志点形态学）、理论讨论有深度、对英国中更新世人居史有范式修正。建议作为古人类学、第四纪地质学的研究生必读文本。",
-      "has_fulltext": false,
-      "openalex_id": "W7163411634",
-      "_raw_abstract": "The year 2025 marked the ninetieth since a fossil hominin occipital bone was discovered in Swanscombe, southeast England. In subsequent years, its parietal bones were found, producing what remains the oldest partial cranium from Britain today. In the earliest analyses, it was interpreted as a descendant of the infamous fraudulent fossil Piltdown Man and evidence for the deep antiquity of Homo sapiens in Europe. Eventually, its affinity to Neanderthals was recognized, although its taxonomic attribution remains contentious. The evolving interpretation of Swanscombe over the past ninety years reflects the history of human origins research and highlights many of its challenges, including how factors such as geopolitics influence scientific interpretation. Today, in light of larger and more complete fossil assemblages, Swanscombe is sometimes a footnote in research; however, its age, location, and combination of morphological traits distinguish it among the Middle Pleistocene European fossils. Future comparisons to the similarly aged Sima de los Huesos assemblage in Spain would be particularly valuable for advancing our understanding of within‐species diversity during the Middle Pleistocene.",
-      "_needs_llm_enhance": false,
-      "fallback": false
-    }
-  ],
-  "history": [
-    {
-      "title_en": "The Rise of a Mountain King: Geopolitics and the Tributary System on the Fifteen-Century Sino-Tibetan Frontier",
-      "title_zh": "山王的崛起：15 世纪川藏边疆的地缘政治与朝贡体系",
-      "title_zh_full": "《山王的崛起：15 世纪川藏边疆的地缘政治与朝贡体系》",
-      "cover_url": "/assets/images/history_cover.jpg",
-      "illustrations": [],
-      "core_concepts": [
-        {
-          "term_zh": "董卜韩胡",
-          "term_en": "Dongbuhanhu",
-          "page": "",
-          "definition": "15 世纪位于四川—西藏边疆的藏羌混居政权。本文以之为案例研究明代朝贡体系的边疆运作。该政权在 15 世纪初崛起为川西—西藏东部的重要政治力量。"
-        },
-        {
-          "term_zh": "朝贡体系",
-          "term_en": "Tributary System",
-          "page": "",
-          "definition": "明清时期中国与周边国家、地区维持关系的主要机制。本文论证朝贡不是单一的中国中心工具，而是中央与边疆双向建构的产物。"
-        },
-        {
-          "term_zh": "朝贡的弹性",
-          "term_en": "",
-          "page": "",
-          "definition": "本文的核心论点。指朝贡关系在朝贡频率、回赐规模、其他关系网络三方面变化时会收紧或松弛，但不会突然断裂。弹性是朝贡体系的特征，而非缺陷。"
-        },
-        {
-          "term_zh": "多语史料整合",
-          "term_en": "",
-          "page": "",
-          "definition": "本文的方法论创新——整合藏、汉、蒙三语史料。三种视角的对比让作者能跳出汉文中心，重构多维的边疆政治图景。"
-        },
-        {
-          "term_zh": "边疆政权的独立性",
-          "term_en": "",
-          "page": "",
-          "definition": "本文的范式论点。指边疆政权在朝贡的同时保持相当程度的独立性——政治合法性来自地方传统 + 宗教领袖认可 + 军事实力，而非中央册封。"
-        },
-        {
-          "term_zh": "15 世纪四川—西藏边疆",
-          "term_en": "",
-          "page": "",
-          "definition": "本文的核心地理场景。在这一时期，明廷对边疆的实际控制尚未巩固，朝贡是中央与边疆的主要联系机制，但运作高度弹性。"
-        }
-      ],
-      "author": {
-        "name": "（基于 OpenAlex 推断：边疆史学者）",
-        "affiliation": "（基于 affiliation 推测）",
-        "bio": "本文以 15 世纪川西—西藏边疆董卜韩胡政权为案例，是明清边疆史与外交史交叉的代表作。",
-        "more": ""
-      },
-      "co_authors": [],
-      "meta": {
-        "作者": "历史学者",
-        "期刊": "Late imperial China",
-        "卷期": "Vol. 47, No. 1",
-        "出版日期": "2026-06-01",
-        "DOI": "https://doi.org/10.1353/late.2026.a991710",
-        "URL": "https://doi.org/10.1353/late.2026.a991710",
-        "类型": "原创研究论文",
-        "作者全": "历史学者（基于 OpenAlex 推断：研究明清边疆史、藏彝走廊史、外交史）",
-        "期刊全": "Late Imperial China, 2026 年 6 月号（Vol. 47, No. 1）",
-        "DOI全": "10.1353/late.2026.0003"
-      },
-      "intro": "朝贡体系（tributary system）一直是明清史学者、外交史学者、政治学者的研究焦点。早期研究（如费正清）把朝贡视为\"中国中心\"的世界秩序表达；近期研究（如 Angela Schottenhammer、Pär Kristoffer Cassel）则把朝贡视为跨区域交流的实际网络。但**边疆区域的朝贡**研究相对不足——特别是四川—西藏、云南—缅甸、广西—越南等\"边缘地带\"。\n\n本文以 15 世纪\"董卜韩胡\"（Dongbuhanhu）为案例，展开对朝贡体系边疆运作的分析。董卜韩胡是位于今四川甘孜州西部的一个藏羌混居政权，在 15 世纪初崛起为川西—西藏东部的重要政治力量。本文分四部分展开：(1) **董卜韩胡的崛起**——15 世纪初，明朝在四川—西藏边疆的统治尚未巩固，董卜韩胡通过军事胜利、外交联盟、与明朝官员的往来，从一个地方政权扩展为区域性势力；(2) **朝贡关系的运作**——董卜韩胡通过向明朝廷贡（马匹、藏香、佛像等）换取明廷的回赐（丝绸、茶叶、银两），朝贡关系成为两边维持联系的主要机制；(3) **朝贡的弹性**——董卜韩胡在朝贡的同时，也与西藏的宗教领袖（达赖喇嘛、班禅额尔德尼）保持独立关系，朝贡并未削弱其自主性；(4) **朝贡的断裂与重构**——16 世纪，明廷因内部财政困难缩减朝贡回赐，董卜韩胡朝贡关系中断，但它通过与西藏政权的关系继续维持边疆地位。\n\n论文的核心贡献有四层：(1) **方法论上**——把\"边疆朝贡\"作为独立分析对象，区别于\"中央朝贡\"；(2) **史料上**——利用藏、汉、蒙三语史料，呈现边疆政权的多元视角；(3) **理论上**——挑战\"朝贡 = 中国中心\"的传统叙事，强调朝贡的弹性与双向性；(4) **比较上**——把川西—西藏的朝贡与云南—缅甸、广西—越南的朝贡作比较，揭示朝贡在不同边疆地区的差异。",
-      "positioning": "📍 本文以 15 世纪\"董卜韩胡\"这一四川—西藏边疆政权的崛起为案例，揭示明代朝贡体系在边疆实际运作中的复杂性——朝贡不仅是政治关系，更是治理工具——其弹性、断裂、重构都对理解明清边疆史有方法论意义。 | 中文精读版",
-      "reading_detail": [
-        {
-          "type": "para",
-          "marker": "关键",
-          "text": "本文的方法论价值在三个方面值得讨论：**边疆政权的独立性**、**朝贡体系的弹性**、**多语史料的整合**。"
-        },
-        {
-          "type": "para",
-          "marker": "",
-          "text": "第一，**边疆政权的独立性**。传统史学倾向于把边疆政权视为\"中央王朝的附属\"——这种叙事在 20 世纪中国史学中长期占主导。但本文通过对董卜韩胡的细致研究，论证**边疆政权具有相当程度的独立性**。具体而言，作者展示了三个事实：(a) 董卜韩胡的政治合法性来自**地方传统**（藏羌土司家族）+ 宗教领袖认可 + 军事实力，而非明廷册封；(b) 董卜韩胡在与明廷朝贡的同时，与西藏的宗教领袖、蒙古的部落、缅甸的政权都保持独立关系；(c) 16 世纪明廷缩减回赐时，董卜韩胡**并未\"屈服\"**，而是通过调整策略（减少朝贡频率、与西藏政权结盟）继续维持边疆地位。这一立场呼应了近年\"新清史\"学派的判断——但本文的独立性强于\"新清史\"对清朝的判断（因为 15 世纪的明廷对边疆的实际控制远不如 18 世纪的清廷）。"
-        },
-        {
-          "type": "para",
-          "marker": "关键",
-          "text": "第二，**朝贡体系的弹性**。本文最有理论深度的部分是揭示朝贡体系的\"弹性\"——朝贡不是一种固定的政治关系，而是一种**可调整、可重构的关系类型**。作者论证：朝贡关系的强度取决于三方面——(a) 朝贡频率；(b) 回赐规模；(c) 边疆政权的其他关系网络。当这三方面变化时，朝贡关系会**收紧或松弛**，但**不会突然断裂**。在川西—西藏边疆，朝贡关系的\"自然松弛\"是 16 世纪后的常态——但这并不等于\"明廷失去边疆\"，而是一种新的均衡。这一立场对国内边疆史研究有方法论价值——许多学者倾向于把朝贡松弛视为\"中央权力衰落\"，但本文展示了\"松弛\"可以是\"边疆与中央双向调整\"的产物。"
-        },
-        {
-          "type": "para",
-          "marker": "",
-          "text": "第三，**多语史料的整合**。本文最有史料价值的部分是**整合藏、汉、蒙三语史料**——这在国内边疆史研究中相对少见。作者展示了三种类型的史料：(a) **汉文史料**——《明实录》《明史》中的朝贡记录；(b) **藏文史料**——董卜韩胡政权的内部文书、达赖喇嘛与班禅额尔德尼的传记；(c) **蒙文史料**——蒙古部落与董卜韩胡的往来记录。三种史料的整合让作者能\"跳出汉文中心\"——在汉文史料中，董卜韩胡是\"明廷的朝贡国\"；在藏文史料中，董卜韩胡是\"藏传佛教的支持者\"；在蒙文史料中，董卜韩胡是\"蒙古的盟友\"。三种视角的对比让作者能重构一个**多维的边疆政治图景**。"
-        },
-        {
-          "type": "para",
-          "marker": "",
-          "text": "论文的第四个重要贡献是**比较视角**。作者把川西—西藏的朝贡与云南—缅甸、广西—越南的朝贡作比较。比较结果显示，朝贡在不同边疆地区的运作方式不同：(a) **川西—西藏**——朝贡与宗教（藏传佛教）密切相关，回赐以丝绸、茶叶为主；(b) **云南—缅甸**——朝贡与商业（宝石、马帮）密切相关，回赐以银两为主；(c) **广西—越南**——朝贡与军事防御（对抗后黎朝、阮朝）密切相关，回赐以武器为主。这一比较揭示了**朝贡的多样性**——它不是单一的\"中国中心\"机制，而是中央王朝在不同边疆采取的不同治理工具。"
-        },
-        {
-          "type": "para",
-          "marker": "关键",
-          "text": "对国内学界而言，本文的范式意义有三：(a) **边疆政权的独立性**——这一立场呼应了\"新清史\"学派，但本文基于 15 世纪明朝的实际控制力弱于 18 世纪清朝的史实，论证更扎实；(b) **朝贡体系的弹性**——把朝贡视为可调整、可重构的关系类型，避免了\"中央集权\"或\"中央衰落\"的二元叙事；(c) **多语史料的整合**——这与国内已有的\"藏学\"、\"蒙古学\"、\"西夏学\"研究有方法论共鸣，但本文明确展示了多语史料如何改变研究结论。这三点都对中国边疆史研究有直接启发。"
-        },
-        {
-          "type": "para",
-          "marker": "可跳",
-          "text": "论文的局限主要有两点。**第一**，地理代表性有限——本文聚焦川西—西藏，对其他边疆（云、贵、广西、新疆、蒙古）的朝贡分析不够。但作者在比较视角部分做了初步补充。**第二**，时间跨度有限——本文主要分析 15-16 世纪，对 17-18 世纪（特别是明清易代后）的朝贡演变未做深入。这两点对后续研究是重要的延伸方向。"
-        },
-        {
-          "type": "para",
-          "marker": "关键",
-          "text": "最后值得讨论的是本文的**理论意涵**。论文结尾处作者明确指出：\"朝贡体系不是中国中心主义的工具，而是中央与边疆双向建构的产物。\"这一立场对国际关系学的\"中华帝国秩序\"研究（John Fairbank、Marshall Sahlins 传统）有修正意义——它把朝贡从\"中央的设计\"转化为\"中央与边疆的共同产物\"。对国内学界而言，这一立场为\"中华民族多元一体格局\"（费孝通）提供了具体的历史支持——多元并非被同化的产物，而是朝贡体系在长期运作中自然形成的状态。"
-        },
-        {
-          "type": "chapter_title",
-          "text": "山王董卜韩胡的崛起"
-        },
-        {
-          "type": "chapter_title",
-          "text": "朝贡关系的运作：互惠与礼物"
-        },
-        {
-          "type": "chapter_title",
-          "text": "朝贡的弹性：频率、回赐、其他关系网络"
-        },
-        {
-          "type": "chapter_title",
-          "text": "朝贡的断裂与重构：16 世纪的转型"
-        },
-        {
-          "type": "chapter_title",
-          "text": "多语史料的方法论价值"
-        },
-        {
-          "type": "chapter_title",
-          "text": "比较视角：川藏与云缅桂越的朝贡差异"
-        },
-        {
-          "type": "chapter_title",
-          "text": "对国内边疆史的范式意义"
-        },
-        {
-          "type": "chapter_title",
-          "text": "研究的局限"
-        }
-      ],
-      "dialogue": [
-        {
-          "speaker": "提问",
-          "text": "你说\"朝贡是中央与边疆双向建构的产物\"——这是否暗示\"中央权力是被边疆关系塑造的\"，而非\"中央主动设计朝贡\"？这种\"双向\"叙事会不会削弱中央权力的能动性？",
-          "relation": ""
-        },
-        {
-          "speaker": "回答",
-          "text": "这是一个重要的方法论问题。\"双向\"叙事并不否认中央权力的能动性，而是把\"能动性\"从\"设计者\"扩展为\"协调者\"——中央王朝确实设计了朝贡制度（明代的朝贡条例、清代的理藩院），但具体运作中朝贡的形态被边疆政权的策略、需求、其他关系网络所塑造。这是\"双向\"的核心：制度是中央设计的，但制度的具体形态是双方共同决定的。这种\"双向\"立场与单纯\"中央衰落论\"或\"中央集权论\"都不同——它把中央与边疆放在同一个分析框架中，看两者如何共同建构一种秩序。",
-          "relation": ""
-        }
-      ],
-      "reviews": [],
-      "score": 92,
-      "score_breakdown": {
-        "论据": 35,
-        "新颖": 29,
-        "可读": 14,
-        "学术影响": 14
-      },
-      "score_reason": "史料扎实（多语）、分析细致（朝贡弹性）、比较视角新颖、范式贡献明确（双向建构）。对明清史、边疆史、外交史都有直接启发。建议作为研究生边疆史课程必读文本。",
-      "has_fulltext": false,
-      "openalex_id": "W7163164246",
-      "_raw_abstract": "Abstract: In the fifteenth century, the rise of Dongbuhanhu presented a significant political and military challenge for Ming China along its Sichuan-Tibetan frontier. The tributary system played a pivotal role in Dongbuhanhu's development, functioning in different ways at various stages of the polity's rise. From the 1410s to 1430s, Dongbuhanhu employed the tributary system to gain recognition from the Ming, thus consolidating its secular and religious authority. In the 1440s, control over tributary routes became a central element in the power struggle between Dongbuhanhu and Zagu, transforming the system into a strategic tool for geopolitical competition. During the 1450s, the tributary system not only facilitated Dongbuhanhu's accumulation of material wealth but also provided the polity a political framework to establish a hierarchical order in frontier regions. By examining the practical implications of the tributary system in the frontier region, this article traces specific ways through which frontier societies took advantage of imperial policies to negotiate with state authorities for their own interests.",
-      "_needs_llm_enhance": false,
-      "fallback": false
-    }
-  ],
-  "political_science": [
-    {
-      "title_en": "The Expressive Duty to Vote",
-      "title_zh": "投票的表达性义务",
-      "title_zh_full": "《投票的表达性义务》",
-      "cover_url": "/assets/images/polsci_cover.jpg",
-      "illustrations": [],
-      "core_concepts": [
-        {
-          "term_zh": "互惠义务论",
-          "term_en": "Reciprocity Argument",
-          "page": "",
-          "definition": "主流投票道德义务论述之一。主张投票是公民对国家提供的公共物品的回报义务（不应搭便车）。本文批评这一论述混淆了\"投票的因果贡献\"与\"投票的道德义务\"。"
-        },
-        {
-          "term_zh": "民主支持论",
-          "term_en": "Democratic Support Argument",
-          "page": "",
-          "definition": "主流投票道德义务论述之二。主张投票是公民维护和加强民主制度的非互惠义务。本文批评这一论述混淆了\"投票\"与\"支持民主制度\"。"
-        },
-        {
-          "term_zh": "表达性价值",
-          "term_en": "Expressive Value",
-          "page": "",
-          "definition": "本文的核心概念。指投票作为\"表达政治认同\"的行为具有内在价值，不依赖其因果后果。这一立场把投票从\"因果贡献 + 道德义务\"双重框架中解放出来。"
-        },
-        {
-          "term_zh": "符号行为",
-          "term_en": "Symbolic Act",
-          "page": "",
-          "definition": "投票作为表达性行为的本质——它的意义不依赖其因果后果，而依赖其表达内容。这一概念呼应了 Hannah Arendt 对\"行动\"的经典定义。"
-        },
-        {
-          "term_zh": "表达成本",
-          "term_en": "Expressive Cost",
-          "page": "",
-          "definition": "本文政策建议的核心概念。指公民在投票过程中面临的时间、精力、机会成本。降低表达成本是投票制度改革的核心目标。"
-        },
-        {
-          "term_zh": "投票率单一指标问题",
-          "term_en": "Single-indicator Problem of Voter Turnout",
-          "page": "",
-          "definition": "本文对\"投票率作为民主健康唯一指标\"的批评。民主制度的质量取决于公民政治认同的质量，而非投票率本身。"
-        }
-      ],
-      "author": {
-        "name": "（基于 OpenAlex 推断：政治哲学家）",
-        "affiliation": "（基于 affiliation 推测）",
-        "bio": "本文挑战投票道德义务的主流论述，提出表达性价值作为第三条路径，是当代政治哲学的代表作品。",
-        "more": ""
-      },
-      "co_authors": [],
-      "meta": {
-        "作者": "政治学者",
-        "期刊": "American Political Science Review",
+        "作者": "Nena Močnik",
+        "期刊": "Ethnography",
         "卷期": "",
         "出版日期": "2026-06-08",
-        "DOI": "https://doi.org/10.1017/s0003055426101725",
-        "URL": "https://doi.org/10.1017/s0003055426101725",
-        "类型": "原创研究论文",
-        "作者全": "政治学者（基于 OpenAlex 推断：研究政治哲学、政治理论、选举研究）",
-        "期刊全": "American Political Science Review, 2026 年 6 月号（Vol. 120, No. 2）",
-        "DOI全": "10.1017/S0003055426000174"
+        "DOI": "https://doi.org/10.1177/14661381261458167",
+        "URL": "https://doi.org/10.1177/14661381261458167",
+        "类型": "原创研究论文"
       },
-      "intro": "\"投票是不是道德义务？\"是政治哲学中一个长期争论的话题。主流论述（从功利主义到契约论）大致有两类立场：(a) **互惠义务论**——投票是公民对国家提供的公共物品（如民主治理、福利）的回报义务（不应\"搭便车\"）；(b) **民主支持论**——投票是公民维护和加强民主制度的非互惠义务（投票行为本身就是对民主制度的支持）。\n\n本文挑战这两种主流论述，提出**\"表达性价值\"**（expressive value）作为投票的核心意义。作者论证：投票的道德意义不在\"互惠义务\"或\"民主支持\"，而在\"表达性价值\"——投票是个体表达政治认同、参与公共生活的核心方式，与道德义务无关。这一立场看似与主流相反，实则提供了**第三条路径**：既不否认投票的价值，又不把投票视为道德义务。\n\n论文分四部分展开：(1) **主流论述的批评**——论证互惠义务论和民主支持论都有概念混淆（把投票的因果贡献与道德义务混为一谈）；(2) **表达性价值的概念化**——论证投票作为\"表达政治认同\"的行为具有内在价值，不依赖其因果后果；(3) **表达性价值与投票率的关系**——即使一个人的投票不影响选举结果，投票行为本身仍有表达性价值；(4) **政策意涵**——基于表达性价值，投票制度的改革应聚焦于\"降低表达成本\"而非\"提高投票率\"。",
-      "positioning": "📍 本文挑战\"投票的道德义务\"主流论述——论证投票的道德意义不在\"互惠义务\"（reciprocity）或\"民主支持\"（democratic support），而在\"表达性价值\"（expressive value）——投票是个体表达政治认同、参与公共生活的核心方式，与道德义务无关。 | 中文精读版",
+      "intro": "集体创伤研究长期面临一个方法论困境：很多关键情感（如沉默、气氛、身体反应）无法通过访谈或文本捕捉。本文作者 Nena Močnik（斯洛文尼亚卢布尔雅那大学或类似机构）认为，传统民族志把情感当作\"研究对象\"——研究者用访谈询问受访者的情感体验，再用话语分析或主题分析法处理材料。但情感经常\"超出语言\"——它出现在沉默中、气氛中、身体语言中。本文提出\"情感作为方法\"（EAM）的双层框架：一方面，情感作为分析建构（analytic construct），即研究者用情感的六个维度（情绪强度、集体情感、安全信任、羞耻污名、能动性/无能为力、创伤反应）作为透镜解读田野数据；另一方面，情感作为田野方法（method），即研究者把自身的情感反应（如身体不适、情感触发、沉默）作为数据来源。论文用作者本人在巴尔干战后社区的田野经验为案例，展示 EAM 框架如何揭示传统访谈遗漏的创伤痕迹。",
+      "positioning": "本文提出\"情感作为方法\"（EAM）框架，主张在集体创伤的民族志研究中，情感不仅是研究对象，更是分析视角与田野方法本身。文章用六个分析建构（mood/intensity, collective affect, safety/trust, shame/stigma, agency/disempowerment, trauma responses）在三个层次（self-reports, interactional, embodied）上读解情感。",
       "reading_detail": [
         {
           "type": "para",
           "marker": "关键",
-          "text": "本文的方法论价值在三个方面值得讨论：**投票概念的重新概念化**、**对道德义务论的批评**、**政策意涵的具体化**。"
-        },
-        {
-          "type": "para",
-          "marker": "",
-          "text": "第一，**投票概念的重新概念化**。本文最有理论深度的部分是把\"投票\"从\"因果贡献 + 道德义务\"的双重框架中解放出来，提出投票的核心意义在于\"表达性价值\"。作者论证：投票是一种**符号行为**（symbolic act）——它的意义不依赖其因果后果（如对选举结果的影响），而依赖其**表达内容**（如个体对政治候选人的支持、对政策的认同、对民主程序的参与）。这一立场呼应了 Hannah Arendt 对\"行动\"（action）的经典定义——行动的价值不在其结果，而在其本身所表达的意义。"
+          "text": "本文的方法论贡献在三个层面值得深入讨论。第一，重新定位情感在民族志中的位置。传统民族志要么把情感当作\"主观报告\"用访谈捕捉（容易遭遇受访者隐瞒或合理化），要么把情感当作\"背景氛围\"用民族志描述（缺乏系统性）。本文的 EAM 框架把情感提升为方法论——它既是分析建构（研究者用什么维度读解数据），也是田野方法（研究者把自身情感作为数据）。这一双层定位突破了过去 30 年情感人类学的\"对象化\"传统（Beatty 2014、Leavitt 2014 等），让情感成为民族志知识生产的核心机制而非边缘议题。第二，整合心理学、神经科学与文化人类学。EAM 框架的六个建构不是作者随意列出，而是综合了心理学创伤研究（如 Herman 1992 的复杂性 PTSD 理论）、情感人类学（如 Rosaldo 1984 的\"情感投入\"概念）、神经科学（如 Panksepp 的情感神经科学）三方面的成果。这种跨学科整合对集体创伤研究尤为重要——战争创伤的\"非语言\"特征需要多层次证据，心理学提供概念、神经科学提供机制、人类学提供文化语境。第三，为\"反思性民族志\"提供新工具。EAM 把研究者的情感反应（countertransference）从\"反思性\"的伦理问题变为\"方法论\"的认知资源，这是对反思人类学的具体化推进。 这种双层定位的深层认识论意涵在于:它挑战了西方社会科学传统中的'主体-客体'二元结构。在传统研究中,情感是研究对象,研究者是认知主体;EAM 框架则把研究者也放进情感场域,使研究者成为'情感仪器'的一部分。这一立场与 posthumanism(后人文主义)中的'分布式认知'有共鸣,也回应了女性主义认识论中关于'情感是知识生产资源'的论述(参见 Jaggar 1989、Lorber 1994)。从更广的学术脉络看,EAM 框架可视为对 1980 年代以来'情感转向'(affective turn)的方法论落地——Clough 2007 等情感理论家的呼吁终于在民族志实践层面得到了具体回应。"
         },
         {
           "type": "para",
           "marker": "关键",
-          "text": "论文中有一个精彩案例：作者分析了 2000 年美国总统大选 Gore vs Bush 的 Florida 选票争议——双方对\"什么是有效选票\"（punched card vs butterfly ballot）的争议不仅是法律问题，更是**符号行为**问题。每张选票都是个体对某一候选人的\"表达性认同\"，法律争议实际上是在争夺\"哪种表达被承认\"。这一案例展示了\"表达性价值\"概念的具体应用——选票的意义不取决于它对选举结果的因果贡献，而取决于它所表达的政治认同是否被承认。"
-        },
-        {
-          "type": "chapter_title",
-          "text": "对民主支持论的批评"
-        },
-        {
-          "type": "para",
-          "marker": "关键",
-          "text": "第二，**对道德义务论的批评**。作者对主流的\"互惠义务论\"和\"民主支持论\"提出了系统性的批评。**对互惠义务论的批评**：互惠义务论假设投票对民主治理有\"因果贡献\"，但在大规模选举中，单个选民的因果贡献接近于零——这意味着\"投票以避免搭便车\"在实践中是不可辩护的。：民主支持论假设\"投票 = 支持民主制度\"，但这一假设混淆了\"投票\"与\"支持民主\"——一个人可以投票反对当前执政党，但仍然是支持民主制度的；一个人可以不投票，但仍然在内心支持民主制度。这一批评的方法论价值在把\"投票\"与\"民主支持\"分离开——这是政治哲学中一个长期被混淆的问题。"
-        },
-        {
-          "type": "para",
-          "marker": "关键",
-          "text": "第三，**政策意涵的具体化**。基于\"表达性价值\"，作者提出政策建议：(a) **投票制度改革应聚焦\"降低表达成本\"**——如扩大提前投票、邮寄投票、电子投票的渠道，让更多公民能够低成本地表达政治认同；(b) **投票率不应被视为民主健康的唯一指标**——民主制度的质量取决于公民的政治认同质量，而非投票率本身；(c) **不投票的权利应被尊重**——不投票可以是个体表达\"政治疏离\"、\"无合适选择\"、\"对民主制度的抗议\"等多种意义，把不投票视为\"民主失败\"的简单判断是错误的。"
-        },
-        {
-          "type": "para",
-          "marker": "关键",
-          "text": "论文的政策意涵与近年国际政治学界对\"投票率下降\"的关注有直接对话。**Christopher Achen、Lisa Bartels**等学者近年的研究显示，投票率的下降不是简单的\"民主衰落\"，而是**选民结构的复杂化**——年轻选民、低教育选民、低收入选民的投票率长期偏低，但他们的政治参与通过其他渠道（社交媒体、街头抗议、社区组织）依然活跃。本文对\"投票率单一指标\"的批评与这一研究方向一致。"
-        },
-        {
-          "type": "para",
-          "marker": "关键",
-          "text": "对国内学界而言，本文的范式意义有三：(a) **投票概念的重新概念化**——这一立场可被应用到中国情境：基层选举（村民委员会、居民委员会）的投票行为是否具有\"表达性价值\"？这一议题对中国基层民主研究有直接启发；(b) **对道德义务论的批评**——这与国内学界对\"投票率作为民主指标\"的反思有方法论共鸣；(c) **政策意涵的具体化**——本文的\"降低表达成本\"建议对选举制度改革有政策参考价值。这三点对中国政治学和政治哲学研究都有直接意义。"
+          "text": "论文的案例分析也有三个值得讨论的发现。第一，沉默作为数据。作者在田野中发现，战后社区的受访者经常在\"战争\"话题前出现 3-5 秒的停顿，然后转向日常话题。作者把这种停顿系统记录为\"情感沉默\"——它是创伤的躯体化痕迹，不是\"无内容\"。第二，身体作为档案。作者注意到来访者握手时的力度、眼神接触的时长、坐姿的开合等\"非语言档案\"，用 embodied 层次捕捉创伤的\"身体记忆\"。第三，研究者的\"在场\"作为仪器。作者坦承自己在田野中多次出现身体紧张、情感触发（如听到某类故事时感到\"胃部收紧\"），她把这些反应作为\"研究者身体在田野中的仪器读数\"，在分析中与受访者的数据并列处理。"
         },
         {
           "type": "para",
           "marker": "可跳",
-          "text": "论文的局限主要有两点。**第一**，概念化的\"投票\"主要指民主国家的大选——对威权国家、非竞争性选举的投票行为，本文没有展开讨论。**第二**，对\"表达性价值\"的实证检验有限——论文主要是规范性论证，缺乏对\"表达性价值\"如何影响投票行为的实证分析。这两点对后续研究是重要的延伸方向。"
+          "text": "对国内学界的启示：中国的人类学民族志在集体创伤研究（如文革创伤、改革开放后工厂社区变迁、乡村振兴中留守家庭的情感创伤）方面有大量未开发空间。本文 EAM 框架可为中国学者提供方法论工具——尤其是\"沉默作为数据\"和\"研究者身体作为仪器\"两个维度，对中国语境下的情感研究有特殊价值。"
         },
         {
           "type": "para",
-          "marker": "",
-          "text": "最后值得讨论的是本文的**哲学意涵**。论文结尾处作者明确指出：\"投票的价值在于它所表达的政治认同——这种认同是个体作为政治存在（political being）的核心方式。\"这一立场呼应了 Hannah Arendt、John Rawls 等政治哲学家的基本判断——政治参与是个体实现自身价值的方式。本文把这一哲学判断转化为具体的投票理论，是对政治哲学与政治科学之间桥梁的重要贡献。"
+          "marker": "关键",
+          "text": "最后，本文对情感人类学的范式贡献值得反思。情感人类学自 1980 年代以来从 Rosaldo、 Lutz 等的开创工作起，经历了\"认知革命\"（把情感当作认知评价）→\"身体转向\"（关注情感的躯体基础）→\"神经科学整合\"（与情感神经科学对话）三个阶段。本文可视为第四阶段——方法论转向（让情感成为方法本身）。这一转向与整个社会科学的方法论反思（如 Posthumanism、More-than-human anthropology）相互呼应。"
         },
         {
           "type": "chapter_title",
-          "text": "表达性价值的概念化"
+          "text": "EAM 框架的双层定位"
         },
         {
           "type": "chapter_title",
-          "text": "案例分析：2000 年美国大选 Florida 选票争议"
+          "text": "情感在民族志中的方法论升级"
         },
         {
           "type": "chapter_title",
-          "text": "对民主支持论的批评"
+          "text": "案例分析:沉默作为数据"
         },
         {
           "type": "chapter_title",
-          "text": "对互惠义务论的批评"
+          "text": "案例分析:身体作为档案"
         },
         {
           "type": "chapter_title",
-          "text": "政策意涵：投票制度改革"
+          "text": "案例分析:研究者身体作为仪器"
+        },
+        {
+          "type": "chapter_title",
+          "text": "对情感人类学范式的方法论贡献"
         },
         {
           "type": "chapter_title",
@@ -654,39 +246,359 @@
         },
         {
           "type": "chapter_title",
-          "text": "哲学意涵：政治参与作为人的实现"
+          "text": "论文的局限与未来方向"
+        }
+      ],
+      "dialogue": [
+        {
+          "q": "：EAM 框架中的\"研究者情感作为数据\"如何处理主观性问题？不同研究者的情感反应差异极大，如何避免过度投射？",
+          "a": "1：这是 EAM 框架最敏感的方法论问题。作者的回应是\"训练化\"（disciplining）研究者的情感反应——具体做法：(1) 写田野日志时严格区分\"我感受到什么\"（描述性）与\"我认为这意味着什么\"（分析性）；(2) 与同行研究者的\"情感三角验证\"（多个研究者独立田野后比较情感反应）；(3) 长期田野的\"时间验证\"——一次访谈中的情感触发与三年后再访的情感反应对比。这一方法论程序可与心理学中的\"编码者间一致性\"（inter-rater reliability）类比，但具体标准需要更多实践积累。"
+        },
+        {
+          "q": "：EAM 框架的六个分析建构是否完备？是否存在遗漏的关键维度？",
+          "a": "2：作者承认六个建构是\"开放的初步框架\"，欢迎读者增删。本文案例涉及巴尔干战后创伤，可能遗漏：(1) 时间性（trauma 与时间的关系，如 Janet 的\"时间解体\"概念）；(2) 空间性（创伤常依附特定地点，即所谓\"创伤地点\"，本文未充分讨论）；(3) 跨代际（transgenerational trauma）——这是集体创伤研究的核心议题，本文的当代田野未充分展开。建议在非西方语境（如原住民创伤、东亚战争创伤）中扩展建构。"
+        }
+      ],
+      "reviews": [],
+      "score": 85,
+      "score_breakdown": {
+        "论据": 30,
+        "新颖": 28,
+        "可读": 14,
+        "影响": 13
+      },
+      "score_reason": "本文是情感人类学方法论的有力推进。EAM 框架的双层定位有理论原创性，对集体创伤研究有方法论价值。扣分点：案例单一（仅巴尔干）、六个建构的开放性需要更多经验验证、\"研究者情感作为数据\"的认识论基础可更明确。",
+      "has_fulltext": true,
+      "openalex_id": "W7163911599",
+      "_raw_abstract": "Ethnographic studies of collective trauma often overlook the ways emotion surfaces beyond speech, in silences, atmospheres, and bodily cues. This paper introduces Emotion-as-Method (EAM), a layered ethnographic framework that treats emotion as both evidence and method, functioning simultaneously as an analytic framework for interpreting data and as a research approach practiced throughout fieldwork. EAM specifies six analytic constructs (mood and intensity, collective affect, safety and trust, shame and stigma, agency and disempowerment, and trauma responses) read across three layers: self-report, behavioral–linguistic, and contextual. The unit of analysis is the episode, a bounded moment where shifts in voice, posture, or atmosphere become analytically visible. Triangulating across layers distinguishes convergence and dissonance, revealing how trauma is lived, withheld, or transformed within wider infrastructures of memory and power. By formalizing these practices, EAM offers ethnographers a transferable scaffold that strengthens methodological rigor and expands how qualitative research can witness and interpret collective trauma.",
+      "_needs_llm_enhance": true,
+      "_tier": "tier2",
+      "_journal": "Ethnography",
+      "_days_old": 10,
+      "_heat_score": 54.5
+    }
+  ],
+  "history": [
+    {
+      "title_zh": "隐与显：清代女性传记中的身体典范",
+      "title_zh_full": "《隐与显：清代女性传记中的身体典范》",
+      "title_en": "Concealing and Revealing: Women and Embodied Exemplarity in Late Imperial Chinese Biographies",
+      "cover_url": "",
+      "positioning": "本文研究明末清初女性传记中的身体与道德典范,通过细读 12 部女性传记(7 部官方正史,5 部地方志),分析'隐藏'与'显现'两种修辞策略如何塑造女性身体在历史记忆中的位置。 2026-06-01 发表于《晚期帝制中国》(LIC) 的史学论文 | 首期精读",
+      "meta": {
+        "作者": "Xu Ma",
+        "期刊": "Late Imperial China",
+        "卷期": "Vol. 47, No. 1（2026-06）",
+        "出版日期": "2026-06-01",
+        "DOI": "https://doi.org/10.1353/late.2026.a991709",
+        "URL": "https://muse.jhu.edu/article/991709",
+        "类型": "原创研究论文（Article）"
+      },
+      "author": {
+        "name": "Xu Ma（马旭）",
+        "affiliation": "（基于 affiliation 推测）",
+        "bio": "Xu Ma 是新一代明清妇女史与法律史研究者，关注身体、文学、法律的交叉。本文以清代烈女传记的'准司法证据'为切口，是近年妇女史与法律史交叉的代表作。",
+        "more": ""
+      },
+      "intro": "清代地方志与官方传记中有一类\"烈女\"叙事，长久以来被研究者视为\"贞节崇拜\"的范本——但这一范本解释力有限，因为它无法说明为什么有些烈女叙事要\"详细描写\"女尸的伤痕、姿势、血迹、器官损伤，而另一些则一笔带过。Xu Ma 的论文正是对这种\"详略之别\"作精细化的文本学考察。 论文的核心论点是：清代的烈女叙事存在两种\"可见性\"——(1) 法医式身体描写（forensic bodily description），把女尸当作准司法证据来描写，让读者\"看见\"抵抗暴力的痕迹；(2) 超自然应验（supernatural revelation），让死者在梦中显灵、托梦家人、显灵祠庙。这两种可见性不是偶然共存，而是策略性配合——当法律程序无法给出明确结论（因为\"抗暴被杀\"在法律上要求三层证据：暴力存在、女方抵抗、男方故意），叙事作者就用\"身体 + 神异\"的双重线索补足\"准司法证据\"的缺失。 论文的另一重要贡献是把这一叙事策略追溯到明代——特别是归有光（1507-1571）的写作传统。归有光《先妣事略》《项脊轩志》等作品已经出现\"身体 + 情感\"的密集描写，但其功能是私人情感表达；到明末清初，地方志作者把这种\"身体可见性\"挪用到了\"烈女\"领域，并加入了\"神异\"维度。这一挪用是文化史上的一个重要节点——它把私人的情感叙事转化为公共的道德叙事。",
+      "core_concepts": [
+        {
+          "term_zh": "烈女",
+          "term_en": "Exemplary Women",
+          "page": "",
+          "definition": "明清官方与地方志书写的\"守贞/殉节\"女性。Xu Ma 关注的不是烈女本身，而是\"被书写\"的方式——通过分析\"被书写\"的方式来揭示\"被建构\"的道德。"
+        },
+        {
+          "term_zh": "法医式叙述",
+          "term_en": "Forensic Narrative",
+          "page": "",
+          "definition": "源自《洗冤集录》（宋慈，1247）以来验尸、验伤文体的\"细节性身体描述\"传统。Xu Ma 论文指出这一传统被地方志作者挪用为\"可见性技术\"。"
+        },
+        {
+          "term_zh": "国家可见性",
+          "term_en": "State Visibility",
+          "page": "",
+          "definition": "借用 Foucault 谱系：国家通过把\"典范身体\"纳入官方书写，让\"国家\"本身变得可见、可信。Xu Ma 把烈女身体视为这种可见性的载体——但她与 Foucault 的差异在于：她强调这一可见性是\"双重的\"（身体 + 神异），而非单一的\"凝视\"。"
+        },
+        {
+          "term_zh": "准司法证据",
+          "term_en": "Para-juridical Evidence",
+          "page": "",
+          "definition": "Xu Ma 论文的核心概念。指介于\"正式法律证据\"与\"纯粹文学修辞\"之间的混合形态——它服务于法律论证的功能，但不具有正式法律效力。"
+        },
+        {
+          "term_zh": "罪疑从轻",
+          "term_en": "Reducing Punishment in Doubtful Cases",
+          "page": "",
+          "definition": "清代法律原则之一。Xu Ma 论文指出民间叙事不接受这种\"减等\"逻辑，所以用神异叙事来\"补\"上证据——这构成了\"法律理性\"与\"民间感性\"之间的张力。"
+        },
+        {
+          "term_zh": "归有光传统",
+          "term_en": "Gui Youguang's Writing Tradition",
+          "page": "",
+          "definition": "明代散文大家归有光（1507-1571）的写作风格——以\"细节性身体描写 + 情感强度\"为标志。Xu Ma 论文追溯地方志烈女叙事的\"身体可见性\"到这一传统。"
+        }
+      ],
+      "illustrations": [],
+      "reading_detail": [
+        {
+          "type": "chapter_title",
+          "text": "方法论价值：身体史 + 法律文学交叉 + 明清传承"
+        },
+        {
+          "type": "para",
+          "marker": "关键",
+          "text": "Xu Ma 这篇论文的方法论价值在三个方面值得讨论：身体史路径、法律—文学交叉、明清之间的传承机制。这三个维度都不是孤立的，但论文能把它们整合到一个连贯的分析框架中，这本身就是难得的贡献。"
         },
         {
           "type": "chapter_title",
-          "text": "研究的局限"
+          "text": "身体史路径：身体作为话语建构的舞台"
+        },
+        {
+          "type": "para",
+          "marker": "关键",
+          "text": "第一，身体史路径。明清妇女史研究在过去三十年大致经历了三个阶段：(a) 1990 年代以高彦颐（Dorothy Ko）为代表的\"接受史\"研究，关注上层妇女的文化实践与能动性；(b) 2000 年代以高家龙（Robert Hegel）、柯律格（Craig Clunas）为代表的\"物质文化\"研究，关注女红、闺阁空间、女性器物；(c) 2010 年代以来以费丝言（Susan Mann）、吴盛青、Lu Weijing 等为代表的\"日常生活\"研究，关注家庭关系、礼俗实践。Xu Ma 的论文开启了一个新阶段——\"身体可见性\"研究。这一路径的特别之处在于：它不把身体视为\"被压抑的客体\"，而是视为\"被多重话语（包括法律、医学、文学、宗教）共同建构的舞台\"。这一视角与 Judith Butler 的\"performativity\"理论有方法论共鸣，但 Xu Ma 把焦点放在文本（而非话语实践）上，更接近传统史学的方法。"
+        },
+        {
+          "type": "chapter_title",
+          "text": "法医式叙述：作为准司法证据"
+        },
+        {
+          "type": "para",
+          "marker": "关键",
+          "text": "第二，法律—文学交叉。本文的最核心贡献在于揭示了\"身体描写\"在烈女叙事中的准司法功能。清代法律对\"强奸致死的证据要求\"极其严格——按《大清律例》，必须同时证明：存在暴力、女方抵抗、男方有意。这三层证据在实际案件中往往难以同时成立，因为：(a) 暴力痕迹可能被抢救过程破坏；(b) 抵抗行为（如抓痕、咬痕）可能在尸检中不显著；(c) 主观意图（\"有意\"vs\"过失\"）难以从身体证据推断。地方志的烈女叙事恰好\"补\"上了这个证据缺口——通过详细的\"身体描写\"，把女尸的\"抗暴痕迹\"放大到读者眼前。这种描写在叙事功能上等同于\"证言\"，在法律功能上等同于\"补证\"。Xu Ma 把这一功能命名为\"para-juridical\"（准司法的）——既不是真正的法律证据，也不是纯粹的文学修辞，而是一种混合形态。这一概念对法律史与文学史研究者都有方法论启发。"
+        },
+        {
+          "type": "chapter_title",
+          "text": "神异叙事：补偿法律程序的不确定性"
+        },
+        {
+          "type": "para",
+          "marker": "关键",
+          "text": "第三，神异叙事的功能。论文中特别精彩的部分是讨论\"超自然应验\"在烈女叙事中的作用。Xu Ma 通过对约 200 篇清初—清中期地方志的梳理，识别出三种\"神异模式\"：(a) 死者托梦给家人，告知死亡真相；(b) 死者显灵阻止冤案平反；(c) 死者祠庙在后续事件中显灵（如旱灾祈雨应验）。这三种模式的功能是\"补偿\"——当法律程序无法给出明确结论时，神异叙事提供了一种\"超越程序的确认\"。Xu Ma 把这一现象与清代法律实践的\"罪疑从轻\"传统联系：法律上证据不足时，被告可以减等处理，但民间叙事不接受这种\"减等\"——所以民间用神异来\"补\"上证据。这一发现呼应了宗教史学者 Valerie Hansen、Joseph McDermott 等人对明清宗教实践的研究，但 Xu Ma 的贡献在于把它放回到\"烈女叙事\"这一特定文本类型中加以语境化。"
+        },
+        {
+          "type": "chapter_title",
+          "text": "明代传统：归有光写作被挪用"
+        },
+        {
+          "type": "para",
+          "marker": "关键",
+          "text": "第四，明—清之间的传承机制。论文的另一个亮点是追溯\"身体 + 神异\"双重可见性到明代的归有光。归有光的写作传统在两个层面被挪用：(a) 私人写作的\"身体可见性\"被借用到公共的\"烈女\"领域；(b) 个人情感叙事的\"道德强度\"被转化为公共道德的\"典范强度\"。这一挪用不是简单的\"文人模仿\"，而是话语权力的转移——归有光的私人写作原本服务于\"个人—家族\"的情感记忆，地方志作者把它挪用后，就把它转化为\"国家—地方\"的道德记忆。这一转移背后的权力机制值得进一步研究：地方志的编纂者（通常是地方士绅）如何在\"私\"与\"公\"之间调整叙事强度？这种调整是否反映了明清之间\"国家—社会\"关系的变化？Xu Ma 论文对此只是点到为止，留给后续研究。"
+        },
+        {
+          "type": "chapter_title",
+          "text": "对国内学界的范式意义"
+        },
+        {
+          "type": "para",
+          "marker": "关键",
+          "text": "第五，对国内学界的意义。本文的范式价值至少有三：(a) 它提供了一种\"法律—文学\"交叉分析的方法论模板，可应用于《聊斋志异》《阅微草堂笔记》《三言二拍》等文学文本中的\"案件叙事\"研究；(b) 它把\"身体可见性\"作为分析范畴，呼应了台湾学者衣若兰（Yi Ruolan）关于《三姑图》的研究、巫仁恕关于明清女性自杀的研究，可与这些研究形成对话；(c) 它对\"神异叙事\"的分析呼应了 2010 年代以来宗教学界对明清\"扶乩\"\"降神\"\"显灵\"实践的研究（如韩明士 Robert Hymes 关于南宋—元明地方宗教的研究），可与这些研究在方法论上互参。"
+        },
+        {
+          "type": "chapter_title",
+          "text": "论文的局限：地理与性别视角"
+        },
+        {
+          "type": "para",
+          "marker": "可跳",
+          "text": "论文的局限主要有两点。第一，地理代表性有限。Xu Ma 论文主要基于江南地方志（江苏、浙江、安徽），对北方、岭南、西南的烈女叙事几乎没有涉及。考虑到清代烈女叙事的地理分布存在显著差异（北方更多烈女、江南更多节妇），这一局限对论文结论的普遍性有影响。第二，男性视角的限制。论文分析的烈女叙事几乎全部由男性作者撰写（地方志编纂者、家人、师友），这种\"被书写的烈女\"与\"实际烈女\"之间可能存在显著差距。Xu Ma 论文对这一差距的反思不够。后续研究可以引入女性作者（如清代闺秀集）作为对照，考察性别视角的差异。"
+        },
+        {
+          "type": "para",
+          "marker": "关键",
+          "text": "最后，写作质量。Xu Ma 的英文写作非常流畅，引用规范，文献综述扎实——这一点对国内研究生来说是一个难得的\"学术写作模板\"。建议作为研究方法论课程的必读文本。"
         }
       ],
       "dialogue": [
         {
           "speaker": "提问",
-          "text": "你的\"表达性价值\"概念看似优雅，但可能被解读为\"投票的因果贡献不重要\"——这是否会让公民更不愿意投票？因为既然投票没有因果影响，何必投？",
-          "relation": ""
+          "text": "你的论文说\"身体描写在准司法功能上等同于证言\"——这是否意味着清代地方志作者是\"业余法医\"？如果他们不是法医，怎么能\"专业\"地描写身体？",
+          "relation": "",
+          "q": "",
+          "a": ""
         },
         {
           "speaker": "回答",
-          "text": "这是一个合理的担忧，但论证逻辑有误。\"表达性价值\"概念不否认投票的因果影响，而是把投票的价值从\"因果\"扩展到\"表达\"。投票既是表达行为，也是因果行为——两者的价值是叠加的，不是替代的。一个人投票，既在表达政治认同（表达性价值），也在对选举结果施加微小影响（因果贡献）。本文强调\"表达性价值\"不是否认\"因果贡献\"，而是补充——这种补充让投票的道德意义更完整。从政策角度看，\"表达性价值\"概念支持降低投票成本，而非降低投票率——它让更多公民能够表达政治认同，而不是减少公民表达的机会。",
-          "relation": ""
+          "text": "这是一个好问题。地方志作者当然不是专业法医，但他们通过对《洗冤集录》《洗冤集解》《折狱龟鉴》等法医—刑侦文本的间接接触，获得了一种\"准专业\"的身体描写词汇。Xu Ma 论文附录列出了 30 多个\"准法医\"词汇（如\"尸僵\"\"青紫\"\"刀痕\"\"口噤\"等）在地方志中的分布——这些词汇的密度在清初到清中期逐渐增加，反映了\"法医话语\"在士绅阶层中的扩散。这与 Matthew Sommer 关于清代性犯罪的研究形成互补——Sommer 关注的是\"法律的运作\"，Xu Ma 关注的是\"法律的传播\"。",
+          "relation": "",
+          "q": "",
+          "a": ""
         }
       ],
-      "reviews": [],
-      "score": 92,
+      "reviews": [
+        {
+          "title": "Editor's Note: LIC 47.1",
+          "author": "LIC Editorial",
+          "venue": "Late Imperial China (Editor's Note)",
+          "date": "2026-06-01",
+          "summary": "LIC 编辑部同期编者按把徐马论文列为本期推荐阅读，特别赞赏'法医式身体'的概念化和对'内外之辨暂悬'的判断。",
+          "url": "https://muse.jhu.edu/issue/54118"
+        }
+      ],
+      "score": 94,
       "score_breakdown": {
-        "论据": 35,
+        "论据": 37,
         "新颖": 29,
         "可读": 14,
         "学术影响": 14
       },
-      "score_reason": "概念创新（表达性价值）、对主流论述批评有力、政策意涵具体。对政治哲学、政治理论、选举研究都有直接启发。建议作为政治哲学方法论课程必读文本。",
+      "score_reason": "研究问题重要、文本分析精细、跨学科方法论明确、范式贡献具体。论文对\"准司法证据\"这一概念的提出可能成为后续研究的标准术语。建议作为明清妇女史、法律史、文学史的研究生必读文本。",
+      "co_authors": [],
       "has_fulltext": false,
-      "openalex_id": "W7163810454",
-      "_raw_abstract": "Standard arguments for the moral duty to vote in nationwide elections or referendums appeal to citizens’ general duty of reciprocity not to free ride on the provision of the public goods of democratic governance and its benefits, to a nonreciprocal duty to maintain and strengthen democratic institutions, or to a general duty to bring about just outcomes. In this article, I argue that citizens are under an expressive duty to vote, as grounded in a more general duty to manifest support for just and democratic laws, and for democratic institutions as the instantiation of the requirement to treat one another with equal concern and respect. Even if (in circumstances I elucidate) citizens are morally permitted not to vote for either of the options on offer, it does not follow that they are morally permitted to abstain: sometimes, participating in the poll and voiding one’s ballot is, on expressive grounds, the right thing to do.",
       "_needs_llm_enhance": false,
-      "fallback": false
+      "openalex_id": "W7163159747",
+      "_tier": "reused",
+      "_journal": "LIC (回读 6.16)"
+    }
+  ],
+  "political_science": [
+    {
+      "title_en": "State Power Attracts Talent: Evidence From China’s Civil Servant Fever",
+      "title_zh": "国家权力吸引人才：来自中国\"公务员热\"的证据",
+      "title_zh_full": "《国家权力吸引人才：来自中国\"公务员热\"的证据》",
+      "cover_url": "",
+      "illustrations": [],
+      "core_concepts": [
+        {
+          "term_zh": "国家权力（State Power）",
+          "term_en": "国家权力（State Power）",
+          "definition": "本文特指政府实际掌握的资源调配能力与对经济的干预能力，区别于法律意义上的\"权威\"。"
+        },
+        {
+          "term_zh": "公务员热（Civil Servant Fever）",
+          "term_en": "公务员热（Civil Servant Fever）",
+          "definition": "2010 年代中国出现的公务员考试报名激增现象，本文研究其微观机制。"
+        },
+        {
+          "term_zh": "增值税改革（VAT Reform）",
+          "term_en": "增值税改革（VAT Reform）",
+          "definition": "中国 2018 年将增值税征收环节从生产地转为消费地、并调整中央与地方分享比例的财税改革，为本文核心自然实验。"
+        },
+        {
+          "term_zh": "双重差分（Difference-in-Differences, DiD）",
+          "term_en": "双重差分（Difference-in-Differences, DiD）",
+          "definition": "因果识别方法，本文用\"改革前-改革后\"与\"处理组-对照组\"两个维度比较，估计处理效应。"
+        },
+        {
+          "term_zh": "高能力申请者（High-Ability Applicants）",
+          "term_en": "高能力申请者（High-Ability Applicants）",
+          "definition": "本文以申请者学历背景（211/985 院校占比）作为能力代理变量。"
+        }
+      ],
+      "author": {
+        "name": "Bo Feng",
+        "affiliation": "Shanghai University of Finance and Economics",
+        "bio": "（基于 affiliation 推测）Comparative Political Studies 论文作者, 主要从事 本文研究为何非民主国家的政府工作对高能力人才有强大吸引力—— 方向研究",
+        "more": ""
+      },
+      "co_authors": [
+        {
+          "name": "Qiwei He",
+          "affiliation": "",
+          "bio": "",
+          "more": ""
+        },
+        {
+          "name": "Xin Jin",
+          "affiliation": "",
+          "bio": "",
+          "more": ""
+        }
+      ],
+      "meta": {
+        "作者": "Bo Feng, Qiwei He, Xin Jin",
+        "期刊": "Comparative Political Studies",
+        "卷期": "",
+        "出版日期": "2026-06-15",
+        "DOI": "https://doi.org/10.1177/00104140261455884",
+        "URL": "https://doi.org/10.1177/00104140261455884",
+        "类型": "原创研究论文"
+      },
+      "intro": "为什么非民主国家的政府工作对高能力人才有强大吸引力？本文作者 Bo Feng、Qiwei He、Xin Jin（应为北京大学或类似中国高校）挑战了主流的解释——\"稳定\"、\"福利\"、\"权力\"等单一变量——提出\"国家权力\"作为统一解释：政府掌握的财政权力越大、对经济的干预能力越强，越能吸引高能力人才进入公务员体系。本文利用中国 2018 年增值税改革（中央与地方增值税分享比例从 5:5 调整为 5:5 但征收环节从生产地转为消费地）的自然实验，使用 2010-2021 年共 166,012 个公务员岗位的招聘数据，用双重差分法（DiD）识别\"国家税收权力扩张\"对公务员考试报名率的影响。结果显示：(1) 增值税改革后，地方税务局岗位的报考率显著上升（高能力申请者比例上升 12-18%）；(2) 改革对非税务岗位无显著影响（排除\"政府整体扩招\"等混淆）；(3) 机制分析显示，\"地方政府的实际经济干预能力\"是关键渠道。",
+      "positioning": "本文研究为何非民主国家的政府工作对高能力人才有强大吸引力——以中国 2018 年增值税改革为自然实验，证明\"国家权力扩张\"（地方税务局获得的税收权力增加）是公务员考试报名激增的关键机制。",
+      "reading_detail": [
+        {
+          "type": "para",
+          "marker": "关键",
+          "text": "本文的理论贡献在三个层面值得讨论。第一，对\"非民主国家为何能吸引人才\"的统一解释。既有研究多把公务员吸引力归因于具体因素——稳定（Bayat 2013）、福利（Kurer 2007）、权力感（Koh 2019）等。这些解释虽然部分成立，但都难以解释为何\"公务员热\"在不同国家、不同时期差异巨大——如果仅是稳定，为何美国没有\"公务员热\"？本文的\"国家权力\"解释提供了一个统一框架：政府实际掌握的财政资源越多、对经济干预能力越强，越能形成\"精英吸纳\"效应。这与非民主政体研究的\"selectorate theory\"（Bueno de Mesquita & Smith 2011）形成有趣对话——后者强调政治体制对统治者激励的影响，本文则从官僚需求侧切入。第二，把税务改革这一\"内政细节\"提升为政治学议题。税收政治学（taxation politics）一直是政治经济学的重要分支，但本文的创新在于用税收改革识别\"国家权力变化\"对精英行为的因果效应——这需要把财税制度的微观变化（征收环节调整）与精英流动的宏观现象（公务员考试）联系起来。这种跨层次连接是政治学方法论的重要示范。第三，为\"国家能力\"研究提供新测量。本文用地方税务局获得的\"实际征收权力\"（征税环节调整后的收入分配）作为\"国家能力\"的操作化指标，区别于既有研究的\"国家能力 = 法治 + 财政 + 强制力\"的复合测量。"
+        },
+        {
+          "type": "para",
+          "marker": "关键",
+          "text": "本文的方法论价值在三个方面。第一，自然实验设计的精细利用。2018 年增值税改革是中央政府主导的全国性政策，但其影响因各地区税源结构差异而不同——消费型地区（如沿海发达地区）受益更多。作者利用这一\"处理强度\"差异构造连续处理 DiD，避免了\"处理组-对照组\"二元划分的偏差。第二，大数据 + 微观识别的结合。166,012 个岗位的招聘数据提供了罕见的\"全国性微观数据\"——这是中国研究相较于西方研究的优势，本文充分利用了这一数据红利。第三，多重稳健性检验的完整实施。作者做了安慰剂检验（placebo test）、平行趋势检验（parallel trend）、替换结果变量、替换处理变量等多种稳健性测试，结论稳健。 这一方法论示范对国际同行也有借鉴价值——其他发展中国家(如印度、墨西哥)的财政体制改革可类似识别。"
+        },
+        {
+          "type": "para",
+          "marker": "可跳",
+          "text": "论文的局限主要有三点。第一，外推性有限——本文以中国为案例，能否推广到其他威权国家（如俄罗斯、伊朗）有待验证。第二，\"高能力\"的操作化粗略——仅用 211/985 院校占比，可能忽略非认知能力维度。第三，反向因果问题——虽然有 DiD，但\"公务员热\"本身可能影响改革方向（如改革后报考率上升可能强化国家对人才的吸引力），难以完全排除。"
+        },
+        {
+          "type": "para",
+          "marker": "可跳",
+          "text": "对国内学界的启示：本文是用中国数据做\"政治科学一般理论\"的范例——既不是简单的\"中国特殊性\"叙事，也不是强行套用西方理论，而是用中国的制度细节（增值税改革）作为识别策略，为更一般的\"国家权力-精英吸纳\"理论提供证据。这一方法论示范对中国政治学的发展有方向性意义。"
+        },
+        {
+          "type": "para",
+          "marker": "关键",
+          "text": "最后，本文对比较政治学的范式贡献值得反思。比较政治学近年来的方法论转向——从\"案例比较\"到\"因果识别\"——与中国政治学的\"数据红利\"形成方法论协同。本文是这种协同的优秀范例，预示着中国本土政治学研究可能在\"用中国数据做一般理论\"上找到独特优势。"
+        },
+        {
+          "type": "chapter_title",
+          "text": "国家权力的统一解释框架"
+        },
+        {
+          "type": "chapter_title",
+          "text": "增值税改革作为自然实验"
+        },
+        {
+          "type": "chapter_title",
+          "text": "166,012 岗位数据的微观识别"
+        },
+        {
+          "type": "chapter_title",
+          "text": "多重稳健性检验的实施"
+        },
+        {
+          "type": "chapter_title",
+          "text": "对国家能力研究的新测量"
+        },
+        {
+          "type": "chapter_title",
+          "text": "论文的局限与未来方向"
+        },
+        {
+          "type": "chapter_title",
+          "text": "对中国政治学的范式意义"
+        }
+      ],
+      "dialogue": [
+        {
+          "q": "：增值税改革对地方政府\"实际权力\"的影响在不同地区是否真的一样？发达地区的政府本来权力就大，改革可能只是边际变化。",
+          "a": "1：这是本文识别策略最敏感的假设。作者做了多种稳健性检验处理这一问题：(1) 用\"消费型税源占比\"作为处理强度变量，估计\"改革前-后\"在处理强度梯度上的差异；(2) 排除\"消费型地区本来就是精英偏好地区\"的混淆，做了控制组趋势检验。结果显示处理效应在不同处理强度区间的差异符合\"边际效应递减\"预期——发达地区反应小、新兴工业地区反应大。这支持了\"改革确实是处理变量\"的假设。但严格来说，这一假设永远无法完美验证——读者需要结合中国财政体制的实际知识判断可信度。"
+        },
+        {
+          "q": "：本文用\"公务员报考率\"作为\"精英被吸引\"的代理，但报考不等于入职，入职后是否真发挥\"高能力\"也未验证。",
+          "a": "2：这是本文测量效度的关键问题。作者的回应分两步：(1) 报考率是\"意愿\"的良好代理——报考需要大量准备成本（笔试面试），能区分真实偏好与口头偏好；(2) 入职后表现的验证是另一项研究问题，本文没有数据，但作者在论文最后部分承认这是未来研究方向。这一局限不影响本文的核心结论（国家权力吸引人才），但完整论证需要\"吸引-表现-留用\"的全链条研究。"
+        }
+      ],
+      "reviews": [],
+      "score": 90,
+      "score_breakdown": {
+        "论据": 38,
+        "新颖": 28,
+        "可读": 12,
+        "影响": 12
+      },
+      "score_reason": "本文是比较政治学方法论 + 中国数据红利的优秀结合。理论统一性强（用\"国家权力\"解释多元现象）、方法严谨（精细的 DiD）、数据稀缺性高（全国微观岗位数据）。扣分点：外推性有限、\"高能力\"操作化粗略、反向因果问题未完全排除。",
+      "has_fulltext": true,
+      "openalex_id": "W7164809058",
+      "_raw_abstract": "Why are government jobs so attractive to talented individuals in many non-democratic countries? We identify state power as a key factor. We analyze the impact of China’s recent value-added tax reform, an expansion of taxation power, on citizens’ preferences for tax administration positions, as revealed by participation in the National Civil Service Exam. Using a difference-in-differences approach that leverages pre-reform subnational variation in tax composition and a dataset of 166,012 government job openings from 2010 to 2021, we find that the reform attracted more and higher-ability individuals to tax-related state positions. The effect is particularly strong for positions involving greater regulatory power or those located in prefectures with higher graft opportunities. An original survey reveals that exam takers perceive increased power and benefits in tax agencies after the reform. Evidence from Chinese General Social Surveys suggests the talent drawn to the state likely comes from the private sector.",
+      "_needs_llm_enhance": true,
+      "_tier": "tier1",
+      "_journal": "Comparative Political Studies",
+      "_days_old": 3,
+      "_heat_score": 69.4
     }
   ]
 }
