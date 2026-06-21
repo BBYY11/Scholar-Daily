@@ -5,53 +5,39 @@
     <link>https://bbyy11.github.io/Scholar-Daily/</link>
     <description>每天 4 张学术精读卡 (社会学/人类学/历史学/政治学)</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 20 Jun 2026 23:58:10 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 21 Jun 2026 23:57:06 +0800</lastBuildDate>
     <atom:link href="https://bbyy11.github.io/Scholar-Daily/feed.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>刑事记录作为分类情境</title>
-      <link>https://bbyy11.github.io/Scholar-Daily/archive/2026-06-20.html</link>
-      <guid isPermaLink="false">2026-06-20-W7165381577</guid>
-      <pubDate>2026-06-20T08:00:00+0800</pubDate>
+      <title>犯罪记录作为一种分类情境</title>
+      <link>https://bbyy11.github.io/Scholar-Daily/archive/2026-06-21.html</link>
+      <guid isPermaLink="false">2026-06-21-W7165381577</guid>
+      <pubDate>2026-06-21T08:00:00+0800</pubDate>
       <category></category>
-      <description>Marion Fourcade 与 Kieran Healy 在《分类情境》（Classification Situations, 2017）一文中提出，信用评分、租客筛查、保险核保等&quot;序数分类装置&quot;通过把社会不平等编码为技术指标，在掩盖不平等的同时强化了不平等。Bing 与 Lageson 这篇 BJS 论文的野心是把这一框架从金融领域迁移到刑事司法领域，论证当代刑事记录已不再只是&quot;有罪/无罪&quot;的二元排斥标记，而是演化为一种分级（gradational）、动态（dynamic）、响应干预（responsive to intervention）的分类系统。
-
-论文的实证抓手是美国 linked administrative data——把个体层面的刑事记录、教育记录、失业保险工资数据三者对接。这种数据组合在刑法学界罕见，它让作者可以同时观察：(a) 刑事记录的&quot;严重度&quot;如何在系统内被分级；(b) 减刑、封存、删除等&quot;记录救济&quot;政策如何对不同人群产生差异化效应；(c) 刑事记录严重度与工资水平的相关性是否反映&quot;事实罪责&quot;还是&quot;社会优势&quot;。
-
-核心发现可总结为三层：(1) 当代刑事记录是&quot;</description>
+      <description>在北美法律社会学的传统叙述中，犯罪记录常被视为一种“二值化”（binary）标签——一旦贴上便终身不可剥离，制造稳定的劳动力市场排斥与住房排斥。但 Bing 与 Lageson 借助 Fourcade 与 Healy 关于“分类情境”（classification situations）的框架指出，刑事记录早已从静态的“有无”转化为一种**序数化、可干预、可修复**的分级制度。回避式审前转处（diversion）、删除赦免（expungement）、封存（sealing）等政策把记录从“命运”重新配置为“可议价的对象”；而私营市场（背景调查公司、修复服务订阅、就业背调 SaaS）则把这一可议价空间商品化。本文的实证基础是加拿大某省 2010 年代后期链接的行政数据——个人级刑事记录、教育与失业保险工资数据，用以检验“修复机会是否被资源占有者先占”这一核心假设。结果指向一个反直觉但稳健的结论：记录的“严重性”不再由罪行本身决定，而由个人能调动多少社会与物质资源去清除或抵消它决定。这是一篇将法律社会学与经济社会学对接、用 Fourcade–Healy 分类理论回看刑事司法扩张的代表作。</description>
     </item>
     <item>
-      <title>情感作为方法：集体创伤民族志的新框架</title>
-      <link>https://bbyy11.github.io/Scholar-Daily/archive/2026-06-20.html</link>
-      <guid isPermaLink="false">2026-06-20-W7163911599</guid>
-      <pubDate>2026-06-20T08:00:00+0800</pubDate>
+      <title>作为方法的情感：集体创伤民族志研究的方法论框架</title>
+      <link>https://bbyy11.github.io/Scholar-Daily/archive/2026-06-21.html</link>
+      <guid isPermaLink="false">2026-06-21-W7163911599</guid>
+      <pubDate>2026-06-21T08:00:00+0800</pubDate>
       <category></category>
-      <description>集体创伤研究（collective trauma studies）在过去 20 年已成为人类学、心理学、精神病学的交叉前沿。但一个方法论困境长期未解：很多关键情感——沉默、气氛、身体紧绷、目光回避——无法通过访谈或文本捕捉。Močnik 这篇 Ethnography 论文的贡献是提出&quot;情感作为方法&quot;（Emotion-as-Method, EAM）的双层框架：一方面，情感作为分析建构（analytic construct），即研究者用情感的六个维度（mood/intensity、collective affect、safety/trust、shame/stigma、agency/disempowerment、trauma responses）作为透镜解读田野数据；另一方面，情感作为田野方法（method），即研究者把自身的情感反应（身体不适、情感触发、沉默）作为数据来源。
-
-论文的核心理论主张是：情感不应被视为&quot;研究对象&quot;，而应同时被视为&quot;分析视角&quot;与&quot;研究方法&quot;。这一立场挑战了过去 30 年情感人类学的&quot;对象化&quot;传统——后者把情感当作&quot;受访者的情感体验&quot;，再用话语分析或主题分析法处理。</description>
+      <description>集体创伤的民族志研究长期被一个方法论问题所困扰：被访者说出的话语（self-report）往往与他们**正在说话时的身体—氛围**并不一致——沉默、目光躲闪、语速降低、共处时的紧张气息，这些&quot;在言语之外&quot;的痕迹，恰好承载了创伤的核心证据。Močnik 提出的 Emotion-as-Method（EAM）框架正是要把这些&quot;溢出语言&quot;的情感—身体现象**系统化**为可记录、可编码、可三角互证的方法学对象。EAM 由两组维度组成：(1) 六个分析性构念——情绪与强度、集体情感、安全与信任、羞耻与污名、能动性与失能、创伤反应；(2) 三个观察层——自我报告层、行为—语言层、情境层。分析单元是&quot;**情节**&quot;（episode）——一个**语音、姿态或氛围出现可分析位移的封闭时刻**。EAM 的理论雄心是：通过分层三角互证区分**收敛**（情感在三层的表现一致）与**失谐**（情感被压抑、被改写或被矛盾表达），从而打开创伤在记忆—权力基础设施中如何被生活、被隐藏、被转化的微观机制。</description>
     </item>
     <item>
-      <title>明清烈女传记中的身体证据</title>
-      <link>https://bbyy11.github.io/Scholar-Daily/archive/2026-06-20.html</link>
-      <guid isPermaLink="false">2026-06-20-W7163159747</guid>
-      <pubDate>2026-06-20T08:00:00+0800</pubDate>
+      <title>隐与显：明清女性传记中的身体典范性</title>
+      <link>https://bbyy11.github.io/Scholar-Daily/archive/2026-06-21.html</link>
+      <guid isPermaLink="false">2026-06-21-W7163159747</guid>
+      <pubDate>2026-06-21T08:00:00+0800</pubDate>
       <category></category>
-      <description>明清烈女研究在过去 30 年是中外妇女史、法律史、文学史的活跃交叉领域。但现有研究多在思想史与文学史的轨道里展开——&quot;烈女&quot;作为儒家&quot;典范&quot;的演变、作为女性能动性的资源、作为&quot;被压抑者&quot;的反叙事。Xu Ma 这篇 LIC 论文的方法论突破是：把烈女研究从思想史带回身体史与法律史的田野。论文追踪一类常被忽视的清代烈女传记——它们对烈女身体的伤损做近乎&quot;法医式&quot;的描述，并伴随神异现象（显灵、托梦、祠庙应验）。
-
-Xu Ma 论证的核心是：这种&quot;身体呈现 + 神异显灵&quot;的双重修辞，是清代地方司法在&quot;难以判定&quot;情境下，借助叙事完成&quot;准司法&quot;裁定的策略。在烈女被性侵致死的案件中，地方官的常规司法程序常常无法直接判定（&quot;她是否真的抵抗过&quot;是开放问题），此时叙事里的身体细节（伤口的形状、抵抗的位置）就承担了&quot;准证据&quot;的功能。神异显灵则在司法证据不足时，提供了&quot;超验&quot;的认证。
-
-Xu Ma 是 Northeastern University（美国波士顿）的中国法律史学者，本篇是其博士论文的延伸——把过去学者对&quot;烈女&quot;的思想史研究推进到身体—司法的交叉层面。</description>
+      <description>明清女性传记（列女传、节妇传、烈女传、贤媛传）是研究前近代中国性别秩序最稠密的文献之一。传统研究多关注&quot;典范话语&quot;——贞、节、烈、孝——如何被建构，却较少追问一个文本层面的反直觉现象：**典范性恰恰通过对身体的&quot;选择性显隐&quot;来运作**。马旭（Xu Ma）在本文中提出，列女传记的修辞策略不是单纯&quot;歌颂节烈&quot;，而是在两个方向上**做相反操作**——一方面**隐去身体**（如&quot;未几而卒&quot;、&quot;年若干卒&quot;等去肉身化的死亡叙事），另一方面**凸显身体的受难瞬间**（如割肉疗亲、毁容拒嫁、投水自尽前的&quot;沐浴更衣&quot;仪式）。这一&quot;隐—显&quot;二重性（concealment / revelation）实际上生产了一种**身体典范性**（embodied exemplarity）：通过让身体在某些场景中**不可见**，在另一些场景中**过度可见**，典范性才能被读者以恰当的方式&quot;感知—想象—继承&quot;。马旭借用了 Judith Butler 关于&quot;performativity&quot;的概念框架，主张典范性不是&quot;属性&quot;，而是**重复的修辞行为所生产的效果**。</description>
     </item>
     <item>
-      <title>超越信念改变：靶向态度相关信念的说服回报</title>
-      <link>https://bbyy11.github.io/Scholar-Daily/archive/2026-06-20.html</link>
-      <guid isPermaLink="false">2026-06-20-W7165027829</guid>
-      <pubDate>2026-06-20T08:00:00+0800</pubDate>
+      <title>超越信念变化：针对态度相关信念的劝服收益</title>
+      <link>https://bbyy11.github.io/Scholar-Daily/archive/2026-06-21.html</link>
+      <guid isPermaLink="false">2026-06-21-W7165027829</guid>
+      <pubDate>2026-06-21T08:00:00+0800</pubDate>
       <category></category>
-      <description>政治传播研究长期面临一个悖论：为什么政治信息常常可靠地改变信念，但几乎不改变态度？Velez、Liu、Clifford 这篇 APSR 论文的贡献是用&quot;信念相关性&quot;（belief relevance）解释这一悖论——特定的信念对特定的态度有不同的&quot;承载量&quot;，只有靶向&quot;focal beliefs&quot;（当事人用以证明该态度的核心信念）才能产生持久的态度改变。
-
-论文的方法论工具是用 LLM 与受访者对话提取其&quot;focal beliefs&quot;。研究者先通过 LLM 对话让受访者详尽阐述对某一议题的态度及其论证理由，再用 LLM 提取出该态度的&quot;focal belief&quot;（核心信念）与&quot;distal belief&quot;（议题相关但当事人未提及的信念）。实验组受访者接受针对 focal belief 的反驳论证，对照组接受针对 distal belief 的反驳论证，第三组为安慰剂。结果：focal belief 反驳组产生显著、持久的态度改变；distal belief 反驳组产生较大的信念改变但几乎无态度改变。
-
-Velez 是 Columbia University 政治学系副教授，专长政治行为、</description>
+      <description>政治传播研究里有一道长期悬而未决的“信念—态度鸿沟”：实验性信息干预经常**显著降低被访者对某条具体政治主张的信念强度**（belief strength），但**对上位态度（attitude）几乎不产生持久影响**。这一现象被 Zaller（1992）以来的一系列研究反复确认，但也一直困扰着关心“政治信息能否真正改变人心”的学者。Velez、Liu 与 Clifford 在这篇 APSR 文章中提出一个简洁但有力的解释：**劝服是否成功，取决于被反驳的“信念”在该被访者心目中的“关联度”**——即这条信念是 ta 在自我陈述中**主动用来支撑其态度的“焦点信念”**（focal belief），还是一条**与议题相关但被访者从未提及的“远端信念”**（distal belief）。两位作者用 LLM 与被访者对话，提取每个人的“焦点信念”，然后以预注册实验随机将被访者分配到“反驳焦点信念”、“反驳远端信念”、“对照组”三组，结果反驳焦点信念的劝服效果在 10 天后仍显著，而反驳远端信念则接近无效。这一发现对“如何设计政治信息”有直接政策含义。</description>
     </item>
   </channel>
 </rss>
