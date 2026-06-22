@@ -1,4 +1,4 @@
 {
-  "timestamp": "2026-06-18 06:38:06 UTC",
-  "message": "✅ 6.18 内容修复完成\n\n修 bug:\n- dialogue {q,a} → {speaker,text} 格式 — 现在每卡 4 条 (提问-回答×2)\n- details/summary 现在正确显示 5-6 个 / 卡\n- 推荐指数 88/85/94/90\n\n完整 4 张:\n- 社会学 (BJS 6.15): 精读 2207字, 5 概念, 4 对话\n- 人类学 (Ethnography 6.08): 精读 2390字, 5 概念, 4 对话\n- 历史学 (LIC 6.16 复用): 精读 2517字, 6 概念, 4 对话\n- 政治学 (CPS 6.15): 精读 2348字, 5 概念, 4 对话\n\ncommit: 319b07c561ea402d7d77b40af6f648af2761c771"
+  "timestamp": "2026-06-18 09:59:37 UTC",
+  "message": "✅ 6.18 章节顺序修复\n\n修 bug:\n- 3 张卡章节末尾堆叠 (社会学 9 个 + 人类学 8 个 + 政治学 7 个)\n- 现在章节按 md 源实际段位置插入\n- 用户看到的不再是空标题堆\n\n验证:\n- sociology: 9 章节嵌入 5 段\n- anthropology: 8 章节嵌入 4 段\n- history: 6.16 真品 (未改)\n- political_science: 7 章节嵌入 5 段\n\ncommit: dd7ffe8b9f7aa1985ee6c11046fb8e36382c059f"
 }

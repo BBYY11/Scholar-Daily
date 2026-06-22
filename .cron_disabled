@@ -1,0 +1,10 @@
+每日一书自动推送已停止 (用户 2026-06-22 决定)
+- cron task_id: 408713942204891 (daily-book-push, schedule: 50 7 * * *) 暂未从 archon-server 删除
+- mavis cron update/delete 工具因 task_id int64 字符串序列化问题失败
+- 替代方案: daily_push.sh 已改成 exit 0, cron 触发也什么都不做
+- 如需完全删除 cron 任务, 需通过 dashboard 或联系管理员手动删
+
+项目保留:
+- 代码、数据、archive、GitHub Pages 仍然在线
+- 仅停止"未来自动更新"
+- 历史内容 (6.16/6.17/6.18) 仍然可访问 https://bbyy11.github.io/Scholar-Daily/
