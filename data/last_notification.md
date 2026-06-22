@@ -1,3 +1,25 @@
+## 2026-06-22 01:40:51 UTC
+
+⏹ 每日一书自动推送已停止
+
+✅ 已完成:
+- scripts/daily_push.sh 改成 exit 0 — cron 触发什么都不做
+- 远程 HEAD a1a485d 已推送
+- 历史 6.16/6.17/6.18 三期内容完整保留
+- GitHub Pages 仍然在线: https://bbyy11.github.io/Scholar-Daily/
+
+⚠️ 未完成:
+- cron 任务 task_id=408713942204891 暂未从 archon-server 删除
+- mavis 工具因 task_id int64 序列化失败, 无法用 cron update/delete API
+- 建议在沙箱 dashboard 上手动删除或联系管理员
+
+项目保留:
+- scripts/, data/, archive/ 都还在
+- 仅停止'未来自动推送', 历史内容不受影响
+- 如果以后想恢复, 修改 scripts/daily_push.sh 把 exit 0 还原即可
+
+---
+
 ## 2026-06-18 09:59:37 UTC
 
 ✅ 6.18 章节顺序修复

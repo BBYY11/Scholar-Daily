@@ -1,4 +1,4 @@
 {
-  "timestamp": "2026-06-18 09:59:37 UTC",
-  "message": "✅ 6.18 章节顺序修复\n\n修 bug:\n- 3 张卡章节末尾堆叠 (社会学 9 个 + 人类学 8 个 + 政治学 7 个)\n- 现在章节按 md 源实际段位置插入\n- 用户看到的不再是空标题堆\n\n验证:\n- sociology: 9 章节嵌入 5 段\n- anthropology: 8 章节嵌入 4 段\n- history: 6.16 真品 (未改)\n- political_science: 7 章节嵌入 5 段\n\ncommit: dd7ffe8b9f7aa1985ee6c11046fb8e36382c059f"
+  "timestamp": "2026-06-22 01:40:51 UTC",
+  "message": "⏹ 每日一书自动推送已停止\n\n✅ 已完成:\n- scripts/daily_push.sh 改成 exit 0 — cron 触发什么都不做\n- 远程 HEAD a1a485d 已推送\n- 历史 6.16/6.17/6.18 三期内容完整保留\n- GitHub Pages 仍然在线: https://bbyy11.github.io/Scholar-Daily/\n\n⚠️ 未完成:\n- cron 任务 task_id=408713942204891 暂未从 archon-server 删除\n- mavis 工具因 task_id int64 序列化失败, 无法用 cron update/delete API\n- 建议在沙箱 dashboard 上手动删除或联系管理员\n\n项目保留:\n- scripts/, data/, archive/ 都还在\n- 仅停止'未来自动推送', 历史内容不受影响\n- 如果以后想恢复, 修改 scripts/daily_push.sh 把 exit 0 还原即可"
 }
